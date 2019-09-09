@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<div class="case_00" id="home">
+    <!--首页-->
+    <div id="homepage" class="case_01">
+        <!--导航栏-->
+        <header>
+            <div id="nav" style="height:380px;display: block;position: relative;margin-top: -2%;">
+              <a href="Index.html" style="display: inline-block;margin-left: 3%;margin-top: 1%" ><img  id="logo" src="images/tp_home/big_logo.png"  width="200px"></a>
+             <!--导航-->
+              <div id="daohang" class="daohang">
+              <ul>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('1')" id="nav_xiang" href="#">乡</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="x_jing">乡景</a></li>
+                        <li><a href="x_feng">乡风</a></li>
+                    </ul>
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('2')" id="nav_yu" href="#">渔</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">渔舟唱晚</a></li>
+                        <li><a href="#">渔海为生</a></li>
+                        <li><a href="#">授人以鱼</a></li>
+                    </ul>
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('3')" id="nav_su" href="#">俗</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">节俗</a></li>
+                        <li><a href="#">习俗</a></li>
+                        <li><a href="#">祭祀</a></li>
+                        <li><a href="#">传说</a></li>
+                    </ul>
+
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('4')" id="nav_yi" href="#">艺</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">渔民画</a></li>
+                        <li><a href="#">沙雕</a></li>
+                        <li><a href="#">船模</a></li>
+                        <li><a href="#">绳结</a></li>
+                    </ul>
+                </li>
+                  <li>
+                      <!--登录注册-->
+                      <a id="displaysign" onclick="start()" href="#" style="margin-top:4%;">
+                          <img src="images/tp_home/登录注册图标.png" width="30px" >
+                      </a>
+                      <!--登录注册-->
+                  </li>
+              </ul>
+              </div>
+            </div>
+        <!--导航-->
+            <div style="width: 100%;">
+            <div id="top_text" style="float: right;width:fit-content;margin-right:10%;margin-top:-1%;height: fit-content;display: block;">
+        <!--纯图片-->
+            <div style="margin-bottom: 5%;">
+                 <p style="font-size: 35px;color:#FFF;text-shadow:1px 1px 2px rgba(0,0,0,0.70);">最新推荐|一文读懂舟山海洋文化</p>
+            </div>
+            <div style="margin-bottom: 5%;">
+            <p style="font-size: 20px;color: #FFFFFF;text-align:center;text-shadow:1px 1px 2px rgba(0,0,0,0.70)">
+                舟山人因海而生、因海而兴，在漫长的历史长河中，<br>
+                在长期的生产、生活中，舟山人兴渔盐之利，行舟楫之便，<br>
+                创造了独具特色的舟山海洋文化
+            </p>
+        </div>
+            <div  class="chakan"  style="margin-left: 35%;">
+                <div class="theme-2">
+                    <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                            <!-- Because of Firefox. -->
+                            <defs>
+                                <radialGradient id="gradient">
+                                    <stop offset="0" stop-color="#0868BB" />
+                                    <stop offset="0.25" stop-color="#0075D8" />
+                                    <stop offset="0.35" stop-color="#0868BB" />
+                                    <stop offset="0.50" stop-color="#0075D8" />
+                                    <stop offset="0.60" stop-color="#0868BB" />
+                                    <stop offset="0.85" stop-color="#0075D8" />
+                                    <stop offset="1" stop-color="#0868BB" />
+                                </radialGradient>
+                            </defs>
+                            <symbol id="ripply-scott" viewBox="0 0 100 100">
+                                <circle id="ripple-shape" fill="url(#gradient)" cx="1" cy="1" r="1" />
+                            </symbol>
+                        </svg>
+                    </div>
+                    <button id="js-ripple-btn" class="button styl-material">
+                        查看详情
+                        <svg class="ripple-obj" id="js-ripple">
+                            <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+                        </svg>
+                    </button>
+                </div>
+        </div>
+        <!--纯图片-->
+        </div>
+            </div>
+        </header>
+        <!--导航栏-->
+        <div id="video" class="video-bg" >
+            <video muted data-autoplay loop="loop" autoplay="autoplay" src="others/homepage_final2.mp4"
+                   style="position: relative;overflow: hidden;left: -15%" class="video-tvc" id="video-tvc" data-object-fit></video>
+        </div>
+    </div>
+    <!--首页-->
+    <div id="signupAndin" class="lowin">
+        <div class="lowin-brand"></div>
+        <div class="lowin-wrapper">
+            <div style="width: 100%;position: absolute;z-index: 99;">
+                <img onclick="close()" id="closesign" src="images/tp_home/close.png" class="closesign">
+            </div>
+            <div class="lowin-box lowin-login">
+                <div class="lowin-box-inner">
+                    <form>
+                        <p>用户登录</p>
+                        <div class="lowin-group">
+                            <label>邮箱 <a href="#" class="login-back-link">登录</a></label>
+                            <input type="email" autocomplete="email" name="email" value="" class="lowin-input">
+                        </div>
+                        <div class="lowin-group password-group" style="margin-bottom: 90px;">
+                            <label>密码 <a href="#" class="forgot-link">忘记密码?</a></label>
+                            <input type="password" name="password" autocomplete="current-password" class="lowin-input">
+                        </div>
+                        <button class="lowin-btn login-btn">
+                            登录
+                        </button>
+                        <div class="text-foot">
+                            没有帐户? <a href="" class="register-link">注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lowin-box lowin-register">
+                <div class="lowin-box-inner">
+                    <form>
+                        <p>让我们创建您的帐户</p>
+                        <div class="lowin-group">
+                            <label>姓名</label>
+                            <input type="text" name="name" autocomplete="name" class="lowin-input">
+                        </div>
+                        <div class="lowin-group">
+                            <label>邮箱</label>
+                            <input type="email" autocomplete="email" name="email" class="lowin-input">
+                        </div>
+                        <div class="lowin-group">
+                            <label>密码</label>
+                            <input type="password" name="password" autocomplete="current-password" class="lowin-input">
+                        </div>
+                        <button class="lowin-btn">
+                            登录
+                        </button>
+                        <div class="text-foot">
+                            已经有账户了? <a href="" class="login-link">登录</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="lowin-footer">
+        </footer>
+    </div>
+    <!--乡-->
+    <div id="home_xiang" class="case_02">
+        <!--背景+标题-->
+        <div id="xiang_bg" style="position: absolute;z-index:-100;width: 100%;margin-top: -150px;">
+        <img id="xiang_bg_img" src="images/tp_home/xiang_bg.png">
+        </div>
+        <div style="width:fit-content;margin-left: auto;margin-right: auto;padding-top: 60px;">
+        <img style="width:50px;" src="images/tp_home/乡.png">
+        </div>
+        <div style="width:fit-content;margin: 0 auto;">
+         <img style="width:80px;" src="images/tp_home/乡-蓝波纹.png">
+        </div>
+        <!--背景+标题-->
+        <!--乡景-->
+        <div style="width: 100%;position: relative;margin-top: 30px;">
+            <div style="position: absolute;width:100%;z-index: 100;height: 100%;">
+                <div id="jing_intro1" class="x_dong01" style="width:fit-content;float:right;position:relative;height:fit-content;display: block;">
+                    <div style="margin-top: 55px">
+                    <img style="margin-top: 10%;" src="images/tp_home/乡景icon.png">
+                    <p style="font-size: 30px;margin-top: 5%"> 乡景 </p>
+                    <img style="margin-top:5%" src="images/tp_home/介绍舟山地理环境，舟山与海洋的渊源，舟山海洋旅游产业，类似海洋公园、旅游景点等的个性化地图展示.png">
+                    </div>
+                    <div class="button_su">
+                     <span class="su_button_circle">
+                     </span>
+                        <a href="#" class="button_su_inner">
+                        <span class="button_text_container">
+                          了解更多&nbsp →
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative;text-align:center;margin:auto 0;">
+                <img id="jing_bg" style="position:relative;z-index:1;" src="images/tp_home/乡景-背景.png">
+                <img id="jing_img" style="position:relative;margin-left: -3%;z-index: -20;" src="images/tp_home/乡景-配图.png">
+            </div>
+        </div>
+        <!--乡景-->
+        <!--乡风-->
+        <div style="width: 100%;position: relative;margin-top: 30px;">
+            <div style="position: absolute;margin-left: 55%;z-index: 100;height: 100%;display: flex;">
+                <div class="x_dong01" style="position:relative;height:fit-content;align-self: center;display: block;">
+                    <div>
+                        <img style="margin-top: 8%;" src="images/tp_home/乡风icon.png">
+                        <p style="font-size: 30px;margin-top: 5%"> 乡风 </p>
+                        <img style="margin-top:5%" src="images/tp_home/介绍舟山名人名家以及传播正能量故事.png">
+                    </div>
+                    <div class="button_su">
+                     <span class="su_button_circle">
+                     </span>
+                        <a href="#" class="button_su_inner">
+                        <span class="button_text_container">
+                          了解更多&nbsp →
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative;text-align:center;margin:auto 0;">
+                <img id="feng_img" style="position:relative;z-index: -20;margin: 0 auto;" src="images/tp_home/乡风-配图.png">
+                <img id="feng_bg" style="position:relative;z-index:0;margin-left: -2.5%;" src="images/tp_home/乡风-背景.png">
+            </div>
+        </div>
+        <!--乡风-->
+    <!--乡-->
+    </div>
+    <!--乡-->
+    <!--渔-->
+    <div id="home_yu" class="case_03">
+        <!--背景+标题-->
+        <div>
+            <div style="width:fit-content;margin-left: auto;margin-right: auto;padding-top: 50px;">
+                <img style="width:50px;" src="images/tp_home/渔.png">
+            </div>
+            <div style="width:fit-content;margin: 0 auto;">
+                <img style="width:80px;" src="images/tp_home/乡-蓝波纹.png">
+            </div>
+            <div style="position: absolute;margin-left:-5%;margin-top: -10%">
+                <img  src="images/tp_home/渔-帆船底纹.png">
+            </div>
+            <div  style="position: absolute;margin-top:20%;right: 4%">
+                <img src="images/tp_home/渔-鱼底纹.png">
+            </div>
+        </div>
+        <!--背景+标题-->
+        <!--卡片-->
+        <div id="yu_card" style="position: relative;margin-left: auto;margin-right:auto;margin-top:2%;width:80%;height:600px;">
+            <div id="yu_a" onmousemove="yu_dong01i(this)" onmouseout="yu_dong01o(this);" style="position:relative;width:30%;height:100%;display:inline-block;">
+                <div id="yu_a_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <img id="yu_dong01_btn1" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/轮船.png">
+                    <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">渔舟唱晚</p>
+                    <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">介绍船的分类、特点和用途</p>
+                </div>
+                <img style="position: relative;width: 100%;height: 100%;" src="images/tp_home/渔舟唱晚-背景.png">
+            </div><!--渔卡a-->
+
+            <div id="yu_b" onmousemove="yu_dong02i(this)" onmouseout="yu_dong02o(this);" style="position:relative;height:100%;width:30%;display:inline-block;margin: 0 0 0 4%;">
+                <div id="yu_b_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <img id="yu_dong01_btn2" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/渔网.png">
+                    <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">渔海为生</p>
+                    <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">交互体验打渔过程</p>
+                </div>
+                <img style="position: relative;width: 100%;height: 100%;" src="images/tp_home/渔舟唱晚-背景.png">
+            </div><!--渔卡b-->
+
+            <div id="yu_c" onmousemove="yu_dong03i(this)" onmouseout="yu_dong03o(this);" style="position:relative;height:100%;width:30%;display:inline-block;margin: 0 0 0 4%;">
+                <div  id="yu_c_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <img id="yu_dong01_btn3" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/鱼类.png">
+                    <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">授人以鱼</p>
+                    <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">分类展示舟山海鲜</p>
+                </div>
+                <img style="position: relative;width: 100%;height: 100%;"  src="images/tp_home/渔舟唱晚-背景.png">
+            </div><!--渔卡c-->
+        </div>
+        <!--卡片-->
+    </div>
+    <!--渔-->
+    <!--俗-->
+    <div id="home_su" class="case_04">
+        <!--背景+标题-->
+        <div id="su_bg" style="position: absolute;z-index:-100;width: 100%;">
+            <img id="su_bg_img" src="images/tp_home/俗-背景.png">
+        </div>
+        <div style="z-index: 3;width: 100%;margin-top: 60px;">
+        <div style="width:fit-content;margin-left: auto;margin-right: auto;">
+            <img style="width:50px;" src="images/tp_home/俗.png">
+        </div>
+        <div style="width:fit-content;margin: 0 auto;">
+            <img style="width:80px;" src="images/tp_home/俗-白波纹.png">
+        </div>
+        </div>
+        <!--背景+标题-->
+        <!--俗_卡片-->
+        <div style="width:100%;margin: 0 auto;height: 60%;">
+            <div id="su_01" class="service">
+                <div class="icon">
+                    <img id="su_jiesu" style="width: 60px;margin-top:20%" src="images/tp_home/节日.png">
+                </div>
+                <h4>节俗</h4>
+                <p>介绍海洋文化节、休渔节、开洋谢洋节等节日风俗</p>
+                <a class="btn-6" id="su_btn1" href="#" style="height: fit-content">查看更多<span></span></a>
+                <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
+            </div>
+
+            <div id="su_02" class="service">
+                <div class="icon">
+                    <img id="su_xisu" style="width: 60px;margin-top:20%" src="images/tp_home/孩子.png">
+                </div>
+                <h4>习俗</h4>
+                <p>介绍舟山各地婚丧及其他各方面的传统习俗</p>
+                <a class="btn-6" id="su_btn2" href="#" style="height: fit-content">查看更多<span></span></a>
+                <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
+            </div>
+
+            <div id="su_03" class="service">
+                <div class="icon">
+                    <img id="su_jisi" style="width: 60px;margin-top:20%" src="images/tp_home/祭拜台.png">
+                </div>
+                <h4>祭祀</h4>
+                <p>介绍舟山关于海洋的祭祀活动及其意义等</p>
+                <a class="btn-6" id="su_btn3" href="#" style="height: fit-content">查看更多<span></span></a>
+                <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
+            </div>
+
+            <div id="su_04" class="service">
+                <div class="icon">
+                    <img id="su_chuanshuo" style="width: 60px;margin-top:20%" src="images/tp_home/佛.png">
+                </div>
+                <h4>传说</h4>
+                <p>介绍舟山民间广为流传的神话故事或历史演变等</p>
+                <a class="btn-6" id="su_btn4" href="#" style="height: fit-content">查看更多<span></span></a>
+                <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
+            </div>
+        </div>
+        <!--俗_卡片-->
+    </div>
+    <!--俗-->
+    <!--艺-->
+    <div id="home_yi" class="case_05">
+        <!--背景+标题-->
+        <div>
+            <div style="width:fit-content;margin-left: auto;margin-right: auto;padding-top: 50px;">
+                <img style="width:50px;" src="images/tp_home/艺.png">
+            </div>
+            <div style="width:fit-content;margin-left: auto;margin-right: auto;margin-bottom: 2%;">
+                <img style="width:80px;" src="images/tp_home/乡-蓝波纹.png">
+            </div>
+            <div style="position: absolute;margin-top: -300px;margin-left: -10%">
+                <img src="images/tp_home/艺-海浪底纹1.png">
+            </div>
+            <div style="position: absolute;margin-top: 380px;right: -10%">
+                <img src="images/tp_home/艺-海浪底纹2.png">
+            </div>
+        </div>
+        <!--背景+标题-->
+
+        <!--艺_图片-->
+        <div style="position: absolute;left:0;right:0;width:100%;height:80%;">
+            <div id="yi_dong01" style="display: flex;justify-content: center;">
+                <div id="yi_01" class="yi_card" style="height:100%;display: inline-block;margin-right: 3%">
+                    <img style="position: relative" src="images/tp_home/绳结配图.png">
+                    <p style="margin-left:50px;margin-top: -130px;font-family: 'Source Han Sans CN'">绳结</p>
+                </div>
+                <div style="height: 100%;display: inline-block;width:55%;">
+                <div id="yi_02" class="yi_card" style="display: inline-block;width:47%;margin-right: 5%">
+                    <img style="position: relative" src="images/tp_home/渔民画配图.png">
+                    <p style="margin-left:50px;margin-top: -90px;">渔民画</p>
+                </div>
+                <div id="yi_03" class="yi_card" style="display: inline-block;width: 47%;">
+                    <img style="position: relative" src="images/tp_home/沙雕配图.png">
+                    <p style="margin-left:50px;margin-top: -90px;">沙雕</p>
+                </div>
+                <div id="yi_04" class="yi_card" style="display: inline-block;width:100%;margin-top: 4%;">
+                    <img style="position: relative" src="images/tp_home/船模配图.png">
+                    <p style="margin-left:50px;margin-top: -100px;">船模</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--艺_图片-->
+    </div>
+    <!--艺-->
+    <footer id="home_footer" style="overflow: hidden;text-align: center">
+        <!--背景-->
+        <div style="position: absolute;margin-top: 0;width: 100%;">
+            <img style="position: absolute;left:-8%;z-index: -5;width: 110%;" src="images/tp_home/底栏背景1.png">
+            <img style="position: absolute;left:-8%;margin-top:-80px;z-index: -6;width: 100%;" src="images/tp_home/底栏背景2.png">
+            <img style="position: absolute;left:-8%;z-index: -7;width: 100%;" src="images/tp_home/底栏背景3.png">
+            <img style="position: absolute;left:-8%;z-index: -8;width: 100%;" src="images/tp_home/底栏背景4.png">
+            <img style="position: absolute;left:-8%;z-index: -9;width: 100%;" src="images/tp_home/底栏背景5.png">
+        </div>
+        <!--背景-->
+        <div style="position: absolute;margin-top: 350px;margin-left: 5%;">
+        <img style="width: 300px;" src="images/tp_home/logo（底）.png">
+    </div>
+        <div style="position: absolute;margin-left: 60%;margin-top: 150px;text-align:center">
+        <p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">
+            关于我们
+        </p>
+        <p style="color: #FFFFFF;font-size: 25px;line-height: 83px">
+            工作照<br>
+            意见反馈<br>
+            联系方式
+        </p>
+    </div>
+        <div style="position: absolute;margin-left: 80%;margin-top: 150px;text-align:center">
+        <p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">
+            友情链接
+        </p>
+        <p style="color: #FFFFFF;font-size: 25px;line-height: 83px">
+            舟山网<br>
+            中国海洋文化在线<br>
+            舟山海洋数字图书馆
+        </p>
+    </div>
+        <div style="margin:550px 0 auto;color: white;font-family: 'Source Han Sans CN'">
+             <p style="margin-bottom: 15px;">Copyrigt©2019&nbspAll&nbspRights&nbspReserved</p>
+        </div>
+</footer>
+</div>
+
+<!--了解更多按钮所需js文件-->
+<script rel="script" src="js/jquery-1.12.4.min.js"></script>
+<script rel="script" src="js/bootstrap.min.js"></script>
+<!--置顶按钮所需js文件-->
+<script rel="script" src="js/scrolltopcontrol.js"></script>
+<!--查看详情按钮所需js文件-->
+<script rel="script" src="js/wow.min.js"></script>
+<script rel="script" src="js/TweenMax.min.js"></script>
+<script rel="script" src="js/ripple-config.js"></script>
+<!--首页js文件-->
+<script rel="script" src="js/index.js"></script>
+<!--登录注册弹窗所需js文件-->
+<script src="js/auth.js"></script>
+<!--其他-->
+<script>
+    Auth.init({
+        login_url: '#login',
+        forgot_url: '#forgot'
+    });
+    // 屏幕自适应
+    function changeheight(){
+        var total = document.documentElement.clientHeight;
+        var colHeight = total-document.getElementById("video").offsetTop;
+        document.getElementById("video").style.height=colHeight+"px";
+        document.getElementById("homepage").style.height=colHeight+"px";
+        document.getElementById("video-tvc").style.height=colHeight+"px";
+        document.getElementById("nav").style.height=colHeight*0.55+"px";
+        document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
+        document.getElementById("su_bg").style.height=colHeight+"px";
+        document.getElementById("su_bg_img").style.height=colHeight+150+"px";
+    }
+    function changewidth(){
+        var total2 = document.documentElement.clientWidth;
+        var colWidth = total2-document.getElementById("video").offsetLeft;
+        document.getElementById("home").style.width=colWidth+"px";
+        document.getElementById("video").style.width=colWidth+"px";
+        document.getElementById("logo").style.width=colWidth*0.15+"px";
+        document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
+        document.getElementById("top_text").style.marginRight=colWidth*0.1+"px";
+        document.getElementById("homepage").style.width=colWidth+"px";
+        document.getElementById("home_xiang").style.width=colWidth+"px";
+        document.getElementById("home_yu").style.width=colWidth+"px";
+        document.getElementById("home_su").style.width=colWidth+"px";
+        document.getElementById("home_footer").style.width=colWidth+"px";
+        document.getElementById("xiang_bg").style.width=colWidth+"px";
+        document.getElementById("xiang_bg_img").style.width=colWidth+"px";
+        document.getElementById("jing_bg").style.width+=colWidth*0.48+"px";
+        document.getElementById("jing_img").style.width+=colWidth*0.46+"px";
+        document.getElementById("feng_bg").style.width+=colWidth*0.48+"px";
+        document.getElementById("feng_img").style.width+=colWidth*0.46+"px";
+        document.getElementById("yu_a").style.width+=colWidth*0.22+"px";
+        document.getElementById("yu_b").style.width+=colWidth*0.22+"px";
+        document.getElementById("yu_c").style.width+=colWidth*0.22+"px";
+        document.getElementById("su_bg").style.width=colWidth+"px";
+        document.getElementById("su_bg_img").style.width=colWidth+"px";
+        document.getElementById("yi_dong01").style.width+=colWidth*0.96+"px";
+        // document.getElementById("yi_01").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_02").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_03").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_04").style.width+=colWidth*0.3+"px";
+        document.getElementById("jing_intro1").style.marginRight=colWidth*0.63+"px";
+    }
+    window.onload=function () {
+        changewidth();
+        changeheight();
+    };
+    window.onresize=function () {
+        changewidth();
+        changeheight();
+    };
+    document.documentElement.style.fontSize = document.body.clientWidth / 1920 + "px";
+    <!--了解更多按钮-->
+    $( ".button_su_inner" ).mouseenter(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+    });
+    $( ".button_su_inner" ).mouseleave(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+    });
+</script>
+</body>
+</html>

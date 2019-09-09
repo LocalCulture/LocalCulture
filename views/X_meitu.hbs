@@ -1,0 +1,525 @@
+{{css "/css/x_meitu.css"}}
+{{css "/css/auth.css"}}
+{{css "/css/base.css"}}
+<div class="case_00">
+    <div id="nav_content" class="case_01" >
+    </div>
+    <!--系列推荐-->
+    <div class="case_02">
+        <div class="tj_biaoti">
+            <p>—— 系列推荐 ——</p>
+        </div>
+        <div style="width: 1680px;height: 343px;margin:auto;margin-top: 55px;">
+            <img onmousemove="tj_dong01_pk()" id="tj_dong01y" style="position: absolute" src="images/tp_xiang/meitu/推荐图片_大桥.png">
+            <div onmousemove="tj_dong01_pk()" onmouseout="tj_dong01_pg()" id="tj_dong01" class="tj_zhezhao" style="display: none">
+                <img style="position: absolute" src="images/tp_xiang/meitu/矩形%203.png">
+                <span style="position: absolute;margin-left: 95px;margin-top:108px;font-size: 45px">蓬莱北界跨石梁</span>
+                <span style="position: absolute;margin-left:133px;margin-top:211px;font-size: 30px;color: rgb(224,223,223)">舟山跨海大桥系列</span>
+            </div>
+            <!--大桥-->
+            <img onmousemove="tj_dong02_pk()" style="position:absolute;margin-left: 585px" src="images/tp_xiang/meitu/推荐图片_白浪.png">
+            <div onmousemove="tj_dong02_pk()" onmouseout="tj_dong02_pg()" id="tj_dong02" class="tj_zhezhao" style="margin-left: 585px;display: none">
+                <img style="position: absolute" src="images/tp_xiang/meitu/矩形%203.png">
+                <span style="position: absolute;margin-left: 95px;margin-top:108px;font-size: 45px">白浪茫茫与海连</span>
+                <span style="position: absolute;margin-left:155px;margin-top:211px;font-size: 30px;color: rgb(224,223,223)">舟山海洋系列</span>
+            </div>
+            <!--白浪-->
+            <img onmousemove="tj_dong03_pk()" style="position:absolute;margin-left: 1170px" src="images/tp_xiang/meitu/推荐图片_日出.png">
+            <div onmousemove="tj_dong03_pk()" onmouseout="tj_dong03_pg()" id="tj_dong03" class="tj_zhezhao" style="margin-left: 1170px;display: none">
+                <img style="position: absolute" src="images/tp_xiang/meitu/矩形%203.png">
+                <span style="position: absolute;margin-left: 95px;margin-top:108px;font-size: 45px">日出江花红胜火</span>
+                <span style="position: absolute;margin-left: 154px;margin-top:211px;font-size: 30px;color: rgb(224,223,223)">舟山日出系列</span>
+            </div>
+            <!--日出-->
+        </div>
+    </div>
+    <!--系列推荐-->
+
+    <!--专题摄影-->
+    <div class="case_03">
+        <!--标题-->
+        <div class="zt_biaoti">
+            <p>—— 专题摄影 ——</p>
+        </div>
+        <!--标题-->
+        <div id="tab">
+            <div class="list">
+                <ul>
+                    <li class="cur"><span>人像</span></li>
+                    <li><span>风景</span></li>
+                    <li><span>纪实</span></li>
+                    <li><span>航拍</span></li>
+                </ul>
+            </div>
+            <div id="listCon">
+                <!--人像-->
+                <div  class="cur">
+                    <!--第一行-->
+                    <script type="text/javascript">
+                        var dianzan=0;
+                        var shoucang=0;
+                        $(document).ready(function(){
+                            $(".dianzan").click(function()
+                            {
+                                if(dianzan===0)
+                                {
+                                    $(".dianzan").attr("src", "images/tp_xiang/meitu/点赞%20(5).png");
+                                    dianzan = 1;
+                                }
+                                else
+                                {
+                                    $(".dianzan").attr("src","images/tp_xiang/meitu/点赞%20(3).png");
+                                    dianzan=0;
+                                }
+                            });
+
+                            $(".shoucang").click(function()
+                            {
+                                if(shoucang===0)
+                                {
+                                    $(".shoucang").attr("src", "images/tp_xiang/meitu/点赞%20(6).png");
+                                    shoucang = 1;
+                                }
+                                else
+                                {
+                                    $(".shoucang").attr("src","images/tp_xiang/meitu/点赞%20(2).png");
+                                    shoucang=0;
+                                }
+                            });
+                        });
+                    </script>
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img class="shoucang" src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img class="dianzan" src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第一行-->
+
+                    <!--第一行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/专题照片.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第一行-->
+                </div>
+                <!--人像-->
+                <!--风景-->
+                <div>
+                    <!--第一行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第一行-->
+
+                    <!--第二行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_大桥.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                    </aside>
+                    <!--第二行-->
+                </div>
+                <!--风景-->
+                <!--纪实-->
+                <div >
+                    <!--第一行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_日出.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_日出.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_日出.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_日出.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第一行-->
+
+                    <!--第二行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img  src="images/tp_xiang/meitu/推荐图片_日出.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                    </aside>
+                    <!--第二行-->
+                </div>
+                <!--纪实-->
+                <!--航拍-->
+                <div >
+                    <!--第一行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第一行-->
+
+                    <!--第二行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section  class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/推荐图片_白浪.png">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <!--第二行-->
+                    </aside>
+                    <!--航拍-->
+                </div>
+            </div>
+        </div>
+        <!--专题摄影-->
+    </div>
+</div>
+<script type="text/javascript">
+        var oDiv = document.getElementById("tab");
+        var lis = oDiv.getElementsByTagName("li");
+        var oDivCon = document.getElementById("listCon");
+        var lisDiv = oDivCon.getElementsByTagName("div");
+        for(var i=0;i<lis.length;i++){
+            lis[i].index = i;
+            lis[i].onclick = function(){
+                show(this.index);
+            }
+        }
+        function show(a){
+            for(var j=0;j<lis.length;j++){
+                lis[j].className = "";
+                lisDiv[j].className = "";
+            }
+            lis[a].className = "cur";
+            lisDiv[a].className = "cur";
+        }
+</script><!--图片类型切换js动效-->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+    // 屏幕自适应
+    function changeheight(){
+        var total = document.documentElement.clientHeight;
+        var colHeight = total-document.getElementById("nav_content").offsetTop;
+        document.getElementById("nav_content").style.height=colHeight+"px";
+        document.getElementById("nav_content").style.height=colHeight+"px";
+        // document.getElementById("homepage").style.height=colHeight+"px";
+        // document.getElementById("video-tvc").style.height=colHeight+"px";
+        // document.getElementById("nav").style.height=colHeight*0.55+"px";
+        // document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
+        // document.getElementById("su_bg").style.height=colHeight+"px";
+        // document.getElementById("su_bg_img").style.height=colHeight+150+"px";
+    }
+    function changewidth(){
+        // var total2 = document.documentElement.clientWidth;
+        // var colWidth = total2-document.getElementById("video").offsetLeft;
+        // document.getElementById("home").style.width=colWidth+"px";
+        // document.getElementById("video").style.width=colWidth+"px";
+        // document.getElementById("logo").style.width=colWidth*0.15+"px";
+        // document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
+        // document.getElementById("top_text").style.marginRight=colWidth*0.1+"px";
+        // document.getElementById("homepage").style.width=colWidth+"px";
+        // document.getElementById("home_xiang").style.width=colWidth+"px";
+        // document.getElementById("home_yu").style.width=colWidth+"px";
+        // document.getElementById("home_su").style.width=colWidth+"px";
+        // document.getElementById("home_footer").style.width=colWidth+"px";
+        // document.getElementById("xiang_bg").style.width=colWidth+"px";
+        // document.getElementById("xiang_bg_img").style.width=colWidth+"px";
+        // document.getElementById("jing_bg").style.width+=colWidth*0.48+"px";
+        // document.getElementById("jing_img").style.width+=colWidth*0.46+"px";
+        // document.getElementById("feng_bg").style.width+=colWidth*0.48+"px";
+        // document.getElementById("feng_img").style.width+=colWidth*0.46+"px";
+        // document.getElementById("yu_a").style.width+=colWidth*0.22+"px";
+        // document.getElementById("yu_b").style.width+=colWidth*0.22+"px";
+        // document.getElementById("yu_c").style.width+=colWidth*0.22+"px";
+        // document.getElementById("su_bg").style.width=colWidth+"px";
+        // document.getElementById("su_bg_img").style.width=colWidth+"px";
+        // document.getElementById("yi_dong01").style.width+=colWidth*0.96+"px";
+        // document.getElementById("yi_01").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_02").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_03").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_04").style.width+=colWidth*0.3+"px";
+        // document.getElementById("jing_intro1").style.marginRight=colWidth*0.50+"px";
+    }
+    window.onload=function () {
+        changewidth();
+        changeheight();
+    };
+    window.onresize=function () {
+        changewidth();
+        changeheight();
+    };
+    document.documentElement.style.fontSize = document.body.clientWidth / 1920 + "px";
+    <!--了解更多按钮-->
+    $( ".button_su_inner" ).mouseenter(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+    });
+    $( ".button_su_inner" ).mouseleave(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+    });
+</script>
+{{js "/js/x_meitu.js"}}

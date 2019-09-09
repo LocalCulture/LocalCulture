@@ -1,0 +1,145 @@
+/*通用*/
+@font-face {
+    font-family:SourceHanSansCN-Medium;
+    src:url('../fonts/SourceHanSansCN-Medium.otf');
+}
+/*通用*/
+
+/*框架*/
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin:0 auto;
+    width:100%;
+    height: fit-content;
+    /*border:5px dashed red;*/
+    font-family:Source Han Sans CN Regular,sans-serif;
+    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
+}
+
+.case_01
+{
+background-color: black;
+}
+.case_02
+{
+    idth: 100%;
+    height: fit-content;
+    position: relative;
+    /*border:2px dashed blue;*/
+}
+.case_03
+{
+    width: 100%;
+    height: 2700px;
+    position: relative;
+    /*border:2px dashed orangered;*/
+}
+/*footer*/
+/*{*/
+    /*width: 100%;*/
+    /*height: 800px;*/
+    /*position: relative;*/
+    /*!*border:2px dashed yellowgreen;*!*/
+    /*background: url("../images/tp_xiang/meitu/底栏背景.png");*/
+/*}*/
+/*框架*/
+
+/*系列推荐*/
+.tj_biaoti
+{
+    font-family:"Source Han Sans CN Regular";
+    font-size: 60px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 66px;
+    color: rgb(92,90,90);
+}
+.tj_zhezhao span
+{
+    color: #FFFFFF;
+    font-family:"Source Han Sans CN Regular";
+}
+/* 系列推荐*/
+
+/*专题摄影*/
+.zt_biaoti
+{
+    font-family:"Source Han Sans CN Regular";
+    font-size: 60px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 76px;
+    color: rgb(92,90,90);
+}
+
+/*图片类型切换*/
+ul{
+    list-style: none;
+}
+#tab{
+    /*border: 1px solid #ccc;*/
+    margin: 55px auto;
+    width: 1640px;
+    border-top: none;
+    font-size: 37px;
+}
+/*切换区*/
+.list ul{
+    overflow: hidden;
+}
+.list li{
+    float: left;
+}
+.list li{
+    padding: 0 167px  78px;
+    border-right: none;
+    cursor: pointer;
+    color: rgb(116,116,116);
+}
+
+.list li.cur span{
+    border-bottom: 3px solid rgb(33,150,243);
+    padding-bottom: 22px;
+}
+
+/*图片区*/
+#listCon{
+    height: 1640px;
+    /*border: 1px dashed blue;*/
+    width: 1640px;
+}
+#listCon>div{
+    position:absolute;
+    display: none;
+}
+#listCon div.cur{
+    display: block;
+}
+#listCon article
+{
+    display: inline-block;
+    margin-left: 3px;
+}
+#listCon div.cur section.zt_tupian img{
+    /*margin-left: 3px;*/
+    width: 400px;
+    height: 400px;
+}
+#listCon div.cur article:hover section.zt_xiaotubiao{
+    display: block;
+}
+#listCon section.zt_xiaotubiao
+{
+    display: none;
+    cursor: pointer;
+}
+#listCon span
+{
+    font-size:20px;
+    font-family:Source Han Sans CN Regular;
+    color:rgba(255,255,255,1);
+    margin-left: 20px;
+    margin-right: 120px;
+}
+/*图片类型切换*/
+/*专题摄影*/

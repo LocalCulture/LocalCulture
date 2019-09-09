@@ -1,0 +1,154 @@
+/*框架*/
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin:0 auto;
+    width:100%;
+    height: 7580px;
+    /*border:5px dashed red;*/
+    font-family:Source Han Sans CN Regular,sans-serif;
+    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
+}
+
+.case_01
+{
+    background-color: black;
+}
+.case_02
+{
+    width: 100%;
+    height: 2600px;
+    position: relative;
+    border:2px dashed blue;
+}
+
+/*框架*/
+/*系列推荐*/
+.tj_biaoti
+{
+    font-family:"Source Han Sans CN Regular";
+    font-size: 60px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 70px;
+    color: rgb(92,90,90);
+}
+/*系列推荐*/
+/*主内容外框*/
+.case_01_a
+{
+    position: relative;
+    width: 1680px;
+    height: 1900px;
+    margin: 0 auto;
+    border: 1px solid sandybrown;
+}
+/*主内容外框*/
+/*绳结内容*/
+/*图片类型切换*/
+ul{
+    list-style: none;
+}
+#tab{
+    /*border: 1px solid #ccc;*/
+    margin-top: 55px;
+    height: fit-content;
+    /*margin: 55px auto ;*/
+    width: fit-content;
+    /*border-top: none;*/
+}
+#listCon>article{
+     position:absolute;
+     display: none;
+ }
+#listCon article.cur{
+    display: block;
+}
+/*切换区*/
+.list ul{
+    overflow: hidden;
+    font-size: 30px;
+}
+.list li{
+    padding: 0 100px 40px 0;
+    cursor: pointer;
+    color: rgb(116,116,116);
+    float: left;
+    font-family: "Source Han Sans CN Regular";
+}
+
+.list li.cur span{
+    border-bottom: 2px solid rgb(33,150,243);
+    padding-bottom: 5px;
+}
+/*切换区*/
+/*卡片区*/
+#tab article
+{
+    border: 2px solid royalblue;
+    margin-left: -80px; /*抵掉内容的左上距离误差*/
+    margin-top: -30px;
+}
+#tab article div.style_neirong div
+{
+    position: relative;
+   display: inline-block;
+    width: 497px;
+    height: 713px;
+    border: 2px solid rgb(185,184,184);
+    border-bottom: 4px solid rgb(33,150,243);
+    margin-left: 80px;
+    margin-top: 30px;
+}
+/*卡片内容设置*/
+#tab article section
+{
+    /*border: 3px dashed grey;*/
+    position: absolute;
+    width: 474px;
+    text-align: center;
+}
+#tab .sheng_name
+{
+    font-size:40px;
+    color:rgba(33,150,243,1);
+    margin-top: 25px;
+}
+#tab article img
+{
+    margin-top: 37px;
+}
+#tab aside .teshe
+{
+    font-size:30px;
+    color: black;
+    margin-top: 25px;
+}
+#tab aside
+{
+    width: 360px;
+    word-break:break-all;
+    /*border: 2px solid sandybrown;*/
+    text-align: left;
+    font-size:20px;
+    color:rgba(145,145,145,1);
+    margin: 0 auto;
+}
+/*卡片内容设置*/
+/*卡片区*/
+/*序列*/
+#tab .xulie li
+{
+    display: inline;
+}
+#tab .xulie li div
+{
+    float: left;
+    margin-left: 50px;
+    /*display: inline;*/
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    text-align: center;
+}
+/*序列*/
+/*绳结内容*/

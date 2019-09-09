@@ -1,0 +1,109 @@
+<header>
+    <div id="nav" style="margin-top:-1%;display: block;position:absolute;width: 100%;z-index: 1002;">
+        <a href="Index.html" style="display: inline-block;margin-left: 3%;" ><img  id="logo" src="images/tp_home/big_logo.png"  width="200px"></a>
+        <div id="daohang" class="daohang">
+            <ul>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('1')" id="nav_xiang" href="#">乡</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="x_jing">乡景</a></li>
+                        <li><a href="x_feng">乡风</a></li>
+                    </ul>
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('2')" id="nav_yu" href="#">渔</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">渔舟唱晚</a></li>
+                        <li><a href="#">渔海为生</a></li>
+                        <li><a href="#">授人以鱼</a></li>
+                    </ul>
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('3')" id="nav_su" href="#">俗</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">节俗</a></li>
+                        <li><a href="#">习俗</a></li>
+                        <li><a href="#">祭祀</a></li>
+                        <li><a href="#">传说</a></li>
+                    </ul>
+
+                </li>
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('4')"  id="nav_yi" href="#">艺</a>
+                    <ul>
+                        <div class="mark"></div>
+                        <li><a href="#">渔民画</a></li>
+                        <li><a href="#">沙雕</a></li>
+                        <li><a href="yi_chuan">船模</a></li>
+                        <li><a href="yi_sheng">绳结</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!--登录注册-->
+                    <a id="displaysign" onclick="start()" href="#" style="margin-top:4%;">
+                        <img src="images/tp_home/登录注册图标.png" width="30px" >
+                    </a>
+                    <!--登录注册-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="signupAndin" class="lowin">
+        <div class="lowin-brand"></div>
+        <div class="lowin-wrapper">
+            <div style="width: 100%;position: absolute;z-index: 99;">
+                <img onclick="close()" id="closesign" src="images/tp_home/close.png" class="closesign">
+            </div>
+            <div class="lowin-box lowin-login">
+                <div class="lowin-box-inner">
+                    <form>
+                        <p>用户登录</p>
+                        <div class="lowin-group">
+                            <label>邮箱 <a href="#" class="login-back-link">登录</a></label>
+                            <input type="email" autocomplete="email" name="email" value="" class="lowin-input">
+                        </div>
+                        <div class="lowin-group password-group" style="margin-bottom: 90px;">
+                            <label>密码 <a href="#" class="forgot-link">忘记密码?</a></label>
+                            <input type="password" name="password" autocomplete="current-password" class="lowin-input">
+                        </div>
+                        <button class="lowin-btn login-btn">
+                            登录
+                        </button>
+                        <div class="text-foot">
+                            没有帐户? <a href="" class="register-link">注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lowin-box lowin-register">
+                <div class="lowin-box-inner">
+                    <form>
+                        <p>让我们创建您的帐户</p>
+                        <div class="lowin-group">
+                            <label>姓名</label>
+                            <input type="text" name="name" autocomplete="name" class="lowin-input">
+                        </div>
+                        <div class="lowin-group">
+                            <label>邮箱</label>
+                            <input type="email" autocomplete="email" name="email" class="lowin-input">
+                        </div>
+                        <div class="lowin-group">
+                            <label>密码</label>
+                            <input type="password" name="password" autocomplete="current-password" class="lowin-input">
+                        </div>
+                        <button class="lowin-btn">
+                            登录
+                        </button>
+                        <div class="text-foot">
+                            已经有账户了? <a href="" class="login-link">登录</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="lowin-footer">
+        </footer>
+    </div>
+</header>
+{{js "/js/base.js"}}
+{{js "/js/auth.js"}}

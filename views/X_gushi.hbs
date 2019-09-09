@@ -1,0 +1,115 @@
+{{css "/css/auth.css"}}
+{{css "/css/base.css"}}
+{{css "/css/x_gushi.css"}}
+<div class="case_00">
+    <div id="nav_content" class="case_01" >
+    </div>
+    <!--内容-->
+    <div class="case_02">]
+        <!--蓝框-->
+        <div class="langkuang">
+            <p>您&nbsp的&nbsp位&nbsp置：&nbsp首页&nbsp>&nbsp乡&nbsp>&nbsp乡风&nbsp>&nbsp舟山故事</p>
+        </div>
+        <!--蓝框-->
+        {{#if data}}
+        <div class="case_01_a">
+            <div class="story_biaoti">
+                <p>{{data.[0].title}}</p>
+            </div>
+            <div class="story_biaoti2">
+                <P>来源：舟山文明网 责任编辑： </P>
+            </div>
+            <div class="wenzhang">
+                <div class="textMain">
+                    <div class="wz_neirong">
+                       <p>{{data.[0].content}}</p>
+                    </div>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="weiyekuang">
+                <div class="sxpian" style="float:left;margin-top: 30px;margin-left:70px">
+                    <p>上一篇：&nbsp<a href="#">大巴司机安全行车300万公里</a></p>
+                    <p>下一篇：&nbsp<a href="#">一个精神科女医生的平凡故事</a></p>
+                </div>
+                <div onclick="dianzan_b()" style="float: right;margin-top:30px;margin-right: 100px;cursor: pointer">
+                    <img id="dianzan" width="50px" src="images/tp_xiang/gushi/dianzan_g.png">
+                </div>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+    <!--内容-->
+</div>
+<script>
+    // 屏幕自适应
+    function changeheight(){
+        var total = document.documentElement.clientHeight;
+        var colHeight = total-document.getElementById("nav_content").offsetTop;
+        document.getElementById("nav_content").style.height=colHeight*0.5+"px";
+        // document.getElementById("homepage").style.height=colHeight+"px";
+        // document.getElementById("video-tvc").style.height=colHeight+"px";
+        // document.getElementById("nav").style.height=colHeight*0.55+"px";
+        // document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
+        // document.getElementById("su_bg").style.height=colHeight+"px";
+        // document.getElementById("su_bg_img").style.height=colHeight+150+"px";
+    }
+    function changewidth(){
+        // var total2 = document.documentElement.clientWidth;
+        // var colWidth = total2-document.getElementById("video").offsetLeft;
+        // document.getElementById("home").style.width=colWidth+"px";
+        // document.getElementById("video").style.width=colWidth+"px";
+        // document.getElementById("logo").style.width=colWidth*0.15+"px";
+        // document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
+        // document.getElementById("top_text").style.marginRight=colWidth*0.1+"px";
+        // document.getElementById("homepage").style.width=colWidth+"px";
+        // document.getElementById("home_xiang").style.width=colWidth+"px";
+        // document.getElementById("home_yu").style.width=colWidth+"px";
+        // document.getElementById("home_su").style.width=colWidth+"px";
+        // document.getElementById("home_footer").style.width=colWidth+"px";
+        // document.getElementById("xiang_bg").style.width=colWidth+"px";
+        // document.getElementById("xiang_bg_img").style.width=colWidth+"px";
+        // document.getElementById("jing_bg").style.width+=colWidth*0.48+"px";
+        // document.getElementById("jing_img").style.width+=colWidth*0.46+"px";
+        // document.getElementById("feng_bg").style.width+=colWidth*0.48+"px";
+        // document.getElementById("feng_img").style.width+=colWidth*0.46+"px";
+        // document.getElementById("yu_a").style.width+=colWidth*0.22+"px";
+        // document.getElementById("yu_b").style.width+=colWidth*0.22+"px";
+        // document.getElementById("yu_c").style.width+=colWidth*0.22+"px";
+        // document.getElementById("su_bg").style.width=colWidth+"px";
+        // document.getElementById("su_bg_img").style.width=colWidth+"px";
+        // document.getElementById("yi_dong01").style.width+=colWidth*0.96+"px";
+        // document.getElementById("yi_01").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_02").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_03").style.width+=colWidth*0.3+"px";
+        // document.getElementById("yi_04").style.width+=colWidth*0.3+"px";
+        // document.getElementById("jing_intro1").style.marginRight=colWidth*0.50+"px";
+    }
+    window.onload=function () {
+        changewidth();
+        changeheight();
+    };
+    window.onresize=function () {
+        changewidth();
+        changeheight();
+    };
+    document.documentElement.style.fontSize = document.body.clientWidth / 1920 + "px";
+    <!--了解更多按钮-->
+    $( ".button_su_inner" ).mouseenter(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+    });
+    $( ".button_su_inner" ).mouseleave(function(e) {
+        var parentOffset = $(this).offset();
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+    });
+</script>
+{{js "/js/x_gushi.js"}}

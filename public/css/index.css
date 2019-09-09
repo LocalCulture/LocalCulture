@@ -1,0 +1,437 @@
+*
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+   margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin: 0;
+    width:100%;
+    /*border:2px dashed red;*/
+    font-family: Source Han Sans CN;
+}
+.video-bg
+{
+    position: absolute;
+    width: 100%;
+    z-index: -99;
+    top:0;
+    overflow: hidden;
+    /*border: solid  2px darkorchid;*/
+}
+header
+{
+   height: 100%;
+    width: 100%;
+}
+
+/*导航栏*/
+.daohang
+{
+    position: relative;
+    width:fit-content;
+    display: inline-block;
+    float: right;
+    /*border: solid 2px darkblue;*/
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    text-align:center;
+    width:150px;
+    font-size:30px;
+    font-family:Source Han Sans CN,sans-serif;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    text-shadow:1px 1px 2px rgba(0,0,0,0.70);
+    opacity:1;
+}
+.logo{
+    height:139px;
+    background:rgba(0,0,0,0);
+    opacity:1;
+}
+a{
+    text-decoration:none;
+    display:block;
+    color:rgba(255,255,255,1);
+}
+ul li ul{
+    padding-bottom:5px;
+}
+ul li ul li{
+    float:none;
+}
+ul li ul li a{
+    height: 45px;
+    background:rgba(0,0,0,0.3);
+    margin:2px 0;
+    font-size:20px;
+    font-family:Source Han Sans CN,sans-serif;
+    font-weight:400;
+    opacity:1;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: block;
+}
+ul li ul li a:hover{
+    background:rgba(33,150,243,1);
+    display: block;
+}
+ul li ul{ display:none;}
+.mark{
+    width:11px;
+    height:11px;
+    background:rgba(255,255,255,1);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.7);
+    border-radius:50%;
+    opacity:1;
+    margin-left: 69px;
+    margin-bottom: 8%;
+    margin-top: 3%;
+}
+/*导航栏*/
+
+/*乡*/
+.case_02{
+    height:fit-content;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /*border:2px dashed blue;*/
+}
+.button_su{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    margin-top: 2em;
+}
+.su_button_circle{
+    background-color: red;
+    border-radius: 1000px;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    pointer-events: none;
+}
+.button_su_inner{
+    display: inline-block;
+    background: rgba(255,255,255,0);
+    border: #2196F3 1px solid;
+    color: #2196F3;
+    font-size: 16px;
+    font-weight: normal;
+    width: 200px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 400ms;
+    text-decoration: none;
+    padding: 15px;
+    z-index: 100000;
+}
+.button_su_inner:hover{
+  color: white;
+}
+.button_text_container{
+    position:relative;
+    z-index: 10000;
+}
+.explode-circle {
+    animation: explode 0.5s forwards;
+
+}
+.desplode-circle{
+    animation: desplode 0.5s forwards;
+}
+@keyframes explode {
+    0% {
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        background-color: rgba(42, 53, 80,0.2);
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;
+        background-color: rgba(30,150,243,1);
+    }
+}
+@keyframes desplode {
+    0% {
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;
+        background-color: rgba(30,150,243,1);
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        background-color: rgba(30,150,243,0.6);
+    }
+}
+/*乡*/
+
+/*渔*/
+.case_03
+{
+    height:fit-content;
+    width: 100%;
+    /*border:2px dashed green;*/
+    position: relative;
+    background-color: white;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.yu_dong01 img:hover
+{
+    color: yellow;
+}
+/*渔*/
+
+/*俗*/
+.case_04
+{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    /*border:2px dashed rosybrown;*/
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.service {
+    border: 1px solid gray;
+    height:120%;
+    padding: 50px 20px;
+    width: 20%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    display: inline-block;
+    margin-right: 1%;
+    margin-left: 3.2%;
+    overflow: hidden;
+    z-index: -3;
+    margin-top:50px;
+}
+.icon {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 24px;
+    height: 100px;
+    line-height: 60px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100px;
+}
+.service h4 {
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    text-transform: uppercase;
+    top: 100px;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    font-family: Source Han Sans CN, sans-serif;
+    font-size: 30px;
+    width: fit-content;
+}
+.service:hover {background:#03a9f4;border: 2px solid #03a9f4;}
+.service:hover .icon {
+    top: -10px;
+}
+.service:hover h4 {
+    color: #fff;
+    top: 10px;
+    margin-bottom:15px
+}
+.service p {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: Source Han Sans CN, sans-serif;
+}
+.service:hover p {
+    color: #fff;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.btn-6 {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height:15%;
+    max-width: 250px;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding: 5%;
+    font-family: Source Han Sans CN, sans-serif;
+    display: none;
+}
+.btn-6 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.btn-6:hover {
+    color: #03a9f4;
+}
+.btn-6:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+.btn-6:active {
+    background-color: blue;
+}
+/*俗*/
+
+/*艺*/
+.case_05
+{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /*border:2px dashed rosybrown;*/
+}
+#yi_dong01
+{
+    /*width:100%;*/
+    margin: 0 auto;
+    height: 95%;
+    /*border:2px dashed rosybrown;*/
+}
+#yi_dong01 div
+{
+    overflow:hidden;
+    transition:width 2s;
+    border-radius: 10px;
+}
+#yi_dong01 img
+{
+    transition:.5s;
+}
+.yi_card:hover img
+{
+    transform:scale(1.15);
+}
+#yi_dong01 p
+{
+    position: absolute;
+    z-index: 10;
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.yi_card:hover p
+{
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+/*艺*/
+
+/*尾页*/
+footer
+{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    /*border:2px dashed yellowgreen;*/
+}
+/*尾页*/
+
+/*置顶按钮*/
+.topcontrol {
+    background: #03a9f4 none repeat scroll 0 0;
+    border-radius: 50px;
+    bottom: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 32px;
+    height: 50px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    padding: 1px 15px;
+    position: fixed;
+    right: 5px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 50px;
+    z-index: 1000;
+}
+.topcontrol:hover {
+    background: #333;
+    color: #fff;
+}
+/*置顶按钮*/
+
+@media screen and (min-width:1920px ) {
+    #video-tvc
+    {
+        height:768px;
+    }
+    #homepage
+    {
+        height:fit-content;
+    }
+}
+@media screen and (max-width:1500px ){
+    #video-tvc
+    {
+        height: 768px;
+    }
+    #homepage
+    {
+        height: fit-content;
+    }
+}

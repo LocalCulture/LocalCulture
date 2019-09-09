@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      {{#each cssList}}
+          <link rel='stylesheet' href={{this}} />
+      {{/each}}
+      <script rel="script" src="js/jquery.js"></script>
+  </head>
+  <body>
+  <div style="width: 100%;height: fit-content;overflow: hidden">
+  {{>header}}
+  {{{body}}}
+  </div>
+  {{#each jsList}}
+      <script src={{this}}></script>
+  {{/each}}
+  <script>
+      Auth.init({
+          login_url: '#login',
+          forgot_url: '#forgot'
+      });
+      // 屏幕自适应
+      function changeheight(){
+          var total = document.documentElement.clientHeight;
+          var colHeight = total-document.getElementById("nav_content").offsetTop;
+          document.getElementById("nav_content").style.height=colHeight+"px";
+          document.getElementById("daohang").style.bottom=-colHeight*0.13+"px";
+          // document.getElementById("video").style.height=colHeight+"px";
+          // document.getElementById("homepage").style.height=colHeight+"px";
+          // document.getElementById("video-tvc").style.height=colHeight+"px";
+          // document.getElementById("nav").style.height=colHeight*0.55+"px";
+          // document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
+          // document.getElementById("su_bg").style.height=colHeight+"px";
+          // document.getElementById("su_bg_img").style.height=colHeight+150+"px";
+      }
+      function changewidth(){
+          var total2 = document.documentElement.clientWidth;
+          var colWidth = total2-document.getElementById("logo").offsetLeft;
+          document.getElementById("logo").style.width=colWidth*0.15+"px";
+          document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
+      }
+      window.onload=function () {
+          changewidth();
+          changeheight();
+      };
+      window.onresize=function () {
+          changewidth();
+          changeheight();
+      };
+      document.documentElement.style.fontSize = document.body.clientWidth / 1920 + "px";
+      <!--了解更多按钮-->
+      $( ".button_su_inner" ).mouseenter(function(e) {
+          var parentOffset = $(this).offset();
+          var relX = e.pageX - parentOffset.left;
+          var relY = e.pageY - parentOffset.top;
+          $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+          $(this).prev(".su_button_circle").removeClass("desplode-circle");
+          $(this).prev(".su_button_circle").addClass("explode-circle");
+      });
+      $( ".button_su_inner" ).mouseleave(function(e) {
+          var parentOffset = $(this).offset();
+          var relX = e.pageX - parentOffset.left;
+          var relY = e.pageY - parentOffset.top;
+          $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+          $(this).prev(".su_button_circle").removeClass("explode-circle");
+          $(this).prev(".su_button_circle").addClass("desplode-circle");
+      });
+  </script>
+  </body>
+</html>

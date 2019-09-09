@@ -1,0 +1,120 @@
+/*通用*/
+*
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+a{text-decoration: none;}
+
+/*通用*/
+
+/*框架*/
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin:0 auto;
+    width:100%;
+    height: fit-content;
+    /*border:5px dashed red;*/
+    font-family:Source Han Sans CN Regular,sans-serif;
+    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
+}
+
+.case_01
+{
+
+}
+.case_02
+{
+    width: 100%;
+    /*height: 2500px;*/
+    height: fit-content;
+    position: relative;
+    /*border:2px dashed blue;*/
+}
+
+/*框架*/
+
+
+/*内容*/
+/*蓝框*/
+.langkuang
+{
+    position: absolute;
+    width: 1500px;
+    height: 80px;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background-color: rgb(33,150,243);
+    text-align: center;
+    line-height: 80px;
+}
+.langkuang p
+{
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-left: -900px;
+}
+/*蓝框*/
+/*标题*/
+.story_biaoti
+{
+    font-family:"Source Han Sans CN Bold";
+    font-size: 55px;
+    font-weight: 600;
+    margin:auto;
+    width: fit-content;
+    margin-top: 75px;
+    color: black;
+    /*border: 2px solid royalblue;*/
+}
+.story_biaoti2
+{
+    font-size: 30px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 20px;
+    color: rgb(119,117,117);
+    /*border: 2px solid royalblue;*/
+}
+/*标题*/
+/*文章*/
+.wenzhang
+{
+    width: 1680px;
+    margin: 0 auto;
+    height: fit-content;
+    /*border: 2px solid yellowgreen;*/
+    margin-top: 30px;
+}
+.wz_neirong p
+{
+    line-height: 300%;
+    font-size: 20pt;
+    text-indent:2em;
+}
+/*文章*/
+/*下一篇+点赞*/
+.weiyekuang
+{
+    width: 1680px;
+    height: 200px;
+    margin: 0 auto;
+    /*border: 2px solid darkslategray;*/
+}
+.weiyekuang .sxpian p
+{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+.weiyekuang .sxpian a
+{
+    font-size: 30px;
+    color: rgb(33,150,243);
+}
+/*下一篇+点赞*/
+/*内容*/
