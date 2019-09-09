@@ -45,6 +45,7 @@ function hideSubMenu(x) {
 function yu_dong01i(x)
 {
     document.getElementById("yu_dong01_btn1").src="images/tp_home/轮船2.png";
+    document.getElementById("yu_dong01_btn1").style.cursor="pointer";
 }
 function yu_dong01o(x)
 {
@@ -54,6 +55,7 @@ function yu_dong01o(x)
 function yu_dong02i(x)
 {
     document.getElementById("yu_dong01_btn2").src="images/tp_home/渔网2.png";
+    document.getElementById("yu_dong01_btn2").style.cursor="pointer";
 }
 function yu_dong02o(x)
 {
@@ -63,6 +65,7 @@ function yu_dong02o(x)
 function yu_dong03i(x)
 {
     document.getElementById("yu_dong01_btn3").src="images/tp_home/鱼类2.png";
+    document.getElementById("yu_dong01_btn3").style.cursor="pointer";
 }
 function yu_dong03o(x)
 {
@@ -119,3 +122,10 @@ document.getElementById("su_03").addEventListener("mouseover",su_dong03i,false);
 document.getElementById("su_03").addEventListener("mouseout",su_dong03o,false);
 document.getElementById("su_04").addEventListener("mouseover",su_dong04i,false);
 document.getElementById("su_04").addEventListener("mouseout",su_dong04o,false);
+
+function gotochuan() {
+    window.location.href='yi_chuan';
+}
+function gotosheng() {
+    window.location.href='yi_sheng';
+}

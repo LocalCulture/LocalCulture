@@ -6,6 +6,9 @@
 	margin-top: 2%;
 	visibility: hidden;
 }
+.closesign:hover{
+	cursor: pointer;
+}
 .lowin {
 	/* variables */
 	--color-primary: #2196f3;

@@ -583,13 +583,13 @@ function object2vrSkin(player,base) {
 			me._tt_info.style[domTransition]='none';
 			me._tt_info.style.visibility='inherit';
 			me._tt_info.ggVisible=true;
-			me._info__img.src=basePath + 'images/info__o.svg';
+			me._info__img.src=basePath + 'others/ship3/images/info__o.svg';
 		}
 		this._info.onmouseout=function () {
 			me._tt_info.style[domTransition]='none';
 			me._tt_info.style.visibility='hidden';
 			me._tt_info.ggVisible=false;
-			me._info__img.src=basePath + 'images/info.svg';
+			me._info__img.src=basePath + 'others/ship3/images/info.svg';
 		}
 		this._tt_info=document.createElement('div');
 		this._tt_info__text=document.createElement('div');

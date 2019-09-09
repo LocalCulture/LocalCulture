@@ -1,33 +1,45 @@
-<footer id="home_footer" style="width:100%;overflow: hidden;text-align: center">
-    <!--背景-->
-    <div style="position: absolute;margin-top: 0;width: 100%;">
-        <img style="position: relative;left:-8%;z-index: -5;width: 108%;" src="images/tp_home/底栏背景.png">
+<footer id="home_footer" style="margin-top: 5%;overflow: hidden;text-align: center;background-color: rgba(255,255,255,0.05)">
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(30,144,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(30,144,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(30,144,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2196F3" />
+            </g>
+        </svg>
     </div>
-    <!--背景-->
-    <div style="position: absolute;margin-top: 350px;margin-left: 5%;">
-        <img style="width: 300px;" src="images/tp_home/logo（底）.png">
-    </div>
-    <div style="position: absolute;margin-left: 60%;margin-top: 150px;text-align:center">
-        <p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">
-            关于我们
-        </p>
-        <p style="color: #FFFFFF;font-size: 25px;line-height: 83px">
-            工作照<br>
-            意见反馈<br>
-            联系方式
-        </p>
-    </div>
-    <div style="position: absolute;margin-left: 80%;margin-top: 150px;text-align:center">
-        <p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">
-            友情链接
-        </p>
-        <p style="color: #FFFFFF;font-size: 25px;line-height: 83px">
-            舟山网<br>
-            中国海洋文化在线<br>
-            舟山海洋数字图书馆
-        </p>
-    </div>
-    <div style="margin:550px 0 auto;color: white;font-family: 'Source Han Sans CN'">
-        <p style="margin-bottom: 15px;">Copyrigt©2019&nbspAll&nbspRights&nbspReserved</p>
+    <!--Waves end-->
+    <div style="height: fit-content;background-color: #2196F3;">
+        <div style="position: relative;margin-left: 5%;display: inline-block;margin-right: 40%;">
+            <img style="width: 300px;" src="images/tp_home/logo（底）.png">
+        </div>
+        <div style="position: relative;text-align:center;display: inline-block;">
+            <p style="color: #FFFFFF;font-size: 26px;margin-bottom:15px">
+                关于我们
+            </p>
+            <p style="color: #FFFFFF;font-size: 20px;line-height: 83px">
+                工作照<br>
+                意见反馈<br>
+                联系方式
+            </p>
+        </div>
+        <div style="position: relative;margin-left: 10%;margin-top: 50px;text-align:center;display: inline-block;">
+            <p style="color: #FFFFFF;font-size: 26px;margin-bottom:15px">
+                友情链接
+            </p>
+            <p style="color: #FFFFFF;font-size: 20px;line-height: 83px">
+                舟山网<br>
+                中国海洋文化在线<br>
+                舟山海洋数字图书馆
+            </p>
+        </div>
+        <div style="margin:50px 0 auto;color: white;font-family: 'Source Han Sans CN'">
+            <p style="margin-bottom: 15px;">Copyrigt©2019&nbspAll&nbspRights&nbspReserved</p>
+        </div>
     </div>
 </footer>
