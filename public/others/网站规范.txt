@@ -1,0 +1,90 @@
+网站规范如下：
+一、文件命名规范
+1.1  html文件命名
+【首页】Index.html
+【乡】乡景：X_jing.html
+          美图展示：X_meitu.html
+          VR页面：X_vr.html
+          乡风：X_feng.html
+          故事详情：X_gushi.html
+【渔】Yu.html
+【俗】Su.html
+【艺】沙雕：Yi_diao.html
+          渔民画：Yi_hua.html
+          绳结：Yi_sheng.html
+          绳结详情：Yi_sheng_detail.html
+          船模：Yi_chuan.html
+【用户中心】User.html
+-------------------------------------------------------------------
+1.2   Js或css文件命名
+1.2.1 自创js或css文件命名(首字母小写)
+如：
+【首页】index.css
+【乡】乡景：x_jing.css
+          美图展示：x_meitu.css
+          VR页面：x_vr.css
+          乡风：x_feng.css
+          故事详情：x_gushi.css
+【渔】yu.css
+【俗】su.css
+【艺】沙雕：yi_diao.css
+          渔民画：yi_hua.css
+          绳结：yi_sheng.css
+          绳结详情：yi_sheng_detail.css
+          船模：yi_chuan.css
+【用户中心】user.css
+
+1.2.2 其他js或css文件命名
+随意，只要不重名
+-----------------------------------------------------------------
+
+二、文件放置规范
+注：目前文件暂时一律放在public文件夹下
+
+2.1   html文件放置
+所有html文件直接放置在public文件夹下，不用额外建文件夹。
+-----------------------------------------------------------------
+2.2   js文件放置
+所有js文件放置在public/javascripts目录下
+具体模块js文件放置如下：
+【首页】js_home
+【乡】js_xiang
+         乡景：jing
+         乡风：feng
+【渔】js_yu
+【俗】js_su
+【艺】js_yi
+         船模：chuan
+         渔民画：hua
+         沙雕：diao
+         绳结：sheng
+         绳结详情：sheng_detail
+【用户中心】js_user
+------------------------------------------------------------------
+2.3  css文件放置
+所有css文件放置在public/css目录下
+------------------------------------------------------------------
+2.4  图片文件放置
+2.4.1   所有图片文件（包括图标）放置在public/images目录下
+          具体模块图片文件放置如下：
+         【首页】tp_home
+         【乡】tp_xiang
+                  乡景：jing
+                  美图展示：meitu
+                 乡风：feng
+                 故事详情：gushi
+         【渔】tp_yu
+         【俗】tp_su
+         【艺】tp_yi                 船模：chuan
+                 渔民画：hua
+                沙雕：diao
+                绳结：sheng
+                绳结详情：sheng_detail
+        【用户中心】tp_user
+2.4.2  其他图片文件直接放置在public/images目录下
+------------------------------------------------------------------
+2.5  字体文件放置
+所有字体文件放置在public/fonts目录下
+------------------------------------------------------------------
+2.6  其他格式的文件放置
+如果有其他格式的文件就放在public/others文件夹中
