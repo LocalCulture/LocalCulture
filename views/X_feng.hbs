@@ -13,81 +13,58 @@
             <p>—— 舟山故事 ——</p>
         </div>
         <!--标题-->
-        <div style="position: absolute;margin-top: 500px;right: 0%">
-            <img src="images/tp_xiang/feng/鱼3.png">
-        </div>
         <!--故事表格-->
         <div class="story_li" >
-            <ul id="stories">
-                {{# each data}}
-                <li>
-                    <div class="biaoge">
-                        <div class="s_tubiao">
-                            <img src="images/tp_xiang/feng/小五角星.png">
+            <ul id="stories" class="story_item_ul">
+                    {{# each data}}
+                    <a href="/x_gushi?id={{this.id}}">
+                    <li class="story_item">
+                        <div style="height: 100%;display: flex;justify-content: center">
+                            <div style="height: fit-content;display: inline-block;width: 79%;margin-right: 5%;">
+                                <div style="height: fit-content">
+                                    <div class="story_div"></div>
+                                    <h1 class="story_h1">{{this.title}}</h1>
+                                </div>
+                                <p class="story_p">{{{this.content}}}</p>
+                            </div>
+                            <div class="story_line"></div>
+                            <div style="height: 80%;display: inline-block;width: 10%;margin-left: 5%;">
+                                <div>
+                                    <h2 class="story_h2">
+                                        {{this.day}}
+                                    </h2>
+                                    <p class="story_p" style="width: 120%;margin-left: -10%;margin-top: -10px;">{{this.date}}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="biaoge_kuang" style="width: 1550px;margin-left: 150px;margin-top: 40px">
-                            <aside>{{this.title}}</aside>
-                            <p class="line-limit-length" id="detail_content">{{this.content}}</p>
-                                <a href="/x_gushi?id={{this.id}}">[详细]</a>
-                            <p>{{this.showdate}}</p>
-                        </div>
-                    </div>
-                </li>
-                {{/each}}
+                    </li>
+                    </a>
+                    {{/each}}
             </ul>
         </div>
         <!--故事表格-->
         <!--序列-->
-        <div class="xuanxiang" style="margin:20px auto;width: fit-content">
-            <div style="background-color: #3a9dff;color: #FFFFFF;font-size: 25px">
-                <a href="/x_feng?page=1">1</a>
-            </div>
-            <div  style="background-color: white;color: #ACACAC;font-size: 25px">
-               <a href="/x_feng?page=2">2</a>
-            </div>
-            <div style="background-color: white;color: #ACACAC;font-size: 25px">
-                <a href="/x_feng?page=3">3</a>
-            </div>
-        </div>
+        <nav class="pagination-outer">
+            <ul class="pagination">
+                <li id="page-pre" class="page-item" onclick="gotonext()">
+                    <a href="#" class="page-link">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li id="page-one" class="page-item" onclick="gotonext()"><a class="page-link" href="/x_feng?page=1">1</a></li>
+                <li id="page-two" class="page-item" onclick="gotonext()"><a class="page-link" href="/x_feng?page=2">2</a></li>
+                <li id="page-three" class="page-item" onclick="gotonext()"><a class="page-link" href="/x_feng?page=3">3</a></li>
+                <li id="page-four" class="page-item" onclick="gotonext()"><a class="page-link" href="/x_feng?page=4">4</a></li>
+                <li id="page-five" class="page-item" onclick="gotonext()"><a class="page-link" href="/x_feng?page=5">5</a></li>
+                <li id="page-next" class="page-item" onclick="gotonext()">
+                    <a href="#" class="page-link" >
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <!--序列-->
     </div>
-    <!--<footer id="home_footer" style="overflow: hidden;text-align: center">-->
-        <!--&lt;!&ndash;背景&ndash;&gt;-->
-        <!--<div style="position: absolute;margin-top: 0;width: 100%;">-->
-            <!--<img style="position: absolute;left:-8%;z-index: -5;width: 110%;" src="images/tp_home/底栏背景1.png">-->
-            <!--<img style="position: absolute;left:-8%;margin-top:-80px;z-index: -6;width: 100%;" src="images/tp_home/底栏背景2.png">-->
-            <!--<img style="position: absolute;left:-8%;z-index: -7;width: 100%;" src="images/tp_home/底栏背景3.png">-->
-            <!--<img style="position: absolute;left:-8%;z-index: -8;width: 100%;" src="images/tp_home/底栏背景4.png">-->
-            <!--<img style="position: absolute;left:-8%;z-index: -9;width: 100%;" src="images/tp_home/底栏背景5.png">-->
-        <!--</div>-->
-        <!--&lt;!&ndash;背景&ndash;&gt;-->
-        <!--<div style="position: absolute;margin-top: 350px;margin-left: 5%;">-->
-            <!--<img style="width: 300px;" src="images/tp_home/logo（底）.png">-->
-        <!--</div>-->
-        <!--<div style="position: absolute;margin-left: 60%;margin-top: 150px;text-align:center">-->
-            <!--<p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">-->
-                <!--关于我们-->
-            <!--</p>-->
-            <!--<p style="color: #FFFFFF;font-size: 25px;line-height: 83px">-->
-                <!--工作照<br>-->
-                <!--意见反馈<br>-->
-                <!--联系方式-->
-            <!--</p>-->
-        <!--</div>-->
-        <!--<div style="position: absolute;margin-left: 80%;margin-top: 150px;text-align:center">-->
-            <!--<p style="color: #FFFFFF;font-size: 40px;margin-bottom:15px">-->
-                <!--友情链接-->
-            <!--</p>-->
-            <!--<p style="color: #FFFFFF;font-size: 25px;line-height: 83px">-->
-                <!--舟山网<br>-->
-                <!--中国海洋文化在线<br>-->
-                <!--舟山海洋数字图书馆-->
-            <!--</p>-->
-        <!--</div>-->
-        <!--<div style="margin:550px 0 auto;color: white;font-family: 'Source Han Sans CN'">-->
-            <!--<p style="margin-bottom: 15px;">Copyright©2019&nbspAll&nbspRights&nbspReserved</p>-->
-        <!--</div>-->
-    <!--</footer>-->
 </div>
 <script rel="script" src="js/jquery.js"></script>
 <script>
@@ -225,71 +202,11 @@
         }
         document.getElementById("intro_"+this.id).style.zIndex="1000";
     }
-    // 屏幕自适应
-    // function changeheight(){
-    //     var total = document.documentElement.clientHeight;
-    //     var colHeight = total-document.getElementById("case_01").offsetTop;
-    //     document.getElementById("case_01").style.height=colHeight+"px";
-    //     // document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
-    // }
-    // function changewidth(){
-    //     var total2 = document.documentElement.clientWidth;
-    //     var colWidth = total2-document.getElementById("case_01").offsetLeft;
-    //     // document.getElementById("logo").style.width=colWidth*0.15+"px";
-    //     // document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
-    // }
-    // window.onload=function () {
-    //     changewidth();
-    //     changeheight();
-    // };
-    // window.onresize=function () {
-    //     changewidth();
-    //     changeheight();
-    // };
-    // document.documentElement.style.fontSize = document.body.clientWidth / 1920 + "px";
 
-    // $.ajax({
-    //     // 数据请求
-    //     url: "/",
-    //     // 类型是get
-    //     type: "get",
-    //     dataType:'json',
-    //     // 请求数据成功后的回调函数
-    //     success: function (data) {
-    //         // 获取数据内容
-    //         var group = $.parseJSON(data);
-    //         //拼接字符串
-    //         var str = "";
-    //         //对数据做遍历，拼接到页面显示
-    //         for(var i=0;i<group.length;i++){
-    //                str +='  <li>\n' +
-    //                         '                    <div class="biaoge">\n' +
-    //                         '                        <div class="s_tubiao">\n' +
-    //                         '                            <img src="images/tp_xiang/feng/小五角星.png">\n' +
-    //                         '                        </div>\n' +
-    //                         '                        <div class="biaoge_kuang" style="width: 1550px;margin-left: 150px;margin-top: 40px">\n' +
-    //                         '                            <aside>'+group[i].title+'</aside>\n' +
-    //                         '                            <p>今年2月，年过七旬的朱忠品自告奋勇成为大干社区一名创城志愿者，\n' +
-    //                         '                                天天骑着电动车，带着工具“巡街”。每看到一处小广告或破损处，\n' +
-    //                         '                                他就立马停车拿出工具进行清理或修复。去除小广告、修补墙面，\n' +
-    //                         '                                朱忠品干活劲头一点不输年轻人。他笑称自己是小广告的“终结者”。\n' +
-    //                         '                                <a href="#">[详细]</a>\n' +
-    //                         '                            </p>\n' +
-    //                         '                        </div>\n' +
-    //                         '                    </div>\n' +
-    //                         '                </li>';
-    //             }
-    //         // 渲染到前端
-    //         $("#stories").html(str);
-    //     },
-    //     error:function(err){
-    //         console.log('请求失败');
-    //     }
-    // });
-
-
-
-
-
-
+    function gotonext() {
+        // document.getElementsByClassName('page-item active')[0].className='page-item';
+        this.refresh(false);
+        this.addClass('active');
+        // if(this.href==='/x_feng?page=2') {this.className='page-item active';this.refresh(false);}
+    }
 </script>

@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/auth.css" />
+    <link type="text/css" rel="stylesheet" href="css/yu.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div style="width:100%;">
+    <div class="case_01"></div>
+    <div id="case2" style="height:1700px;margin-top: 100px;border: solid 3px saddlebrown;">
+        <div style="justify-content: center;display: flex">
+            <h1 style="margin-bottom: 60px;">——渔舟唱晚——</h1>
+        </div>
+        <div>
+            <select id="tabs">
+                <option>作业水域</option>
+                <option>船体材料</option>
+                <option>推进方式</option>
+                <option>担负任务</option>
+            </select>
+            <div id="content">
+                <div id ="chanpin1">
+                    <div class="chanpin_title">
+                        <button onclick=chanpin1_show1() class="button11">不限</button>
+                        <button onclick=chanpin1_show2() class="button1">沿岸渔船</button>
+                        <button onclick=chanpin1_show3() class="button1">近海渔船</button>
+                        <button onclick=chanpin1_show4() class="button1">远洋渔船</button>
+                        <button onclick=chanpin1_show5() class="button1">淡水渔船</button>
+                    </div>
+                    <div id="chanpin1_1" style="display: block" >
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin1_2" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin1_3" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin1_4" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin1_5" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id ="chanpin2"  >
+                    <div class="chanpin_title">
+                        <button onclick=chanpin2_show1() class="button22" >不限</button>
+                        <button onclick=chanpin2_show2() class="button1">木质渔船</button>
+                        <button onclick=chanpin2_show3() class="button1">钢制渔船</button>
+                        <button onclick=chanpin2_show4() class="button1">钛合金船</button>
+                        <button onclick=chanpin2_show5() class="button1">混合材料</button>
+                    </div>
+                    <div id="chanpin2_1" style="display: block" >
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin2_2" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin2_3" style="display: none;">
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                    </div>
+                    <div id="chanpin2_4" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin2_5" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                </div>
+                <div id ="chanpin3">
+                    <div class="chanpin_title">
+                        <button onclick=chanpin3_show1() class="button33" >不限</button>
+                        <button onclick=chanpin3_show2() class="button1">机动渔船</button>
+                        <button onclick=chanpin3_show3() class="button1">风帆渔船</button>
+                        <button onclick=chanpin3_show4() class="button1">手动渔船</button>
+                    </div>
+                    <div id="chanpin3_1" style="display: block" >
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin3_2" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin3_3" style="display: none;">
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                    </div>
+                    <div id="chanpin3_4" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin3_5" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                </div>
+                <div id ="chanpin4">
+                    <div class="chanpin_title">
+                        <button onclick=chanpin4_show1() class="button44" >不限</button>
+                        <button onclick=chanpin4_show2() class="button1">捕捞渔船</button>
+                        <button onclick=chanpin4_show3() class="button1">辅助渔船</button>
+                    </div>
+                    <div id="chanpin4_1" style="display: block" >
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin4_2" style="display: none;">
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                    </div>
+                    <div id="chanpin4_3" style="display: none;">
+                        <div><img src="images/tp_yu/IMG_1531.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_0172.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1442.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div><img src="images/tp_yu/IMG_1457.JPG">
+                            <p>大对船</p><label>标签1</label>
+                            <label>标签2</label></div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1458.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_1527.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                        <div><img src="images/tp_yu/IMG_3404.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9877.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+                        <div>
+                            <img src="images/tp_yu/IMG_9880.JPG">
+                            <p>大对船</p>
+                            <label>标签1</label>
+                            <label>标签2</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;margin-top:150px">
+            <img src="images/绳结.png">
+        </div>
+
+    </div>
+    </div>
+    <!--渔海为生动画-->
+    <div>
+        <div style="justify-content: center;display: flex">
+            <h1 style="margin-bottom: 60px;">——渔海为生——</h1>
+        </div>
+        <div id="flashContent" style="display: flex;justify-content: center">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1920" height="1080" id="dayu" align="middle">
+            <param name="movie" value="dayu.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <param name="play" value="true" />
+            <param name="loop" value="false" />
+            <param name="wmode" value="window" />
+            <param name="scale" value="showall" />
+            <param name="menu" value="true" />
+            <param name="devicefont" value="false" />
+            <param name="salign" value="" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="dayu.swf" width="1920" height="1080">
+                <param name="movie" value="dayu.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="play" value="true" />
+                <param name="loop" value="false" />
+                <param name="wmode" value="window" />
+                <param name="scale" value="showall" />
+                <param name="menu" value="true" />
+                <param name="devicefont" value="false" />
+                <param name="salign" value="" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <!--<![endif]-->
+                <a href="http://www.adobe.com/go/getflash">
+                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                </a>
+                <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
+    </div>
+    </div>
+    <!--授人以渔-->
+    <div id="case3" class="YU">
+        <h1 style="margin-bottom: 60px;">——授人以鱼——</h1>
+        <div id="fsm_container" class="fsm-container" style="border: solid 1px greenyellow">
+            <div id="btn1" class="fsm apple" >
+                <i class="fa fa-qq"></i>
+                <div id="yu-content" style="display: none;width:1200px;margin-top: 25px;">
+                    <div class="content">
+                    <!--<p class="description">鱼</p>-->
+                        <a class="card" href="#!">
+                        <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                            <p>马头鱼</p>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p class="back-title">马头鱼</p>
+                                <p class="back-content">
+                                    马头鱼所属鲈形目，分布于菲律宾南部
+                                    到中国、朝鲜和日本南部海区，中国沿海均产。
+                                    通常栖息于水深150米以浅的砂泥底质水域。</p>
+                            </div>
+                        </div>
+                    </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fsm pied" >
+                <i class="fa fa-weixin"></i>
+                <div id="xia-content" style="display: none;width:1200px;margin-top: 25px;">
+                    <div class="content">
+                        <!--<p class="description">鱼</p>-->
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fsm codepen">
+                <i class="fa fa-weibo"></i>
+                <div id="bei-content" style="display: none;width:1200px;margin-top: 25px;">
+                    <div class="content">
+                        <!--<p class="description">鱼</p>-->
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fsm google">
+                <i class="fa fa-renren"></i>
+                <div id="xie-content" style="display: none;width:1200px;margin-top: 25px;">
+                    <div class="content">
+                        <!--<p class="description">鱼</p>-->
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="#!">
+                            <div class="front" style="background-image: url(images/tp_yu/IMG_0172.JPG);">
+                                <p>马头鱼</p>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <p class="back-title">马头鱼</p>
+                                    <p class="back-content">
+                                        马头鱼所属鲈形目，分布于菲律宾南部
+                                        到中国、朝鲜和日本南部海区，中国沿海均产。
+                                        通常栖息于水深150米以浅的砂泥底质水域。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/ripple-config.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/x_jing.js"></script>
+<script src="js/auth.js"></script>
+
+<!--渔舟唱晚，下拉导航栏，-->
+<script>
+    $(function(){
+        $('#chanpin'+1).show();
+        // $('#chanpin'+1).hide();
+        $('#chanpin'+2).hide();
+        $('#chanpin'+3).hide();
+        $('#chanpin'+4).hide();
+
+        var li = $('#tabs');
+        var cc=$('#tabs option');
+        var len=cc.length;
+        var i;
+        li.change(function(){
+            for(var j= 0;j<=len;j++){
+                $('#chanpin'+j).hide();
+            }
+            //alert(123);
+            var t = parseInt(li.get(0).selectedIndex);
+            for(i= 0;i<len;i++){
+                if(t===i){
+                    // alert(i);
+                   $('#chanpin'+(i+1)).show();
+
+                   }
+                }
+        });
+    });
+</script>
+<!--渔舟唱晚动态效果代码-->
+<script type="text/javascript">
+    function chanpin1_show1()
+    {
+        document.getElementById("chanpin1_1").style.display='block';
+        document.getElementById("chanpin1_2").style.display='none';
+        document.getElementById("chanpin1_3").style.display='none';
+        document.getElementById("chanpin1_4").style.display='none';
+        document.getElementById("chanpin1_5").style.display='none';
+        document.getElementsByClassName("button111")[0].className = 'button11';
+    }
+    function chanpin1_show2()
+    {
+        document.getElementById("chanpin1_1").style.display='none';
+        document.getElementById("chanpin1_2").style.display='block';
+        document.getElementById("chanpin1_3").style.display='none';
+        document.getElementById("chanpin1_4").style.display='none';
+        document.getElementById("chanpin1_5").style.display='none';
+        document.getElementsByClassName("button11")[0].className = 'button111';
+    }
+    function chanpin1_show3()
+    {
+        document.getElementById("chanpin1_1").style.display='none';
+        document.getElementById("chanpin1_2").style.display='none';
+        document.getElementById("chanpin1_3").style.display='block';
+        document.getElementById("chanpin1_4").style.display='none';
+        document.getElementById("chanpin1_5").style.display='none';
+        document.getElementsByClassName("button11")[0].className = 'button111';
+    }
+    function chanpin1_show4()
+    {
+        document.getElementById("chanpin1_1").style.display='none';
+        document.getElementById("chanpin1_2").style.display='none';
+        document.getElementById("chanpin1_3").style.display='none';
+        document.getElementById("chanpin1_4").style.display='block';
+        document.getElementById("chanpin1_5").style.display='none';
+        document.getElementsByClassName("button11")[0].className = 'button111';
+    }
+    function chanpin1_show5()
+    {
+        document.getElementById("chanpin1_1").style.display='none';
+        document.getElementById("chanpin1_2").style.display='none';
+        document.getElementById("chanpin1_3").style.display='none';
+        document.getElementById("chanpin1_4").style.display='none';
+        document.getElementById("chanpin1_5").style.display='block';
+        document.getElementsByClassName("button11")[0].className = 'button111';
+    }
+    function chanpin2_show1()
+    {
+        document.getElementById("chanpin2_1").style.display='block';
+        document.getElementById("chanpin2_2").style.display='none';
+        document.getElementById("chanpin2_3").style.display='none';
+        document.getElementById("chanpin2_4").style.display='none';
+        document.getElementById("chanpin2_5").style.display='none';
+        document.getElementsByClassName("button222")[0].className = 'button22';
+    }
+    function chanpin2_show2()
+    {
+        document.getElementById("chanpin2_1").style.display='none';
+        document.getElementById("chanpin2_2").style.display='block';
+        document.getElementById("chanpin2_3").style.display='none';
+        document.getElementById("chanpin2_4").style.display='none';
+        document.getElementById("chanpin2_5").style.display='none';
+        document.getElementsByClassName("button22")[0].className = 'button222';
+    }
+    function chanpin2_show3()
+    {
+        document.getElementById("chanpin2_1").style.display='none';
+        document.getElementById("chanpin2_2").style.display='none';
+        document.getElementById("chanpin2_3").style.display='none';
+        document.getElementById("chanpin2_4").style.display='block';
+        document.getElementById("chanpin2_5").style.display='none';
+        document.getElementsByClassName("button22")[0].className = 'button222';
+    }
+    function chanpin2_show4()
+    {
+        document.getElementById("chanpin2_1").style.display='none';
+        document.getElementById("chanpin2_2").style.display='none';
+        document.getElementById("chanpin2_3").style.display='none';
+        document.getElementById("chanpin2_4").style.display='none';
+        document.getElementById("chanpin2_5").style.display='block';
+        document.getElementsByClassName("button22")[0].className = 'button222';
+    }
+    function chanpin2_show5()
+    {
+        document.getElementById("chanpin2_1").style.display='none';
+        document.getElementById("chanpin2_2").style.display='none';
+        document.getElementById("chanpin2_3").style.display='none';
+        document.getElementById("chanpin2_4").style.display='none';
+        document.getElementById("chanpin2_5").style.display='block';
+        document.getElementsByClassName("button22")[0].className = 'button222';
+    }
+    function chanpin3_show1()
+    {
+        document.getElementById("chanpin3_1").style.display='block';
+        document.getElementById("chanpin3_2").style.display='none';
+        document.getElementById("chanpin3_3").style.display='none';
+        document.getElementById("chanpin3_4").style.display='none';
+        document.getElementsByClassName("button33")[0].className = 'button333';
+    }
+    function chanpin3_show2()
+    {
+        document.getElementById("chanpin3_1").style.display='none';
+        document.getElementById("chanpin3_2").style.display='block';
+        document.getElementById("chanpin3_3").style.display='none';
+        document.getElementById("chanpin3_4").style.display='none';
+        document.getElementsByClassName("button33")[0].className = 'button333';
+    }
+    function chanpin3_show3()
+    {
+        document.getElementById("chanpin3_1").style.display='none';
+        document.getElementById("chanpin3_2").style.display='none';
+        document.getElementById("chanpin3_3").style.display='block';
+        document.getElementById("chanpin3_4").style.display='none';
+        document.getElementsByClassName("button33")[0].className = 'button333';
+    }
+    function chanpin3_show4()
+    {
+        document.getElementById("chanpin3_1").style.display='none';
+        document.getElementById("chanpin3_2").style.display='none';
+        document.getElementById("chanpin3_3").style.display='none';
+        document.getElementById("chanpin3_4").style.display='block';
+        document.getElementsByClassName("button33")[0].className = 'button333';
+    }
+    function chanpin4_show1()
+    {
+        document.getElementById("chanpin4_1").style.display='block';
+        document.getElementById("chanpin4_2").style.display='none';
+        document.getElementById("chanpin4_3").style.display='none';
+        document.getElementsByClassName("button444")[0].className = 'button44';
+    }
+    function chanpin4_show2()
+    {
+        document.getElementById("chanpin4_1").style.display='none';
+        document.getElementById("chanpin4_2").style.display='block';
+        document.getElementById("chanpin4_3").style.display='none';
+        document.getElementsByClassName("button44")[0].className = 'button444';
+    }
+    function chanpin4_show3()
+    {
+        document.getElementById("chanpin4_1").style.display='none';
+        document.getElementById("chanpin4_2").style.display='none';
+        document.getElementById("chanpin4_3").style.display='block';
+        document.getElementsByClassName("button44")[0].className = 'button444';
+    }
+
+</script>
+<!--授人以鱼展开全屏动态效果-->
+<script>
+    Auth.init({
+        login_url: '#login',
+        forgot_url: '#forgot'
+    });
+    function changeheight(){
+        var total = document.documentElement.clientHeight;
+        var colHeight = total-document.getElementById("video").offsetTop;
+        document.getElementById("video").style.height=colHeight+"px";
+        document.getElementById("homepage").style.height=colHeight+"px";
+        document.getElementById("video-tvc").style.height=colHeight+"px";
+        document.getElementById("case2").style.height=colHeight+"px";
+    }
+    function changewidth(){
+        var total2 = document.documentElement.clientWidth;
+        var colWidth = total2-document.getElementById("video").offsetLeft;
+        document.getElementById("video").style.width=colWidth+"px";
+        document.getElementById("homepage").style.width=colWidth+"px";
+        document.getElementById("case2").style.width=colWidth+"px";
+    }
+    window.onload=function () {
+        changewidth();
+        changeheight();
+    };
+    window.onresize=function () {
+        changewidth();
+        changeheight();
+    };
+
+    // JS available on https://github.com/colinlohner/FSM-JS
+    //Setup
+    var fsmActual = document.createElement('div');
+    fsmActual.setAttribute('id', 'fsm_actual');
+    document.body.appendChild(fsmActual);
+    var $fsm = document.querySelectorAll('.fsm');
+    var $fsmActual = document.querySelector('#fsm_actual');
+    $fsmActual.style.position = "absolute";
+    var position = {};
+    var size = {};
+
+    //modal action stuffs
+    var openFSM = function(event) {
+        var $this = event.currentTarget;
+        position = $this.getBoundingClientRect();
+        var total = document.body.clientHeight;
+
+        size = {
+            width: window.getComputedStyle($this).width,
+            height: window.getComputedStyle($this).height
+        };
+        $fsmActual.style.position = "absolute";
+        $fsmActual.style.top =4095+'px';
+        $fsmActual.style.left = position.left + 'px';
+        $fsmActual.style.height = size.height;
+        $fsmActual.style.width = size.width;
+        $fsmActual.style.margin = $this.style.margin;
+
+        setTimeout(function(){
+            $fsmActual.innerHTML = $this.innerHTML;
+            var classes = $this.classList.value.split(' ');
+            for (var i = 0; i < classes.length; i++) {
+                $fsmActual.classList.add(classes[i]);
+            }
+            $fsmActual.classList.add('growing');
+            $fsmActual.style.height = '100vh';
+            $fsmActual.style.width = '100%';
+            $fsmActual.style.top = total-document.getElementById("case2").offsetTop+ 'px';
+            $fsmActual.style.left = '0';
+            $fsmActual.style.margin = '0';
+        }, 10);
+
+        setTimeout(function(){
+            $fsmActual.classList.remove('growing');
+            $fsmActual.classList.add('full-screen');
+            var top=$(document).scrollTop();
+            $(document).on('scroll.unable',function (e){
+                $(document).scrollTop(top);
+            })
+        }, 1000);
+    };
+
+    var closeFSM = function(event){
+        var $this = event.currentTarget;
+        $this.style.height = size.height;
+        $this.style.width = size.width;
+        $this.style.top =4130+ 'px';
+        $this.style.left = position.left + 'px';
+        $this.style.margin = '0';
+        $this.classList.remove('full-screen');
+        $this.classList.add('shrinking');
+        setTimeout(function(){
+            while($this.firstChild) $this.removeChild($this.firstChild);
+            var classList = $this.classList;
+            while (classList.length > 0) {
+                classList.remove(classList.item(0));
+            }
+            $this.style = '';
+            $(document).unbind("scroll.unable");
+        }, 1000);
+    };
+
+    function yu_open(){
+        // document.getElementById("yu-content").style.transitionDelay='3s';
+        document.getElementById("yu-content").style.display='block';
+        // document.getElementById("yu-content")[0].setAttribute("style","transition: display 2s ease");
+
+        // setTimeout(document.getElementById("yu-content").style.display='block',10000);
+    }
+    function xia_open(){
+        document.getElementById("xia-content").style.display='block';
+    }
+    function bei_open(){
+        document.getElementById("bei-content").style.display='block';
+    }
+    function xie_open(){
+        document.getElementById("xie-content").style.display='block';
+    }
+    function yu_close(){
+        document.getElementById("yu-content").style.display='none';
+    }
+    function xia_close(){
+        document.getElementById("xia-content").style.display='none';
+    }
+    function bei_close(){
+        document.getElementById("bei-content").style.display='none';
+    }
+    function xie_close(){
+        document.getElementById("xie-content").style.display='none';
+    }
+
+    for (var i = 0; i < $fsm.length; i++) {
+        if(i==0)
+        {
+            $fsm[0].addEventListener("click", openFSM);
+            $fsm[0].addEventListener("click", yu_open);
+        }
+        else if(i==1)
+        {
+            $fsm[1].addEventListener("click", openFSM);
+            $fsm[1].addEventListener("click", xia_open);
+        }
+        else if(i==2)
+        {
+            $fsm[2].addEventListener("click", openFSM);
+            $fsm[2].addEventListener("click", bei_open);
+        }
+        else if(i==3)
+        {
+            $fsm[3].addEventListener("click", openFSM);
+            $fsm[3].addEventListener("click", xie_open);
+        }
+    }
+    $fsmActual.addEventListener("click", closeFSM);
+    $fsmActual.addEventListener("click", yu_close);
+    $fsmActual.addEventListener("click", xia_close);
+    $fsmActual.addEventListener("click", bei_close);
+    $fsmActual.addEventListener("click", xie_close);
+    // for (var j = 0; j < $fsmActual.length; j++) {
+    //     if(j ==0){
+    //         $fsmActual[0].addEventListener("click", closeFSM);
+    //         $fsmActual[0].addEventListener("click", yu_close);
+    //     }
+    //    else if(j ==1)
+    //     {
+    //         $fsmActual[1].addEventListener("click", closeFSM);
+    //         $fsmActual[1].addEventListener("click", xia_close);
+    //     }
+    //     else if(j ==2)
+    //     {
+    //         $fsmActual[2].addEventListener("click", closeFSM);
+    //         $fsmActual[2].addEventListener("click", bei_close);
+    //     }
+    //     else if(j ==3)
+    //     {
+    //         $fsmActual[3].addEventListener("click", closeFSM);
+    //         $fsmActual[3].addEventListener("click", xie_close);
+    //     }
+    // }
+    //end
+</script>
+
+</html>
