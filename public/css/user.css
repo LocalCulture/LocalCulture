@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+.case_00{
+    width: 100%;
+    border: #2196F3;
+    height:1500px;
+    background-color:#f4f6f9;
+}
+
+.case_01
+{
+    height: 420px;
+    /*border: solid 1px yellow;*/
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.user-infobar
+{
+    position: absolute;
+    z-index: 5;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+}
+.user-imgbox
+{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.user-img
+{
+    display: inline-block;
+    border-radius: 100%;
+    background-size: 100%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 100px;
+    height: 100px;
+}
+.user-info-content
+{
+    display: inline-block;
+    margin-left: 26px;
+    width: 800px;
+    vertical-align: middle;
+}
+.info-top{
+    width: 100%;
+}
+.info-name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 4px;
+    display: inline-block;
+    max-width: 500px;
+    font-size: .28rem;
+    vertical-align: middle;
+}
+.info-middle{
+    margin-top: 9px;
+    font-size: .16rem;
+}
+.guanzhu{
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+    display: inline-block;
+    line-height: 14px;
+    cursor: pointer;
+}
+.fensi{
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 14px;
+    cursor: pointer;
+}
+.info-bottom{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+.center-tab{
+    position: relative;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    height: 58px;
+    z-index: 5;
+    width: 100%;
+}
+.center-tab-all{
+    height: 58px;
+    white-space: nowrap;
+    text-align: center;
+    top: 0;
+    z-index: 999;
+}
+.center-tab-a-active{
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+}
+
+.center-tab-a{
+    color: #444444;
+    display: inline-block;
+    margin: 0 20px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s;
+    cursor: pointer;
+}
+.center-tab-a:hover{
+    color: #2196F3;
+}
+.cover-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+.sort-bar{
+    margin: 0 auto;
+    width:80%;
+    height: 50px;
+}
+.sort-top{
+    float: left;
+}
+.sort-a-active{
+    color: #2196F3;
+    position: relative;
+    display: inline-block;
+}
+.sort-a-active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: #2196F3;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sort-a{
+    color: #444444;
+    position: relative;
+    display: inline-block;
+}
+.sort-li{
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-top: 13px;
+    display: inline-block;
+}
+.create{
+    color: #444444;
+    margin: -60px 50px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 14px;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s;
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+}
+.modal-contentbox{
+    width: 80%;
+    margin: 20px auto;
+    /*background-color: white;*/
+    box-shadow: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-top: 1px solid #efefef;
+}
+
+.user-new-touxiang{
+    border-radius: 500rem;
+    width: 80px;
+    height:80px;
+}
+.news-img{
+    width: 500px;
+    margin: 20px 100px;
+}
+.news-icons{
+    width: 30px;
+}
+.fun-icons{
+    display: inline-block;
+    margin-right: 30px;
+}
+.user-info-bar{
+    display: inline-block;
+    margin: 0 20px;
+}
+.user-news-img{
+    display: inline-block;
+}
+.user-news-top{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.news-content{
+    margin: 10px 100px;
+}
+/*.user-info-bar span{*/
+    /*font-weight: bold;*/
+/*}*/
+@media screen and (min-width:1920px){
+       .case_01{
+           height: 627px;
+       }
+       .center-tab-a-active{
+           font-size: 24px;
+           color: #2196F3;
+           border-bottom: 2px solid #2196F3;
+       }
+       .center-tab-a{
+           font-size: 24px;
+       }
+       .center-tab-all{
+        height: 86px;
+       }
+      .sort-li{
+        font-size: 21px;
+       }
+
+
+}

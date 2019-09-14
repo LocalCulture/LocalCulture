@@ -1,0 +1,98 @@
+/*框架*/
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin:0 auto;
+    width:100%;
+    height: fit-content;
+    /*border:3px dashed red;*/
+    font-family:Source Han Sans CN Regular,sans-serif;
+    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
+}
+.case_01{
+    height: 420px;
+}
+.case_02
+{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    /*border:3px dashed blue;*/
+}
+
+/*框架*/
+
+/*case_01*/
+/*具体绳结名称*/
+.tj_biaoti
+{
+    font-family:"Source Han Sans CN Regular";
+    font-size: 48px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 108px;
+    color: rgb(92,90,90);
+}
+/*具体绳结名称*/
+/*主内容外框*/
+.case_02_a
+{
+    position: relative;
+    width: 1700px;
+    height: fit-content;
+    margin: 0 auto;
+    /*border: 1px solid white;  !*注意这里加了白边看不出，为了让导航定好位*!*/
+}
+/*主内容外框*/
+/*位置导航*/
+.weizhi_daohang
+{
+    font-size: 20px;
+    color: rgb(112,112,112);
+}
+.weizhi_daohang a
+{
+    color: rgb(112,112,112);
+}
+.weizhi_daohang a:hover
+{
+    color: rgb(33,150,243);
+}
+.weizhi_daohang img
+{
+    vertical-align: middle;
+}
+/*位置导航*/
+/*绳结内容*/
+.shengjie_k
+{
+    position: relative;
+    width: 1200px;
+    height: 710px;
+    margin: 25px auto;
+    border-radius: 20px;
+    background-color: rgb(193, 230, 243);
+    /*border: 2px solid cadetblue;*/
+}
+.shengjie_k #shiping
+{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    /*border: 2px solid #90c9d2;*/
+    margin: 50px auto;
+    left: 0;
+    right: 0;
+}
+
+.shengjie_k #tuwen
+{
+    width: 1186px;
+    height: 700px;
+    position: absolute;
+    margin: 10px auto;
+   /*border: 2px solid chocolate;*/
+    left: 0;
+    right: 0;
+}
+/*绳结内容*/
+/*case_01*/

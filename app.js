@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/user');
 var fengRouter = require('./routes/x_feng');
 var jingRouter = require('./routes/x_jing');
 var yuRouter = require('./routes/yu');
@@ -12,6 +12,8 @@ var meituRouter = require('./routes/x_meitu');
 var shengRouter = require('./routes/yi_sheng');
 var gushiRouter = require('./routes/x_gushi');
 var chuanRouter = require('./routes/yi_chuan');
+var suRouter = require('./routes/su');
+var shengdetailRouter = require('./routes/yi_sheng_detail');
 
 var app = express();
 var hbs = require('hbs');
@@ -46,7 +48,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 app.use('/x_feng', fengRouter);
 app.use('/x_jing', jingRouter);
 app.use('/yu', yuRouter);
@@ -54,6 +56,8 @@ app.use('/x_meitu', meituRouter);
 app.use('/yi_sheng', shengRouter);
 app.use('/x_gushi', gushiRouter);
 app.use('/yi_chuan', chuanRouter);
+app.use('/su', suRouter);
+app.use('/yi_sheng_detail',shengdetailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

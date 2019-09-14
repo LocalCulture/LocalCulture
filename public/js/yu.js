@@ -204,7 +204,7 @@ var openFSM = function(event) {
         $fsmActual.classList.add('growing');
         $fsmActual.style.height = '100vh';
         $fsmActual.style.width = '100%';
-        $fsmActual.style.top = total-document.getElementById("case_02").offsetTop+ 'px';
+        $fsmActual.style.top = total-document.getElementById("yuzhou").offsetTop+ 'px';
         $fsmActual.style.left = '0';
         $fsmActual.style.margin = '0';
     }, 10);

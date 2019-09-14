@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绳结详情</title>
+    <link  rel="stylesheet" href="css/css_yi/sheng_detail/sheng_detail.css">
+    <link rel="stylesheet" href="css/css_yi/sheng_detail/tuwen.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/js_yi/sheng_detail/tuwen.js"></script>
+</head>
+<body>
+<div class="case_00">
+    <!--首页-->
+        <header></header>
+    <!--首页-->
+        <div class="case_01">
+            <div class="case_01_a">
+            <!--位置-->
+            <div style="position: absolute;margin-left: 0;margin-top: 18px;width: 275px;height: 42px/*;border: 2px solid saddlebrown*/">
+            <p class="weizhi_daohang">
+                <img src="images/tp_yi/sheng_detail/daohang_xiaotubiao.png"><a href="#">首页</a> > <a href="#">艺</a> > <a href="#">绳结</a> > <span style="color: rgb(33,150,243);cursor: pointer">单结</span>
+            </p>
+            </div>
+            <!--位置-->
+            <!--主内容-->
+                <!--标题-->
+                <div class="tj_biaoti">
+                <p>—— 立桶结 ——</p>
+                </div>
+                <!--标题-->
+                <!--绳结讲解-->
+                <div class="shengjie_k" style="background-color: rgb(193, 230, 243); /*border: 2px solid cadetblue;*/">
+                    <!--两个按钮-->
+                    <div>
+                    <div id="shiping_b" style="position: absolute;margin-left: 1200px;top: 50%;margin-top: -110px;width: 248px;cursor: pointer">
+                    <img style="position: absolute" src="images/tp_yi/sheng_detail/xuan_b_h.png">
+                        <span style="position:absolute;font-size: 44px;margin-left: 70px;margin-top: 30px;color: #FFFFFF">视频</span>
+                    </div>
+                    <div id="tuwen_b" style="position: absolute;margin-left: 1200px;top: 50%;margin-top: 10px;width: 248px;cursor: pointer">
+                        <img  style="position:absolute" src="images/tp_yi/sheng_detail/xuan_b.png">
+                        <span style="position:absolute;font-size: 31px;margin-left: 60px;margin-top: 25px;color: #FFFFFF">图文</span>
+                    </div>
+                    </div>
+                    <!--两个按钮-->
+                    <!--按钮动效-->
+                    <script>
+                        $('#shiping_b').click(function () {
+                            $('.shengjie_k').height(710);
+                        });
+                        $('#tuwen_b').click(function () {
+                           $('.shengjie_k').height(920);
+                        });
+                    </script>
+                    <!--按钮动效-->
+                    <!--视频-->
+                <div id="shiping" >
+                        <video id="shengjie_sp" src="images/tp_yi/sheng_detail/litongjie_shiping.mp4" controls="controls" width="1100" ></video>
+                </div>
+                    <!--视频-->
+                    <!--图文-->
+                <div id="tuwen" style="display: none">
+                    <!--<div style=" position: relative;  width: 1200px; height: 900px;/* border: 2px solid cadetblue*/;margin: 25px auto;/*background-color: rgb(193, 230, 243)*/border-radius: 20px;">-->
+                        <div style="position: absolute; height: 980px;width: 1000px;left:50%;top:50%;margin-top:-600px;margin-left:-420px;/*border: 2px solid coral*/">
+                            <!--轮播-->
+                            <div class="lb_gl">
+                                <div class="container">
+                                    <div class="pictureSlider poster-main">
+                                        <ul id="zturn" class="poster-list">
+                                            <li class="poster-item  zturn-item" data_n="0" style="position: absolute; left: 50%; margin-left: -100px; z-index: 8; opacity: 1; transform: scale(1) rotate(-90deg);">
+                                                <p class="xxgy">第一步：</p>
+                                                <p class="say">将物体压在绳索的中端</p>
+                                                <div class="for_btn">
+                                                    <img src="images/tp_yi/sheng_detail/litongjie01.png" width="100%">
+                                                </div>
+                                            </li><!--绳结第一步-->
+                                            <li class="poster-item zturn-item" data_n="1" style="position: absolute; left: 50%; margin-left: -57.1429px; z-index: 7; opacity: 0.9; transform: scale(0.9) rotate(-90deg);">
+                                                <p class="xxgy">第二步：</p>
+                                                <p class="say">用两绳头打一个半结，收紧至物体上方</p>
+                                                <div class="for_btn">
+                                                    <img src="images/tp_yi/sheng_detail/litongjie02.png" width="100%">
+                                                </div>
+                                            </li><!--绳结第二步-->
+                                            <li class="poster-item zturn-item" data_n="2" style="position: absolute; left: 50%; margin-left: -14.2857px; z-index: 6; opacity: 0.81; transform: scale(0.81) rotate(-90deg);">
+                                                <p class="xxgy">第三步：</p>
+                                                <p class="say">将半结分开套在物体高的三分之一处</p>
+                                                <div class="for_btn">
+                                                    <img src="images/tp_yi/sheng_detail/litongjie03.png" width="100%">
+                                                </div>
+                                            </li><!--绳结第三步-->
+                                            <li class="poster-item zturn-item" data_n="3" style="position: absolute; left: 50%; margin-left: 28.5714px; z-index: 5; opacity: 0.729; transform: scale(0.729) rotate(-90deg);">
+                                                <p class="xxgy">第四步：</p>
+                                                <p class="say">将半结收紧</p>
+                                                <div class="for_btn">
+                                                    <img src="images/tp_yi/sheng_detail/litongjie04.png" width="100%">
+                                                </div>
+                                            </li><!--绳结第四步-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <script type="text/javascript">
+                        var aa = new zturn({
+                            id: "zturn",
+                            opacity: 0.9,
+                            width: 200,
+                            Awidth: 300,
+                            scale: 0.9,
+                            auto: true,//是否轮播 默认5000
+                            turning: 4000//轮播时长
+                        })
+                    </script>
+                </div>
+                    <!--图文-->
+                </div>
+                <!--绳结讲解-->
+            </div>
+            <!--主内容-->
+        </div>
+    <!--尾页-->
+        <footer></footer>
+    <!--尾页-->
+</div>
+<script src="javascripts/js_yi/sheng_detail/sheng_detail.js"></script>
+</body>
+</html>
