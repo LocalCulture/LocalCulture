@@ -6,7 +6,7 @@
 .title{
     display: flex;
     justify-content: center;
-    font-size: 45px;
+    font-size: 48px;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -67,7 +67,7 @@
 .qualities .column {
     transition: all 0.5s ease-in-out;
     border: solid 1px #e6e6e6;
-    padding: 25px;
+    padding: 40px;
     padding-top: 65px;
     border-radius: 20px;
     background: #fff;
@@ -110,13 +110,14 @@
     margin-bottom: 10px;
     display: block;
     transition: all 0.5s ease-in-out;
-    font-size: 1.25rem;
+    font-size: 26px;
     margin-top:15px;
 }
 
 .qualities .column p {
     transition: all 0.5s ease-in-out;
     padding-bottom: 0px;
+    font-size: 20px;
 }
 .qualities .column .icon
 {
