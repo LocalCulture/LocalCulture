@@ -8,17 +8,12 @@
     font-family:"Source Han Sans CN Regular",sans-serif;
     /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
 }
-/*.case_01*/
-/*{*/
-    /*width: 100%;*/
-    /*height: fit-content;*/
-    /*position: relative;*/
-    /*!*border:2px dashed blue;*!*/
-/*}*/
-.case_01{
-
-    overflow: hidden;
+.case_01
+{
     width: 100%;
+    height: fit-content;
+    position: relative;
+    /*border:2px dashed blue;*/
 }
 .video-bg
 {
@@ -34,7 +29,7 @@
     width: 100%;
     height: fit-content;
     position: relative;
-    /*border:5px dashed cadetblue;*/
+    border:5px dashed cadetblue;
 }
 
 /*框架*/
@@ -60,7 +55,7 @@
 
 /*主*/
 /*主_01*/
-.case_02_a
+.case_01_a
 {
     position: relative;
     width: 1600px;
@@ -97,9 +92,9 @@
 {
     position: relative;
     width: 1660px;
-    /*height: 1100px;*/
+    height: fit-content;
     margin: 0 auto;
-    /*border:  2px solid saddlebrown;*/
+    border:  2px solid saddlebrown;
 }
 .tupian_k
 {
@@ -107,7 +102,7 @@
     margin-top: 40px;
     width: 1660px;
     height:900px;
-    /*border: 2px solid cornflowerblue;*/
+    border: 2px solid cornflowerblue;
     overflow: hidden
 }
 .tupian_k img  /*9.14先写死后面会改成活的*/

@@ -11,7 +11,7 @@
         </div>
     </div>
     <!--主_01-->
-    <div class="case_02">
+    <div class="case_01">
         <div class="tj_biaoti">
             <p>—— 自主创作 ——</p>
         </div>
@@ -26,7 +26,7 @@
         </div>
         <!--绘画按钮-->
         <!--创意-->
-        <div class="case_02_a">
+        <div class="case_01_a">
             <!--画板-->
             <div class="h_box">
                 <canvas id="canvas" width="1600" height="600"></canvas>
@@ -121,7 +121,7 @@
                 <img style="margin-left: 0px;margin-top: 427px" src="images/tp_yi/hua/yuminghua04.png">
                 <img style="margin-left: 1289px;margin-top: 500px" src="images/tp_yi/hua/yuminghua05.png">
                 <img style="margin-left: 0px;margin-top: 950px" src="images/tp_yi/hua/yuminghua06.png">
-                <img style="margin-left: 725px;margin-top: 796px" src="images/tp_yi/hua/yuminghua07.png">
+                <img id="hua_07" style="margin-left: 725px;margin-top: 796px;display: none" src="images/tp_yi/hua/yuminghua07.png">
                 <img style="margin-left: 1289px;margin-top: 950px"  src="images/tp_yi/hua/yuminghua08.png">
             </div>
             <div  class="gengduo_b">
@@ -130,7 +130,8 @@
             <script>
                 $('.gengduo_b').click(function () {
                     $('.tupian_k').animate({height:'1500px'});
-                    $('.case_02').animate({height:'2000px'});
+                    $('#hua_07').css('display','');
+                    $('.case_02').animate({height:'1800px'});
                     // $('.tupian_k').height($('.tupian_k').height() + 500);
                 });
             </script>
