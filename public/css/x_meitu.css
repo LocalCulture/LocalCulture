@@ -48,7 +48,7 @@ background-color: black;
 .tj_biaoti
 {
     font-family:"Source Han Sans CN Regular";
-    font-size: 60px;
+    font-size: 48px;
     margin:auto;
     width: fit-content;
     margin-top: 66px;
@@ -65,7 +65,7 @@ background-color: black;
 .zt_biaoti
 {
     font-family:"Source Han Sans CN Regular";
-    font-size: 60px;
+    font-size: 48px;
     margin:auto;
     width: fit-content;
     margin-top: 76px;
@@ -81,7 +81,7 @@ ul{
     margin: 55px auto;
     width: 1640px;
     border-top: none;
-    font-size: 37px;
+    font-size: 26px;
 }
 /*切换区*/
 .list ul{

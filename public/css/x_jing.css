@@ -27,6 +27,7 @@
     margin-top: 50px;
     margin-bottom: 40px;
     font-family: "思源黑体 CN Normal";
+    color: rgb(92,90,90);
 }
 
 
@@ -130,6 +131,7 @@
     transition: all 0.5s ease-in-out;
     font-size: 26px;
     margin-top:15px;
+    color: rgb(92,90,90);
 }
 
 .qualities .column p {
@@ -163,4 +165,5 @@ i.flat::before {
 
 .text01{
     line-height: 48px;
+    color: rgb(92,90,90);
 }

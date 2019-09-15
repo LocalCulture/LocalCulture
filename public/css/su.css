@@ -5,9 +5,12 @@
     /*margin:0;*/
     /*border:0;*/
 /*}*/
+.case_01{
+    height: 900px;
+    overflow: hidden;
+}
 .jiesu{
    text-align: center;
-
 }
 .xisu{
     /*text-align: center;*/
