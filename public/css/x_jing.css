@@ -1,3 +1,20 @@
+.jing_text{
+    width: 580px;
+    height: 400px;
+    margin-right: 300px;
+    margin-left: 100px;
+    background-image: url("../images/tp_xiang/jing/biankuang.png");
+    background-size:350px;
+    background-repeat: no-repeat;
+    font-family: "思源黑体 CN Normal";
+}
+.jing_text p{
+    margin-top: 35%;
+    margin-left: 30%;
+    color: white;
+    font-size: 80px ;
+}
+
 
 /*VR舟山标题*/
 .VR_content{
@@ -9,6 +26,7 @@
     font-size: 48px;
     margin-top: 50px;
     margin-bottom: 40px;
+    font-family: "思源黑体 CN Normal";
 }
 
 
