@@ -23,6 +23,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    overflow: hidden;
 }
 .user-infobar
 {
@@ -136,6 +137,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
+    margin-top: -700px;
 }
 .sort-bar{
     margin: 0 auto;
