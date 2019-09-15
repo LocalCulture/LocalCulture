@@ -129,3 +129,9 @@ function gotochuan() {
 function gotosheng() {
     window.location.href='yi_sheng';
 }
+function gotohua() {
+    window.location.href='yi_hua';
+}
+function gotodiao() {
+    window.location.href='yi_diao';
+}

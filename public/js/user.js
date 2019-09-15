@@ -3,7 +3,7 @@ $(document).ready(function() {
     var hash = window.location.hash.substr(1);
     var href = $('#center-selectbar a').each(function(){
         var href = $(this).attr('href');
-        if(hash===href.substr(0,href.length-4)){
+        if(hash===href.substr(0,href.length)){
             var toLoad = hash+'.html #use_inner_content';
             $('#use_inner_content').load(toLoad)
         }
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $('#load').remove();
         $('#wrapper').append('<span id="load">LOADING...</span>');
         $('#load').fadeIn('normal');
-        window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-4);
+        window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length);
         function loadContent() {
             $('#use_inner_content').load(toLoad,'',showNewContent())
         }

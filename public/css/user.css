@@ -187,6 +187,20 @@ a{
     display: inline-flex;
     align-items: center;
 }
+.create-2{
+    color: #444444;
+    margin: 0 50px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 14px;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s;
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+}
 .modal-contentbox{
     width: 80%;
     margin: 20px auto;

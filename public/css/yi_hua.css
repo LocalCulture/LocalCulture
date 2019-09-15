@@ -1,0 +1,120 @@
+/*框架*/
+.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
+{
+    margin:0 auto;
+    width:100%;
+    height: fit-content;
+    /*border:5px dashed red;*/
+    font-family:"Source Han Sans CN Regular",sans-serif;
+    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
+}
+/*.case_01*/
+/*{*/
+    /*width: 100%;*/
+    /*height: fit-content;*/
+    /*position: relative;*/
+    /*!*border:2px dashed blue;*!*/
+/*}*/
+.case_02
+{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    /*border:5px dashed cadetblue;*/
+}
+
+/*框架*/
+
+/*系列推荐*/
+.tj_biaoti
+{
+    font-size: 48px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 70px;
+    color: rgb(92,90,90);
+}
+.tj_biaoti02
+{
+    font-size: 48px;
+    margin:auto;
+    width: fit-content;
+    margin-top: 70px;
+    color: rgb(92,90,90);
+}
+/*系列推荐*/
+
+/*主*/
+/*主_01*/
+.case_02_a
+{
+    position: relative;
+    width: 1600px;
+    height: fit-content;
+    margin: 40px auto;
+    /*border:  2px solid darkblue;*/
+}
+.huihua_b
+{
+    width: 1600px;
+    height: fit-content;
+    margin: 30px auto;
+    /*border: 3px solid coral*/
+}
+.huihua_b div
+{
+    cursor: pointer;
+    width: fit-content;
+    height: 40px;
+    display: inline-block;
+    /*border-bottom: 1px solid rgb(33,150,243);*/
+}
+.huihua_b p
+{
+    font-size:26px;
+    font-family:"Source Han Sans CN Regular";
+    line-height:40px;
+    letter-spacing:2px;
+    color:rgba(116,116,116,1);
+}
+/*主_01*/
+/*主_02*/
+.case_02_a
+{
+    position: relative;
+    width: 1660px;
+    /*height: 1100px;*/
+    margin: 0 auto;
+    /*border:  2px solid saddlebrown;*/
+}
+.tupian_k
+{
+    position: relative;
+    margin-top: 40px;
+    width: 1660px;
+    height:900px;
+    /*border: 2px solid cornflowerblue;*/
+    overflow: hidden
+}
+.tupian_k img  /*9.14先写死后面会改成活的*/
+{
+    position: absolute;
+}
+.gengduo_b
+{
+    width:240px;
+    height:79px;
+    background:rgba(33,150,243,1);
+    border-radius:5px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.gengduo_b p
+{
+    line-height:79px;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+}
+/*主_02*/
+/*主*/

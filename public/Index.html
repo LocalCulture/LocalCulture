@@ -30,26 +30,26 @@
                 <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('2')" id="nav_yu" href="#">渔</a>
                     <ul>
                         <div class="mark"></div>
-                        <li><a href="#">渔舟唱晚</a></li>
-                        <li><a href="#">渔海为生</a></li>
-                        <li><a href="#">授人以鱼</a></li>
+                        <li><a href="/yu#yuzhou">渔舟唱晚</a></li>
+                        <li><a href="/yu#yuhai">渔海为生</a></li>
+                        <li><a href="/yu#shouren">授人以鱼</a></li>
                     </ul>
                 </li>
                 <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('3')" id="nav_su" href="#">俗</a>
                     <ul>
                         <div class="mark"></div>
-                        <li><a href="#">节俗</a></li>
-                        <li><a href="#">习俗</a></li>
-                        <li><a href="#">祭祀</a></li>
-                        <li><a href="#">传说</a></li>
+                        <li><a href="/su#jiesu">节俗</a></li>
+                        <li><a href="/su#xisu">习俗</a></li>
+                        <li><a href="/su#jisi">祭祀</a></li>
+                        <li><a href="/su#chuanshuo">传说</a></li>
                     </ul>
 
                 </li>
                 <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a onclick="Redirect('4')" id="nav_yi" href="#">艺</a>
                     <ul>
                         <div class="mark"></div>
-                        <li><a href="#">渔民画</a></li>
-                        <li><a href="#">沙雕</a></li>
+                        <li><a href="yi_hua">渔民画</a></li>
+                        <li><a href="yi_diao">沙雕</a></li>
                         <li><a href="yi_chuan">船模</a></li>
                         <li><a href="yi_sheng">绳结</a></li>
                     </ul>
@@ -265,16 +265,21 @@
         <div id="yu_card" style="position: relative;margin-left: auto;margin-right:auto;margin-top:2%;width:80%;height:600px;">
             <div id="yu_a" style="position:relative;width:30%;height:100%;display:inline-block;">
                 <div id="yu_a_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <a href="/yu#yuzhou">
                     <img onmousemove="yu_dong01i(this)"  onmouseout="yu_dong01o(this);" id="yu_dong01_btn1" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/轮船.png">
+                    </a>
                     <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">渔舟唱晚</p>
                     <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">介绍船的分类、特点和用途</p>
+
                 </div>
                 <img style="position: relative;width: 100%;height: 100%;" src="images/tp_home/渔舟唱晚-背景.png">
             </div><!--渔卡a-->
 
             <div id="yu_b" style="position:relative;height:100%;width:30%;display:inline-block;margin: 0 0 0 4%;">
                 <div id="yu_b_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <a href="/yu#yuhai">
                     <img onmousemove="yu_dong02i(this)" onmouseout="yu_dong02o(this);" id="yu_dong01_btn2" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/渔网.png">
+                    </a>
                     <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">渔海为生</p>
                     <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">交互体验打渔过程</p>
                 </div>
@@ -283,7 +288,9 @@
 
             <div id="yu_c" style="position:relative;height:100%;width:30%;display:inline-block;margin: 0 0 0 4%;">
                 <div id="yu_c_content" style="position: absolute;margin-top:100px;z-index: 2;text-align:center;width: 100%;height: fit-content">
+                    <a href="/yu#shouren">
                     <img onmousemove="yu_dong03i(this)" onmouseout="yu_dong03o(this);" id="yu_dong01_btn3" style="position:relative;text-align:center;margin-top: 10%;z-index: 5" src="images/tp_home/鱼类.png">
+                    </a>
                     <p style="font-size: 40px;font-family: 'Source Han Sans CN';text-align: center;position: relative;margin-top: 5%">授人以鱼</p>
                     <p style="text-align: center;font-family: 'Source Han Sans CN';font-size: 28px;color: darkgrey;margin-top: 10%">分类展示舟山海鲜</p>
                 </div>
@@ -316,7 +323,7 @@
                 </div>
                 <h4>节俗</h4>
                 <p>介绍海洋文化节、休渔节、开洋谢洋节等节日风俗</p>
-                <a class="btn-6" id="su_btn1" href="#" style="height: fit-content">查看更多<span></span></a>
+                <a class="btn-6" id="su_btn1" href="/su#jiesu" style="height: fit-content">查看更多<span></span></a>
                 <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
             </div>
 
@@ -326,7 +333,7 @@
                 </div>
                 <h4>习俗</h4>
                 <p>介绍舟山各地婚丧及其他各方面的传统习俗</p>
-                <a class="btn-6" id="su_btn2" href="#" style="height: fit-content">查看更多<span></span></a>
+                <a class="btn-6" id="su_btn2" href="/su#xisu" style="height: fit-content">查看更多<span></span></a>
                 <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
             </div>
 
@@ -336,7 +343,7 @@
                 </div>
                 <h4>祭祀</h4>
                 <p>介绍舟山关于海洋的祭祀活动及其意义等</p>
-                <a class="btn-6" id="su_btn3" href="#" style="height: fit-content">查看更多<span></span></a>
+                <a class="btn-6" id="su_btn3" href="/su#jisi" style="height: fit-content">查看更多<span></span></a>
                 <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
             </div>
 
@@ -346,7 +353,7 @@
                 </div>
                 <h4>传说</h4>
                 <p>介绍舟山民间广为流传的神话故事或历史演变等</p>
-                <a class="btn-6" id="su_btn4" href="#" style="height: fit-content">查看更多<span></span></a>
+                <a class="btn-6" id="su_btn4" href="/su#chuanshuo" style="height: fit-content">查看更多<span></span></a>
                 <img style="position: relative;width: 300%;top:-350px;left: -15%;z-index: -2" src="images/tp_home/习俗背景.png">
             </div>
         </div>
@@ -380,11 +387,11 @@
                     <p style="margin-left:50px;margin-top: -130px;font-family: 'Source Han Sans CN'">绳结</p>
                 </div>
                 <div style="height: 100%;display: inline-block;width:55%;">
-                <div id="yi_02" class="yi_card" style="display: inline-block;width:47%;margin-right: 5%">
+                <div onclick="gotohua();" id="yi_02" class="yi_card" style="display: inline-block;width:47%;margin-right: 5%">
                     <img style="position: relative" src="images/tp_home/渔民画配图.png">
                     <p style="margin-left:50px;margin-top: -90px;">渔民画</p>
                 </div>
-                <div id="yi_03" class="yi_card" style="display: inline-block;width: 47%;">
+                <div onclick="gotodiao();" id="yi_03" class="yi_card" style="display: inline-block;width: 47%;">
                     <img style="position: relative" src="images/tp_home/沙雕配图.png">
                     <p style="margin-left:50px;margin-top: -90px;">沙雕</p>
                 </div>

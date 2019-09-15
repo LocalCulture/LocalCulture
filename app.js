@@ -14,6 +14,13 @@ var gushiRouter = require('./routes/x_gushi');
 var chuanRouter = require('./routes/yi_chuan');
 var suRouter = require('./routes/su');
 var shengdetailRouter = require('./routes/yi_sheng_detail');
+var huaRouter = require('./routes/yi_hua');
+var diaoRouter = require('./routes/yi_diao');
+var loginRouter = require('./routes/login');
+var zhuceRouter = require('./routes/zhuce');
+var userworkRouter = require('./routes/user-work');
+var userinfoRouter = require('./routes/user-info');
+var userlikeRouter = require('./routes/user-like');
 
 var app = express();
 var hbs = require('hbs');
@@ -58,6 +65,13 @@ app.use('/x_gushi', gushiRouter);
 app.use('/yi_chuan', chuanRouter);
 app.use('/su', suRouter);
 app.use('/yi_sheng_detail',shengdetailRouter);
+app.use('/yi_hua',huaRouter);
+app.use('/yi_diao',diaoRouter);
+app.use('/login',loginRouter);
+app.use('/zhuce',zhuceRouter);
+app.use('/user-work',userworkRouter);
+app.use('/user-like',userlikeRouter);
+app.use('/user-info',userinfoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

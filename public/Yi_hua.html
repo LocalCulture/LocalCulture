@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绳结</title>
+    <link  rel="stylesheet" href="css/css_yi/hua/yi_hua.css">
+    <link rel="stylesheet" href="css/css_yi/hua/huaban.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="case_00">
+    <!--首页-->
+        <header></header>
+    <!--首页-->
+    <!--主-->
+    <!--主_01-->
+        <div class="case_01">
+            <div class="tj_biaoti">
+                <p>—— 自主创作 ——</p>
+            </div>
+            <!--绘画按钮-->
+            <div class="huihua_b" >
+                <div  style="border-bottom: 2px solid rgb(33,150,243)">
+                    <p>创意绘画</p>
+                </div>
+                <div style="margin-left: 20px">
+                    <p>选填色块</p>
+                </div>
+            </div>
+            <!--绘画按钮-->
+            <!--创意-->
+            <div class="case_01_a">
+                <!--画板-->
+                <div class="h_box">
+                    <canvas id="canvas" width="1600" height="600"></canvas>
+                    <div class="h_console">
+                        <div class="h_tool">工具台</div>
+                        <ul class="h_tool1">
+                            <li id="line" class="bg">
+                                <span class="iconfont" title="绘制直线"></span>
+                            </li>
+                            <li id="rect" class="bg">
+                                <span class="iconfont" title="绘制矩形"></span>
+                            </li>
+                            <li id="dytriangle" class="bg">
+                                <span class="iconfont" title="绘制等腰三角形"></span>
+                            </li>
+                            <li id="zjtriangle" class="bg">
+                                <span class="iconfont" title="绘制直角三角形"></span>
+                            </li>
+                            <li id="tablet" class="bg bgtb">
+                                <span class="iconfont" title="铅笔"></span>
+                            </li>
+                            <li id="polygon" class="bg bgp">
+                                <span class="iconfont" title="绘制多边形"></span>
+                                <div class="polygon1">
+                                    <input type="number" min="3" max="30" value="3" id="range">
+                                    <div class="trag"></div>
+                                </div>
+                            </li>
+                            <li class="bg" id="circle">
+                                <span class="iconfont" title="绘制圆形"></span>
+                            </li>
+                            <li class="bg" id="ellipse">
+                                <span class="iconfont" title="绘制椭圆"></span>
+                            </li>
+                            <li class="bg" id="eraser">
+                                <span class="iconfont" title="橡皮擦"></span>
+                            </li>
+                        </ul>
+                        <ul class="h_tool1 h_tool2">
+                            <li class="bg" id="way">
+                                <span class="iconfont" title="转换填充样式"></span>
+                            </li>
+                            <li class="bg bgp">
+                                <span class="iconfont" title="修改填充色"></span>
+                                <div class="polygon1 poly1">
+                                    <input type="color" id="fillCo">
+                                    <div class="trag"></div>
+                                </div>
+                            </li>
+                            <li class="bg bgp">
+                                <span class="iconfont" title="线条加粗"></span>
+                                <div class="polygon2">
+                                    <input type="range" min="1" max="30" value="1" id="linew">
+                                    <div class="trag trag1"></div>
+                                    <p id="numW">0</p>
+                                </div>
+                            </li>
+                            <li class="bg" id="revo">
+                                <span class="iconfont" title="撤销"></span>
+                            </li>
+                            <li class="bg" id="refresh">
+                                <span class="iconfont" title="刷新画板"></span>
+                            </li>
+                            <li class="bg" id="save">
+                                <span class="iconfont" title="保存"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div class="h_tittle">-->
+                    <!--<div class="h_tittle1">-->
+                    <!--<img src="images/tp_yi/hua/palette_03.png" alt="">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <!--画板-->
+            </div>
+            <!--创意-->
+            <!--选填-->
+            <!--选填-->
+        </div>
+    <!--主_01-->
+    <!--主_02-->
+        <div class="case_02">
+            <div class="tj_biaoti02">
+                <p>—— 作品展示 ——</p>
+            </div>
+            <div class="case_02_a">
+                <div class="tupian_k">
+                    <img style="margin-left: 0px;margin-top: 0" src="images/tp_yi/hua/yuminghua01.png">
+                    <img style="margin-left: 725px;margin-top: 0" src="images/tp_yi/hua/yuminghua02.png">
+                    <img style="margin-left: 1289px;margin-top: 0" src="images/tp_yi/hua/yuminghua03.png">
+                    <img style="margin-left: 0px;margin-top: 427px" src="images/tp_yi/hua/yuminghua04.png">
+                    <img style="margin-left: 1289px;margin-top: 500px" src="images/tp_yi/hua/yuminghua05.png">
+                    <img style="margin-left: 0px;margin-top: 950px" src="images/tp_yi/hua/yuminghua06.png">
+                    <img style="margin-left: 725px;margin-top: 796px" src="images/tp_yi/hua/yuminghua07.png">
+                    <img style="margin-left: 1289px;margin-top: 950px"  src="images/tp_yi/hua/yuminghua08.png">
+                </div>
+                <div  class="gengduo_b">
+                     <p>查看更多</p>
+                </div>
+                <script>
+                    $('.gengduo_b').click(function () {
+                       $('.tupian_k').animate({height:'1500px'});
+                        $('.case_02').animate({height:'2000px'});
+                       // $('.tupian_k').height($('.tupian_k').height() + 500);
+                    });
+                </script>
+            </div>
+        </div>
+    <!--主_02-->
+    <!--主-->
+    <!--尾页-->
+        <footer></footer>
+    <!--尾页-->
+    </div>
+<script src="javascripts/js_yi/hua/huaban.js"></script>
+<script src="javascripts/js_yi/hua/yi_hua.js"></script>
+</body>
+</html>
