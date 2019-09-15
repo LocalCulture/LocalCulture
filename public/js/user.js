@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('#load').fadeIn('normal');
         window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length);
         function loadContent() {
-            $('#use_inner_content').load(toLoad,'',showNewContent())
+            $('#use_inner_content').load(toLoad,'',showNewContent());
         }
         function showNewContent() {
             $('#use_inner_content').slideDown('normal',hideLoader());

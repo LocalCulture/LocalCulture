@@ -190,7 +190,7 @@ var openFSM = function(event) {
         height: window.getComputedStyle($this).height
     };
     $fsmActual.style.position = "absolute";
-    $fsmActual.style.top =4095+'px';
+    $fsmActual.style.top =4195+'px';
     $fsmActual.style.left = position.left + 'px';
     $fsmActual.style.height = size.height;
     $fsmActual.style.width = size.width;
@@ -204,7 +204,7 @@ var openFSM = function(event) {
         $fsmActual.classList.add('growing');
         $fsmActual.style.height = '100vh';
         $fsmActual.style.width = '100%';
-        $fsmActual.style.top = total-document.getElementById("yuzhou").offsetTop+ 'px';
+        $fsmActual.style.top = total-document.getElementById("yuzhou").offsetTop+100+ 'px';
         $fsmActual.style.left = '0';
         $fsmActual.style.margin = '0';
     }, 10);
@@ -225,7 +225,7 @@ var closeFSM = function(event){
     var $this = event.currentTarget;
     $this.style.height = size.height;
     $this.style.width = size.width;
-    $this.style.top =4190+ 'px';
+    $this.style.top =4340+ 'px';
     $this.style.left = position.left + 'px';
     // $this.style.margin = '0';
     $this.classList.remove('full-screen');
