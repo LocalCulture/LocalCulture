@@ -1,50 +1,3 @@
-/* å…¬å…±æ ·å¼è¡¨css */
-/*html,body {*/
-    /*color: #333;*/
-    /*margin: 0;*/
-    /*height: 100%;*/
-    /*font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;*/
-/*}*/
-
-/** {*/
-    /*-webkit-box-sizing: border-box;*/
-    /*-moz-box-sizing: border-box;*/
-    /*box-sizing: border-box;*/
-/*}*/
-
-/*a {*/
-    /*text-decoration: none;*/
-    /*color: #000;*/
-/*}*/
-
-/*img {*/
-    /*border: 0;*/
-/*}*/
-
-/*body {*/
-    /*background: #fff;*/
-    /*color: #666;*/
-/*}*/
-
-/*html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-/*}*/
-
-/*a {*/
-    /*text-decoration: none;*/
-    /*color: #08acee;*/
-/*}*/
-
-/*button {*/
-    /*outline: 0;*/
-/*}*/
-
-/*img {*/
-    /*border: 0;*/
-/*}*/
-
-
 button,input,optgroup,select,textarea {
     margin: 0;
     font: inherit;
@@ -55,14 +8,6 @@ button,input,optgroup,select,textarea {
 li {
     list-style: none;
 }
-
-/*a {*/
-    /*color: #666;*/
-/*}*/
-
-/*a:hover {*/
-    /*color: #eee;*/
-/*}*/
 
 .clearfix::after {
     clear: both;
@@ -75,9 +20,8 @@ li {
 .clearfix {
 }
 
-/* å¿…è¦å¸ƒå±€æ ·å¼css */
 .i-process .list {
-    background: #fff url("../../../images/tp_yi/diao/line_blue.png") no-repeat center ;
+    background: #fff url("../images/tp_yi/diao/line_blue.png") no-repeat center ;
     margin: 0 auto;
     width: 1600px;
     height: 333px;
@@ -200,26 +144,6 @@ li {
     top:210px;
 }
 
-/*.i-process .btn:nth-child(5) {*/
-    /*left: 618px;*/
-    /*top: 54px;*/
-/*}*/
-
-/*.i-process .btn:nth-child(6) {*/
-    /*left: 776px;*/
-    /*top: 46px;*/
-/*}*/
-
-/*.i-process .btn:nth-child(7) {*/
-    /*left: 957px;*/
-    /*top: 148px;*/
-/*}*/
-
-/*.i-process .btn:nth-child(8) {*/
-    /*left: 1087px;*/
-    /*top: 58px;*/
-/*}*/
-
 .i-process .btn .light {
     float: left;
     width: 10px;
@@ -288,21 +212,6 @@ li {
     background-image: url(../images/bg_sign09.png);
 }
 
-/*.i-process .btn:nth-child(5) .circle:after {*/
-    /*background-image: url(../images/bg_sign10.png);*/
-/*}*/
-
-/*.i-process .btn:nth-child(6) .circle:after {*/
-    /*background-image: url(../images/bg_sign11.png);*/
-/*}*/
-
-/*.i-process .btn:nth-child(7) .circle:after {*/
-    /*background-image: url(../images/bg_sign12.png);*/
-/*}*/
-
-/*.i-process .btn:nth-child(8) .circle:after {*/
-    /*background-image: url(../images/bg_sign13.png);*/
-/*}*/
 
 .i-process {
     /* height: 350px; */

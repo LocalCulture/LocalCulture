@@ -115,7 +115,7 @@
                     $('form').serialize(), //post的数据，node端用req.body解析
                     function (data)
                     {
-                        alert(data.toString());
+                        // alert(data.toString());
                         //data代表的是zhuce.js里的res.send函数参数的字符串内容
                         if(data.toString()==='登录成功!'){
                             window.location.href='/user';

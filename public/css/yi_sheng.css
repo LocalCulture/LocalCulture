@@ -78,6 +78,10 @@ ul{
     float: left;
     font-family: "Source Han Sans CN Regular";
 }
+.list li a{
+  text-decoration: none;
+    color: #444444;
+}
 
 .list li.cur span{
     border-bottom: 2px solid rgb(33,150,243);
@@ -96,7 +100,7 @@ ul{
     position: relative;
    display: inline-block;
     width: 497px;
-    height: 713px;
+    height: 750px;
     border: 2px solid rgb(185,184,184);
     border-bottom: 4px solid rgb(33,150,243);
     margin-left: 80px;
@@ -118,7 +122,8 @@ ul{
 }
 #tab article img
 {
-    margin-top: 37px;
+    /*margin-top: 37px;*/
+    width:500px;
 }
 #tab aside .teshe
 {

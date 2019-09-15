@@ -1,14 +1,14 @@
 /*框架*/
-.case_00 /*最外围的框，为了限定网页的大小和保持居中*/
-{
-    margin:0 auto;
-    width:100%;
-    height: fit-content;
-    /*border:5px dashed red;*/
-    font-family:"Source Han Sans CN Regular",sans-serif;
-    /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
-}
-.case_01
+/*.case_00 !*最外围的框，为了限定网页的大小和保持居中*!*/
+/*{*/
+    /*margin:0 auto;*/
+    /*width:100%;*/
+    /*height: fit-content;*/
+    /*!*border:5px dashed red;*!*/
+    /*font-family:"Source Han Sans CN Regular",sans-serif;*/
+    /*!*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*!*/
+/*}*/
+.case_02
 {
     width: 100%;
     height: fit-content;
@@ -24,12 +24,12 @@
     overflow: hidden;
     /*border: solid  2px darkorchid;*/
 }
-.case_02
+.case_03
 {
     width: 100%;
     height: fit-content;
     position: relative;
-    border:5px dashed cadetblue;
+    /*border:5px dashed cadetblue;*/
 }
 
 /*框架*/
@@ -55,7 +55,7 @@
 
 /*主*/
 /*主_01*/
-.case_01_a
+.case_02_a
 {
     position: relative;
     width: 1600px;
@@ -88,13 +88,13 @@
 }
 /*主_01*/
 /*主_02*/
-.case_02_a
+.case_03_a
 {
     position: relative;
     width: 1660px;
     height: fit-content;
     margin: 0 auto;
-    border:  2px solid saddlebrown;
+    /*border:  2px solid saddlebrown;*/
 }
 .tupian_k
 {
@@ -102,7 +102,7 @@
     margin-top: 40px;
     width: 1660px;
     height:900px;
-    border: 2px solid cornflowerblue;
+    /*border: 2px solid cornflowerblue;*/
     overflow: hidden
 }
 .tupian_k img  /*9.14先写死后面会改成活的*/

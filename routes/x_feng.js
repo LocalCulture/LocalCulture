@@ -14,11 +14,6 @@ router.get('/', function(req, res, next) {
     if(init_page>1){
         start = (init_page-1)*num; //页码减去1，乘以条数就得到分页的起始数了
     }
-    // switch (req.query.page)
-    // {
-    //     case '1':document.getElementsByClassName('page-item active')[0].className='page-item';
-    //
-    // }
     var newsql='SELECT id,title,content,DATE_FORMAT(showdate,"%d") as day,DATE_FORMAT(showdate,"%Y-%m") as date FROM tbnews LIMIT '+start+','+num+';';
     db.query(newsql,
         function (err, rows) {

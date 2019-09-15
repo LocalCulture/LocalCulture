@@ -4,14 +4,14 @@
 {{css "/css/huaban.css"}}
 <div class="case_00">
     <!--主-->
-    <div id="nav_content" class="case_01">
+    <div id="nav_content" class="case_01" style="height: 1000px">
         <div id="video" class="video-bg" >
-            <video muted data-autoplay loop="loop" autoplay="autoplay" src="others/homepage_final2.mp4"
-                   style="position: relative;overflow: hidden;left: -15%" class="video-tvc" id="video-tvc" data-object-fit></video>
+            <video muted data-autoplay loop="loop" autoplay="autoplay" src="others/yi_hua2.mp4"
+                   style="position: relative;overflow: hidden;left:-15%" class="video-tvc" id="video-tvc" data-object-fit></video>
         </div>
     </div>
     <!--主_01-->
-    <div class="case_01">
+    <div class="case_02">
         <div class="tj_biaoti">
             <p>—— 自主创作 ——</p>
         </div>
@@ -26,7 +26,7 @@
         </div>
         <!--绘画按钮-->
         <!--创意-->
-        <div class="case_01_a">
+        <div class="case_02_a">
             <!--画板-->
             <div class="h_box">
                 <canvas id="canvas" width="1600" height="600"></canvas>
@@ -109,11 +109,11 @@
     </div>
     <!--主_01-->
     <!--主_02-->
-    <div class="case_02">
+    <div class="case_03">
         <div class="tj_biaoti02">
             <p>—— 作品展示 ——</p>
         </div>
-        <div class="case_02_a">
+        <div class="case_03_a">
             <div class="tupian_k">
                 <img style="margin-left: 0px;margin-top: 0" src="images/tp_yi/hua/yuminghua01.png">
                 <img style="margin-left: 725px;margin-top: 0" src="images/tp_yi/hua/yuminghua02.png">
@@ -131,7 +131,7 @@
                 $('.gengduo_b').click(function () {
                     $('.tupian_k').animate({height:'1500px'});
                     $('#hua_07').css('display','');
-                    $('.case_02').animate({height:'1800px'});
+                    $('.case_03').animate({height:'1800px'});
                     // $('.tupian_k').height($('.tupian_k').height() + 500);
                 });
             </script>
@@ -140,8 +140,6 @@
     <!--主_02-->
     <!--主-->
 </div>
-
-
 {{js "/js/jquery-1.12.4.min.js"}}
 {{js "/js/huaban.js"}}
 {{js "/js/yi_hua.js"}}
