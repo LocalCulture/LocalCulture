@@ -9,9 +9,11 @@
     height: 900px;
     overflow: hidden;
     margin-top: -350px;
+
 }
 .jiesu{
    text-align: center;
+    margin-top: 50px;
 }
 .xisu{
     /*text-align: center;*/
