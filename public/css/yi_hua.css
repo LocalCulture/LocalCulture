@@ -15,6 +15,20 @@
     /*position: relative;*/
     /*!*border:2px dashed blue;*!*/
 /*}*/
+.case_01{
+
+    overflow: hidden;
+    width: 100%;
+}
+.video-bg
+{
+    position: absolute;
+    width: 100%;
+    z-index: -99;
+    top:0;
+    overflow: hidden;
+    /*border: solid  2px darkorchid;*/
+}
 .case_02
 {
     width: 100%;

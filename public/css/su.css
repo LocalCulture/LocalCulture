@@ -8,6 +8,7 @@
 .case_01{
     height: 900px;
     overflow: hidden;
+    margin-top: -350px;
 }
 .jiesu{
    text-align: center;

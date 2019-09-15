@@ -12,6 +12,9 @@
 .case_01
 {
     background-color: black;
+    height: 800px;
+    overflow: hidden;
+    margin-top: -200px;
 }
 .case_02
 {
