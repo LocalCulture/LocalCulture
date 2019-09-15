@@ -1,6 +1,7 @@
 body.no-scroll {
     overflow: hidden;
 }
+
 .YU{
     /*border: solid 1px brown;*/
     width: 100%;
@@ -12,6 +13,15 @@ body.no-scroll {
     margin: 0;
     /*background-color: #f5f5f5;*/
     font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+}
+
+/*渔舟唱晚样式*/
+.yuzhou_title{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-family:'思源黑体 CN Normal';
 }
 .fsm {
     margin: 5vh 5vw;
@@ -45,20 +55,33 @@ body.no-scroll {
     opacity: 0;
     transition: 1s;
 }
-.fsm.apple {
-    background: linear-gradient(135deg, #83458e 0%, #608dc9 100%);
-    overflow: hidden;
+#yu-btn img,
+#xia-btn img,
+#bei-btn img,
+#xie_btn img
+{
+    width: 60px;
 }
+.fsm.apple {
+    /*background: linear-gradient(135deg, #83458e 0%, #608dc9 100%);*/
+    overflow: hidden;
+    /*background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);*/
+    /*background-color: #2196F3;*/
+    /*background: radial-gradient(ellipse at top left,rgba(22,145,244,1) 0%, rgba(93,156,236,1) 57%);*/
+    background: linear-gradient(135deg, #5583ee 0%, #41d8dd 120%);
+}
+
+
 .fsm.pied {
-    background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%);
+    background: linear-gradient(135deg, #5583ee 0%, #41d8dd 120%);
     overflow: hidden;
 }
 .fsm.codepen {
-    background: linear-gradient(135deg, #778899 0%, #DCDCDC 100%);
+    background: linear-gradient(135deg, #5583ee 0%, #41d8dd 120%);
     overflow: hidden;
 }
 .fsm.google {
-    background: linear-gradient(135deg, #4285f4 0%, #ea4335 100%);
+    background: linear-gradient(135deg, #5583ee 0%, #41d8dd 120%);
     overflow: hidden;
 }
 .fsm.growing h1.modal-content {
@@ -204,6 +227,18 @@ option:focus{
     margin-left: 100px;
 }
 
+#chanpin1_1 div p, #chanpin1_2 div p,#chanpin1_3 div p,#chanpin1_4 div p,#chanpin1_5 div p,
+#chanpin2_1 div p, #chanpin2_2 div p,#chanpin2_3 div p,#chanpin2_4 div p,#chanpin2_5 div p,
+#chanpin3_1 div p, #chanpin3_2 div p,#chanpin3_3 div p,#chanpin3_4 div p,
+#chanpin4_1 div p, #chanpin4_2 div p,#chanpin4_3 div p
+{
+    font-size: 26px;
+}
+#chanpin1_1 div label{
+    font-size: 20px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
 /*卡片翻转*/
 *, *:before, *:after {
     box-sizing: border-box;
