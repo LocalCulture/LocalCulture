@@ -92,6 +92,16 @@
     win.zturn = zturn;
 }(window, document))
 
+var aa = new zturn({
+    id: "zturn",
+    opacity: 0.9,
+    width: 200,
+    Awidth: 300,
+    scale: 0.9,
+    auto: true,//是否轮播 默认5000
+    turning: 4000//轮播时长
+})
+
 
 
 
