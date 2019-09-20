@@ -16,10 +16,12 @@ li {
     height: 0;
     visibility: hidden;
 }
-
-.clearfix {
+/*控制字体样式*/
+.clearfix  p{
+    font-size: 20px;
+    color:rgba(122,121,121,1);
 }
-
+/*控制字体样式*/
 .i-process .list {
     background: #fff url("../images/tp_yi/diao/line_blue.png") no-repeat center ;
     margin: 0 auto;
