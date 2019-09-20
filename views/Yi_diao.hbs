@@ -159,12 +159,25 @@
             <img style="margin-left: 507px;margin-top: 324px" src="images/tp_yi/diao/shadiao03.png">
             <img style="margin-left: 855px;margin-top: 324px" src="images/tp_yi/diao/shadiao04.png">
             <img style="margin-left: 1243px;margin-top: 0px" src="images/tp_yi/diao/shadiao05.png">
+            <div class="more_tupian">
+            <img style="margin-left: 20px;" src="images/tp_yi/diao/shadiao06.JPG">
+            <img style="margin-left: 440px;" src="images/tp_yi/diao/shadiao07.JPG">
+            <img style="margin-left: 860px;" src="images/tp_yi/diao/shadiao08.JPG">
+            <img style="margin-left: 1280px;" src="images/tp_yi/diao/shadiao09.JPG">
+            </div>
         </div>
-        <div  style="width:240px;height:61px;border: 1px solid rgb(33,150,243);border-radius:5px;text-align: center;margin: -20px auto;cursor: pointer; ">
+        <div id="more_b" style="width:240px;height:61px;border: 1px solid rgb(33,150,243);border-radius:5px;text-align: center;margin: -20px auto;cursor: pointer; ">
             <p style="line-height:61px;font-size:20px;font-weight: 600;color: rgb(33, 150, 243);">加载更多</p>
         </div>
     </div>
     <!--主_02-->
+<!--更多按钮特效-->
+    <script>
+        $('#more_b').click(function () {
+          $("div.case_03_a").animate({height:'1130px'});
+        })
+    </script>
+    <!--更多按钮特效-->
     <!--主-->
 </div>
 {{js "/js/jquery-1.12.4.min.js"}}

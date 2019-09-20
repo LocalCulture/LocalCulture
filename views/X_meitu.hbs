@@ -115,39 +115,35 @@
                 <!--人像-->
                 <div  class="cur">
                     <!--第一行-->
+                    <!--第一张图片的点赞收藏动效-->
                     <script type="text/javascript">
-                        var dianzan=0;
-                        var shoucang=0;
                         $(document).ready(function(){
                             $(".dianzan").click(function()
                             {
-                                if(dianzan===0)
+                                if($(".dianzan").attr('src')=="images/tp_xiang/meitu/点赞%20(3).png")
                                 {
                                     $(".dianzan").attr("src", "images/tp_xiang/meitu/点赞%20(5).png");
-                                    dianzan = 1;
                                 }
                                 else
                                 {
                                     $(".dianzan").attr("src","images/tp_xiang/meitu/点赞%20(3).png");
-                                    dianzan=0;
                                 }
                             });
 
                             $(".shoucang").click(function()
                             {
-                                if(shoucang===0)
+                                if($(".shoucang").attr('src')=="images/tp_xiang/meitu/点赞%20(2).png")
                                 {
                                     $(".shoucang").attr("src", "images/tp_xiang/meitu/点赞%20(6).png");
-                                    shoucang = 1;
                                 }
                                 else
                                 {
                                     $(".shoucang").attr("src","images/tp_xiang/meitu/点赞%20(2).png");
-                                    shoucang=0;
                                 }
                             });
                         });
                     </script>
+                    <!--第一张图片的点赞收藏动效-->
                     <aside>
                         <article>
                             <section class="zt_tupian">
@@ -196,7 +192,7 @@
                     </aside>
                     <!--第一行-->
 
-                    <!--第一行-->
+                    <!--第二行-->
                     <aside>
                         <article>
                             <section class="zt_tupian">
@@ -243,7 +239,56 @@
                             </section>
                         </article>
                     </aside>
-                    <!--第一行-->
+                    <!--第二行-->
+
+                    <!--第二行-->
+                    <aside>
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/4.JPG">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--1-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/5.JPG">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--2-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/6.JPG">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article><!--3-->
+                        <article>
+                            <section class="zt_tupian">
+                                <img src="images/tp_xiang/meitu/7.JPG">
+                            </section>
+                            <section class="zt_xiaotubiao" style="position: absolute;margin-top: -90px;margin-left: 10px">
+                                <img src="images/tp_xiang/meitu/7C8DAE69EB1F46308A9E64204349AF9F6BB3DBDB_size43_w500_h713.png">
+                                <span>舟山一号</span>
+                                <img src="images/tp_xiang/meitu/点赞%20(2).png">
+                                <img src="images/tp_xiang/meitu/点赞%20(3).png">
+                            </section>
+                        </article>
+                    </aside>
+                    <!--第二行-->
                 </div>
                 <!--人像-->
                 <!--风景-->
@@ -484,9 +529,17 @@
                 </div>
                 <!--航拍-->
             </div>
-            <div  style="width:240px;height:61px;border: 1px solid rgb(33,150,243);border-radius:5px;text-align: center;margin: 20px auto;cursor: pointer; ">
+            <div id="more_b" style="width:240px;height:61px;border: 1px solid rgb(33,150,243);border-radius:5px;text-align: center;margin: 20px auto;cursor: pointer; ">
                 <p style="line-height:61px;font-size:20px;font-weight: 600;color: rgb(33, 150, 243);">加载更多</p>
             </div>
+            <script>
+                $('#more_b').click(function () {
+                    if(($('div.cur').find('img').length)>32)
+                    {
+                        $('div.cur').animate({height: '1220px'});
+                    }
+                });
+            </script>
         </div>
         <!--专题摄影-->
     </div>

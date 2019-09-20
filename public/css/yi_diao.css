@@ -100,13 +100,21 @@
 {
     position: relative;
     width:1680px;
-    height: 750px;
+    height: 730px;
     margin: 40px auto;
     /*border:  2px solid cadetblue;*/
+    overflow: hidden;
 }
 .case_03_a img
 {
     position: absolute;
+}
+.more_tupian img
+{
+    position: absolute;
+    width: 380px;
+    height: 350px;
+    margin-top: 760px;
 }
 /*主_02*/
 /*主*/
