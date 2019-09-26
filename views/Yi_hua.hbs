@@ -2,6 +2,7 @@
 {{css "/css/base.css"}}
 {{css "/css/yi_hua.css"}}
 {{css "/css/huaban.css"}}
+<script src="js/HGame.js"></script>
 <div class="case_00">
     <!--主-->
     <div id="nav_content" class="case_01" style="height: 1000px">
@@ -17,16 +18,18 @@
         </div>
         <!--绘画按钮-->
         <div class="huihua_b" >
-            <div  style="border-bottom: 2px solid rgb(33,150,243)">
+            <div id="chuanyi" class="xiahuaxian">
                 <p>创意绘画</p>
             </div>
-            <div style="margin-left: 20px">
+            <div id="tianse" style="margin-left: 20px">
                 <p>选填色块</p>
             </div>
         </div>
         <!--绘画按钮-->
-        <!--创意-->
+        <!--创作-->
         <div class="case_02_a">
+            <!--创意-->
+            <div id="huaban01" class="case_02_a1">
             <!--画板-->
             <div class="h_box">
                 <canvas id="canvas" width="1600" height="600"></canvas>
@@ -102,10 +105,166 @@
                 <!--</div>-->
             </div>
             <!--画板-->
+            </div>
+            <!--创意-->
+            <!--选填-->
+            <div id="huaban02" class="case_02_a2" style="display: none">
+                <!--填色-->
+                <!--填色内容-->
+                <div style="margin: 0px auto;width: fit-content;display: flex;align-items: center;">
+                    <div class="imgShowRow">
+                        <div class="jiantou" onclick="xl_pre()">
+                            <img src="images/tp_yi/hua/箭头%20(1).png" >
+                        </div>
+                        <div class="yingcang_k">
+                            <div onclick="changeDraw(0)" style=" background-image: url(images/tp_yi/hua/tianseimg/se1.png)" class="item">
+                                <div class="toolBox">《斗鲨》</div>
+                            </div>
+                            <div onclick="changeDraw(1)" style=" background-image: url(images/tp_yi/hua/tianseimg/se2.png);" class="item">
+                                <div class="toolBox">《拾贝》</div>
+                            </div>
+                            <div onclick="changeDraw(2)" style=" background-image: url(images/tp_yi/hua/tianseimg/se3.png);" class="item">
+                                <div class="toolBox">《理网》</div>
+                            </div>
+                            <div onclick="changeDraw(3)" style=" background-image: url(images/tp_yi/hua/tianseimg/se4.png);" class="item">
+                                <div class="toolBox">《捕鱼》</div>
+                            </div>
+                            <div onclick="changeDraw(4)" style=" background-image: url(images/tp_yi/hua/tianseimg/se5.png);" class="item">
+                                <div class="toolBox">《乌贼夫妻》</div>
+                            </div>
+                            <div onclick="changeDraw(5)" style=" background-image: url(images/tp_yi/hua/tianseimg/se6.png);" class="item">
+                                <div class="toolBox">《台风前夕》</div>
+                            </div>
+                        </div>
+                        <div class="jiantou" onclick="xl_nex()" >
+                            <img src="images/tp_yi/hua/箭头%20(2).png" >
+                        </div>
+                    </div>
+                    <div id="boxRender">
+                        <div id="nowSelectColor"></div>
+                        <div id="colorSelect" class="colorSelect"></div>
+                    </div>
+                    <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+                </div>
+                <!--填色内容-->
+                <!--填色动效-->
+                <script src='js/data.js'></script>
+                <script type="text/javascript">
+                    var canvas = new HGAME.canvas();
+                    var testBox=document.getElementById('boxRender');
+                    testBox.appendChild(canvas.dom);
+                    var animate=new HGAME.animate({
+                        action:function(){
+                            canvas.render();
+                        }
+                    });
+                    var colorObj={
+                        r:0,
+                        g:0,
+                        b:0
+                    };
+                    function initColor(){
+                        var div=null;
+                        var initColor=document.getElementById("colorSelect");
+                        for(var r=0;r<255;r+=65){
+                            for(var b=0;b<255;b+=65){
+                                for(var g=0;g<255;g+=65){
+                                    div=document.createElement("div");
+                                    div.setAttribute("class","item");
+                                    div.setAttribute("data-r",r);
+                                    div.setAttribute("data-g",g);
+                                    div.setAttribute("data-b",b);
+                                    div.style.backgroundColor="rgba("+r+","+g+","+b+","+"1)";
+                                    initColor.appendChild(div);
+                                    div.onclick=function(){
+                                        document.getElementById("nowSelectColor").style.backgroundColor="rgba("+this.getAttribute("data-r")+","+this.getAttribute("data-g")+","+this.getAttribute("data-b")+","+"1)";
+                                        colorObj.r=this.getAttribute("data-r");
+                                        colorObj.g=this.getAttribute("data-g");
+                                        colorObj.b=this.getAttribute("data-b");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    initColor();
+                    /*创建img数据*/
+                    function changeImgColor(img,r,g,b){
+                        var c=document.createElement("canvas");
+                        var txt= c.getContext("2d");
+                        c.width=img.width;
+                        c.height=img.height;
+                        txt.drawImage(img,0,0);
+                        var data=txt.getImageData(0,0, c.width, c.height);
+                        for(var q=0;q<data.data.length;q+=4){
+                            if(data.data[q+3]>100){
+                                data.data[q]=r;
+                                data.data[q+1]=g;
+                                data.data[q+2]=b;
+                            }
+                        }
+                        txt.putImageData(data,0,0);
+                        return c;
+                    }
+                    var div=document.createElement("div");
+
+                    function changeDraw(num){
+                        /*加载数据*/
+                        var source=new HGAME.source({
+                            loadCall:function(num,allNum){
+                                div.innerHTML="加载资源"+num+"/"+allNum;
+                                div.setAttribute("class","tool");
+                                testBox.appendChild(div);
+                            },
+                            loaded:function(){
+                                testBox.removeChild(div);
+                                var img=new HGAME.Object2D({
+                                    img:this.data[0],
+                                    w:500,
+                                    h:500,
+                                    x:0,
+                                    y:0
+                                });
+                                canvas.child=new Array();
+                                canvas.add(img);
+
+                                var THIS = this;
+                                img.child=new Array();
+                                each(this.data,function(intX){
+                                    if(intX>=1){
+                                        img.add(new HGAME.Object2D({
+                                            x:whxyInfo[num][intX-1].x,
+                                            y:whxyInfo[num][intX-1].y,
+                                            w:whxyInfo[num][intX-1].w,
+                                            h:whxyInfo[num][intX-1].h,
+                                            img:THIS.data[intX],
+                                            isClick:true,
+                                            clickFun:function(){
+                                                if(typeof this.bufferImg=="undefined"){
+                                                    this.bufferImg=this.img;
+                                                    this.img=changeImgColor(this.bufferImg,colorObj.r,colorObj.g,colorObj.b);
+                                                }else{
+                                                    this.img=changeImgColor(this.bufferImg,colorObj.r,colorObj.g,colorObj.b);
+                                                }
+                                            }
+                                        }));
+                                    }
+                                });
+                                animate.stop();
+                                animate.run();
+                            },
+                            data:data[num]
+                        });
+
+                    }
+                    changeDraw(0);
+                    //
+                </script>
+                <!--填色动效-->
+                <!--填色-->
+            </div>
+            <!--选填-->
         </div>
-        <!--创意-->
-        <!--选填-->
-        <!--选填-->
+        <!--创作-->
     </div>
     <!--主_01-->
     <!--主_02-->
