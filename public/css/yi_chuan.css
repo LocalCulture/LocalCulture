@@ -54,7 +54,7 @@
     padding: 0;
     list-style-type: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 26px; /*控制标题字大小*/
     text-align: center;
 }
 .process-items li {
