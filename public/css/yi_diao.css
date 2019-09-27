@@ -96,6 +96,7 @@
 /*流程*/
 /*主_01*/
 /*主_02*/
+/*新增遮罩*/
 .case_03_a
 {
     position: relative;
@@ -104,17 +105,44 @@
     margin: 40px auto;
     /*border:  2px solid cadetblue;*/
     overflow: hidden;
+    padding: 5px;
+}
+.case_03_a div.bai_k
+{
+    position: absolute;
+    border:5px solid #fff;
+   background: #fff;
+    box-shadow: 0px 1px 8px #ccc;
+}
+.case_03_a div.hei_k
+{
+    position: absolute;
+    bottom: 0%;
+    background: #111;
+    padding: 5px 15px;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0 0 10px #000;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 20;
+}
+.case_03_a div.bai_k:hover div.hei_k
+{
+    opacity: 1;
+    bottom: 40px;
 }
 .case_03_a img
 {
-    position: absolute;
+     margin: -10px;
+    margin-bottom: -17px;
 }
-.more_tupian img
+.case_03_a img.xia_shatu
 {
-    position: absolute;
-    width: 380px;
-    /*height: 350px;*/
-    margin-top: 760px;
+    margin: 5px;
+    margin-bottom: 1px;
 }
+/*新增遮罩*/
 /*主_02*/
 /*主*/
+

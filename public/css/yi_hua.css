@@ -27,7 +27,7 @@
 .case_03
 {
     width: 100%;
-    height: fit-content;
+    height:fit-content;
     position: relative;
     /*border:5px dashed cadetblue;*/
 }
@@ -204,23 +204,45 @@ body{
 {
     position: relative;
     width: 1660px;
-    height: fit-content;
-    margin: 0 auto;
+    height: 900px;
+    overflow: hidden;
+    margin: 40px auto;
     /*border:  2px solid saddlebrown;*/
+    padding: 5px;
 }
-.tupian_k
+.case_03_a img
 {
-    position: relative;
-    margin-top: 40px;
-    width: 1660px;
-    height:900px;
-    /*border: 2px solid cornflowerblue;*/
-    overflow: hidden
+    /*position: absolute;*/
+    margin: 5px;
+    margin-bottom: 1px;
 }
-.tupian_k img  /*9.14先写死后面会改成活的*/
+/*新增遮罩*/
+.case_03_a div.bai_k
 {
     position: absolute;
+    border:5px solid #fff;
+    background: #fff;
+    box-shadow: 0px 1px 8px #ccc;
 }
+.case_03_a div.hei_k
+{
+    position: absolute;
+    bottom: 0%;
+    background: #111;
+    padding: 5px 15px;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0 0 10px #000;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 20;
+}
+.case_03_a div.bai_k:hover div.hei_k
+{
+    opacity: 1;
+    bottom: 40px;
+}
+/*新增遮罩*/
 .gengduo_b
 {
     width:240px;
@@ -239,3 +261,4 @@ body{
 }
 /*主_02*/
 /*主*/
+
