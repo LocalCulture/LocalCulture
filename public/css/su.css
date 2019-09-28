@@ -1,51 +1,87 @@
-/*html,body{*/
-    /*width:100%;*/
-    /*height:100%;*/
-    /*padding:0;*/
-    /*margin:0;*/
-    /*border:0;*/
+/*框架*/
+.case_011
+{
+    margin-top: 650px;
+    width: 100%;
+    height: 820px;
+    position: relative;
+    /*border:5px dashed #6f60ff;*/
+}
+.case_02
+{
+    width: 100%;
+    height: 790px;
+    position: relative;
+    /*border:5px dashed orangered;*/
+}
+.case_03
+{
+    width: 100%;
+    height: 620px;
+    position: relative;
+    /*border:5px dashed #ff35dd;*/
+}
+.case_04
+{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    /*border:5px dashed #5bc7ff;*/
+}
+/*footer*/
+/*{*/
+    /*width: 100%;*/
+    /*height: 500px;*/
+    /*position: relative;*/
+    /*border:2px dashed #aa6bcd;*/
+    /*background: url("../images/tp_su/底栏背景.png");*/
 /*}*/
-.case_01{
-    height: 900px;
-    overflow: hidden;
-    margin-top: -350px;
+/*框架*/
 
+/*标题*/
+.biaoti
+{
+    font-size: 48px;
+    margin:70px auto 30px;
+    width: fit-content;
+    color: rgb(92,90,90);
+    /*border: 2px solid blueviolet;*/
 }
-.jiesu{
-   text-align: center;
-    margin-top: 50px;
+.sua
+{
+    position: relative;
+    width: 1720px;
+    height: 700px;
+    /*border: 2px solid #5ced50;*/
+    margin: 0 auto;
 }
-.xisu{
-    /*text-align: center;*/
-margin-top: 3%;
+.sub
+{
+    position: relative;
+    width: 1794px;
+    height: 700px;
+    /*border: 2px solid #ed9586;*/
+    margin: 0 auto;
 }
-.jisi{
-    margin-top: 3%;
+.suc
+{
+    position: relative;
+    width: 1750px;
+    height: 500px;
+    /*border: 2px solid #d8edd0;*/
+    margin: 0 auto;
 }
-.chuanshuo{
-    margin-top: 3%;
+.sud
+{
+    position: relative;
+    width: 1740px;
+    height: 500px;
+    /*border: 2px solid #b67eed;*/
+    margin: 0 auto;
 }
+.sud img
+{
+    margin: 10px;
+}
+/* 标题*/
 
-
-
-.picl{
-    flex-direction:row;
-}
-.pic0{
-    width: 400px;
-    height: 14%;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.11);
-margin-right: 3%;
-    margin-bottom:2% ;
-
-}
-.picall{
-    display:flex;
-    margin-top: 35px;
-    flex-direction:row;
-    align-items: center;
-    /*margin-left: 10%;*/
-    /*margin-right: 10%;*/
-    /*width: 80%;*/
-
-}
