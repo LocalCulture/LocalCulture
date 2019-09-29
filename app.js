@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session=require('express-session');
 
 var usersRouter = require('./routes/user');
 var fengRouter = require('./routes/x_feng');
@@ -21,6 +22,16 @@ var zhuceRouter = require('./routes/zhuce');
 var userworkRouter = require('./routes/user-work');
 var userinfoRouter = require('./routes/user-info');
 var userlikeRouter = require('./routes/user-like');
+var aindexRouter = require('./routes/aindex');
+var user_managementRouter = require('./routes/user_management');
+var user_management_addRouter = require('./routes/user_management_add');
+var user_management_updateRouter = require('./routes/user_management_update');
+var searchRouter = require('./routes/search');
+var shengjie_backRouter = require('./routes/shengjie_back');
+var loginoutRouter = require('./routes/loginout');
+var headerRouter = require('./routes/header');
+var shengjie_editRouter = require('./routes/shengjie_edit');
+// var uploadpic = require('./routes/uploadpic');
 
 var app = express();
 var hbs = require('hbs');
@@ -55,6 +66,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+    secret:'keyboard cat',
+    resave: false,
+    saveUninitialized:true
+}));
+
 app.use('/user', usersRouter);
 app.use('/x_feng', fengRouter);
 app.use('/x_jing', jingRouter);
@@ -72,6 +89,15 @@ app.use('/zhuce',zhuceRouter);
 app.use('/user-work',userworkRouter);
 app.use('/user-like',userlikeRouter);
 app.use('/user-info',userinfoRouter);
+app.use('/aindex', aindexRouter);
+app.use('/user_management',user_managementRouter);
+app.use('/user_management_add',user_management_addRouter);
+app.use('/user_management_update',user_management_updateRouter);
+app.use('/search',searchRouter);
+app.use('/shengjie_back',shengjie_backRouter);
+app.use('/loginout',loginoutRouter);
+app.use('/header',headerRouter);
+app.use('/shengjie_edit',shengjie_editRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

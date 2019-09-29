@@ -11,20 +11,43 @@ router.post('/', function(req, res, next) {
         database: 'oceanculture'
     });
     console.log(req.body.uemail);
-    db.query('SELECT ukey FROM users WHERE uemail = ? ',[req.body.uemail], function(err,rows,fields) {
+    var pwd=req.body.upassword;
+    db.query('SELECT * FROM users WHERE uemail = ? ',[req.body.uemail], function(err,rows,fields) {
         if(err){
             console.log('[SELECT ERROR] - ',err.message);
             return false;
         }
-        var pwd=req.body.upassword;
-        if( rows[0].ukey!==pwd.toString()){
+        console.log(rows);
+        if(!rows[0]){
+            console.log("11111111");
+            db.query('SELECT * FROM admin WHERE ademail = ? ',[req.body.uemail], function(err,result,fields) {
+                if(err){
+                    console.log('[SELECT ERROR] - ',err.message);
+                    return false;
+                }
+                if( result[0].adkey!==pwd.toString()){
+                    console.log(result[0].adkey);
+                    console.log(pwd.toString());
+                    res.send('管理员账号或密码不正确!');
+                }
+                else{
+                    console.log('管理员登录成功');//返回结果
+                    req.session.admin= result;
+                    console.log(req.session.admin[0].adname);
+                    res.send('管理员登录成功!');
+                }
+            });
+        }
+        else if( rows[0].ukey!==pwd.toString()){
             console.log(rows[0].ukey);
             console.log(pwd.toString());
-            res.send('账号或密码不正确!');
+            res.send('用户账号或密码不正确!');
         }
         else{
-            console.log('登录成功');//返回结果
-            res.send('登录成功!');
+            console.log('用户登录成功');//返回结果
+            req.session.user=rows;
+            console.log(rows);
+            res.send('用户登录成功!');
         }
     });
 });

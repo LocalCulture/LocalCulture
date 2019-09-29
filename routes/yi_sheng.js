@@ -23,10 +23,10 @@ router.get('/', function(req, res, next) {
     db.query(newsql,
         function (err, rows) {
             if(err){
-                res.render('Yi_sheng', {title: '绳结', data: []});
+                res.render('Yi_sheng', {title: '绳结', data: [],user:req.session.user});
             }
             else{
-                res.render('Yi_sheng',{title: '绳结',data:rows});
+                res.render('Yi_sheng',{title: '绳结',data:rows,user:req.session.user});
                 // res.send(rows);
             }
         });

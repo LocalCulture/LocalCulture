@@ -1,0 +1,167 @@
+<link rel="stylesheet" href="/css/x-admin.css" />
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header header header-demo">
+        <div class="layui-main">
+            <a class="logo" href="/aindex">
+                <img style="width: 200px;margin-top:-2.5% " src="images/tp_home/big_logo.png">
+            </a>
+            <div style="display: inline-block;font-family: 'Source Han Sans CN';font-weight: bold">
+                舟山渔海后台管理系统
+            </div>
+            <ul class="layui-nav" lay-filter="">
+                <li style="left:-50px" class="layui-nav-item"><img src="images/backmanage/0.jpg" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+                <li style="left:-50px" class="layui-nav-item">
+                    <a style="color: white" href="javascript:">{{admin.[0].adname}}</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="#">个人信息</a></dd>
+                        <dd><a href="/loginout">退出</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-side layui-bg-black x-side">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav" lay-filter="side">
+                <!--数据管理-->
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;" _href="main.html">
+                        <i class="layui-icon" style="top: 3px;">&#xe62d;</i><cite>数据管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Warning_management.html">
+                                <cite>预警信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Data_management.html">
+                                <cite>数据管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="shujutongji.html">
+                                <cite>数据统计</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                    </dl>
+                </li>
+                <!--用户管理-->
+                <li class="layui-nav-item">
+                    <a class="javascript:;"  href="javascript:;" _href="/user_management">
+                        <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>用户管理</cite>
+                    </a>
+                </li>
+                <!--角色管理-->
+                <!--<li class="layui-nav-item">-->
+                    <!--<a class="javascript:;" href="javascript:;" _href="Role_management.html">-->
+                        <!--<i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>角色管理</cite>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--网站信息管理-->
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe629;</i><cite>网站信息管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="/shengjie_back">
+                                <i class="layui-icon"></i><cite>绳结信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="About_us.html">
+                                <i class="layui-icon"></i><cite>船模信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="New.html">
+                                <i class="layui-icon"></i><cite>美图信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>渔船信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>海鲜信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>名人信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>民俗信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>渔民画信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>沙雕信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="Download.html">
+                                <i class="layui-icon"></i><cite>作品信息管理</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="layui-tab layui-tab-card site-demo-title x-main" lay-filter="x-tab" lay-allowclose="true">
+        <div class="x-slide_left"></div>
+        <ul class="layui-tab-title">
+            <li class="layui-this">
+                数据管理
+                <i class="layui-icon layui-unselect layui-tab-close">ဆ</i>
+            </li>
+        </ul>
+        <div class="layui-tab-content site-demo site-demo-body">
+            <div class="layui-tab-item layui-show">
+                <iframe frameborder="0" src="main.html" class="x-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="site-mobile-shade">
+    </div>
+</div>
+<script src="./lib/layui/layui.js" charset="utf-8"></script>
+<script src="./js/x-admin.js"></script>

@@ -18,6 +18,23 @@
       <script src={{this}}></script>
   {{/each}}
   <script>
+      {{#if user}}
+      document.getElementById('user_img').src='images/tp_user/touxiang.png';
+      document.getElementById('user_img').style.width="50px";
+      document.getElementById('user_img').style.marginTop="0";
+      document.getElementById('displaysign').style.marginTop="0";
+      document.getElementById('log_child').innerHTML='<div class="mark"></div>\n' +
+              '                        <li><a href="user">个人中心</a></li>\n' +
+              '                        <li><a href="loginout">退出</a></li>';
+      $('#displaysign').on("click",function () {
+          this.onclick=null;
+          document.getElementById('signupAndin').style.display="none";
+          document.getElementById("closesign").style.visibility="hidden";
+          window.location.href='/user';
+      });
+      document.getElementById('signupAndin').style.display="none";
+      document.getElementById("closesign").style.visibility="hidden";
+      {{/if}}
       Auth.init({
           login_url: '#login',
           forgot_url: '#forgot'
@@ -26,11 +43,11 @@
       function changeheight(){
           var total = document.documentElement.clientHeight;
           var colHeight = total-document.getElementById("nav_content").offsetTop;
-          document.getElementById("nav_content").style.height=colHeight+"px";
+          document.getElementById("nav_content").style.height=colHeight*0.73+"px";
           // document.getElementById("daohang").style.bottom=-colHeight*0.12+"px";
-          document.getElementById("video").style.height=colHeight+"px";
+          document.getElementById("video").style.height=colHeight*0.73+"px";
           // document.getElementById("homepage").style.height=colHeight+"px";
-          document.getElementById("video-tvc").style.height=colHeight+"px";
+          // document.getElementById("video-tvc").style.height=colHeight*0.73+"px";
           // document.getElementById("nav").style.height=colHeight*0.55+"px";
           // document.getElementById("daohang").style.bottom=-colHeight*0.15+"px";
           // document.getElementById("su_bg").style.height=colHeight+"px";
@@ -40,6 +57,8 @@
           var total2 = document.documentElement.clientWidth;
           var colWidth = total2-document.getElementById("logo").offsetLeft;
           document.getElementById("logo").style.width=colWidth*0.15+"px";
+          // document.getElementById("video").style.width=100%;
+          // document.getElementById("video-tvc").style.width=colWidth+"px";
           document.getElementById("daohang").style.marginRight=colWidth*0.05+"px";
       }
       window.onload=function () {

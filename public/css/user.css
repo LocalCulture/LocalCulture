@@ -29,7 +29,7 @@ a{
 {
     position: absolute;
     z-index: 5;
-    left: 40px;
+    left: 150px;
     right: 40px;
     bottom: 40px;
 }
@@ -118,7 +118,7 @@ a{
 .center-tab-a{
     color: #444444;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 50px;
     height: 58px;
     line-height: 58px;
     font-size: 16px;
@@ -141,7 +141,7 @@ a{
 }
 .sort-bar{
     margin: 0 auto;
-    width:80%;
+    width:83%;
     height: 50px;
 }
 .sort-top{
@@ -191,7 +191,7 @@ a{
 }
 .create-2{
     color: #444444;
-    margin: 0 50px;
+    margin: 0 180px;
     height: 58px;
     line-height: 58px;
     font-size: 14px;

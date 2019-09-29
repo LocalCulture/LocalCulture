@@ -94,3 +94,18 @@ a{text-decoration: none;}
     text-overflow: ellipsis;
     /*white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...*/
 }
+.log_child{
+    display: none;
+    background-color: #ffffff59;
+    z-index: 100;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.video-tvc{
+    width: 100%;
+}
+.video-bg{
+    width: 100%;
+}

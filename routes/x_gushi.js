@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
         }
        else{
             console.log(rows);
-            res.render('X_gushi',{title: '故事详情',data:rows});
+            res.render('X_gushi',{title: '故事详情',data:rows,user:req.session.user});
         }
     });
 });

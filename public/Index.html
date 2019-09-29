@@ -54,11 +54,13 @@
                         <li><a href="yi_sheng">绳结</a></li>
                     </ul>
                 </li>
-                  <li>
+                  <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
                       <!--登录注册-->
-                      <a id="displaysign" onclick="start();" href="#" style="margin-top:4%;">
-                          <img src="images/tp_home/用户.png" width="30px" >
+                      <a id="displaysign" onclick="start()" href="#" style="margin-top:4%;height:50px;">
+                          <img id="user_img" style="width: 30px" src="images/tp_home/用户.png" >
                       </a>
+                      <ul id="log_child">
+                      </ul>
                       <!--登录注册-->
                   </li>
               </ul>
@@ -151,7 +153,7 @@
                     <form>
                         <p>让我们创建您的帐户</p>
                         <div class="lowin-group">
-                            <label>姓名</label>
+                            <label>昵称</label>
                             <input type="text" name="name" autocomplete="name" class="lowin-input">
                         </div>
                         <div class="lowin-group">
@@ -551,8 +553,25 @@
                 {
                     // alert(data.toString());
                     //data代表的是zhuce.js里的res.send函数参数的字符串内容
-                    if(data.toString()==='登录成功!'){
-                        window.location.href='/user';
+                    if(data.toString()==='用户登录成功!'){
+                        document.getElementById('user_img').src='images/tp_user/touxiang.png';
+                        document.getElementById('user_img').style.width="50px";
+                        document.getElementById('user_img').style.marginTop="0";
+                        document.getElementById('displaysign').style.marginTop="0";
+                        document.getElementById('log_child').innerHTML='<div class="mark"></div>\n' +
+                            '                        <li><a href="user">个人中心</a></li>\n' +
+                            '                        <li><a href="loginout">退出</a></li>';
+                        $('#displaysign').on("click",function () {
+                            this.onclick=null;
+                            document.getElementById('signupAndin').style.display="none";
+                            document.getElementById("closesign").style.visibility="hidden";
+                            window.location.href='/user';
+                        });
+                        document.getElementById('signupAndin').style.display="none";
+                        document.getElementById("closesign").style.visibility="hidden";
+                    }
+                    else if(data.toString()==='管理员登录成功!'){
+                        window.location.href='/aindex';
                     }
                     else{
                         alert("登录失败");

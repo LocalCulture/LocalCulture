@@ -1,245 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="17333" start="node1" appversion="6.0.5">
+<tour appversion="6.0.5" apprev="17333" start="node1">
   <panorama id="node1">
-    <input levelingpitch="0" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="2048" leveltilesize="510" width="2048">
-      <level predecode="0" preload="0" height="2048" width="2048"/>
-      <level predecode="0" preload="0" height="1024" width="1024"/>
-      <level predecode="0" preload="0" height="512" width="512"/>
-      <level predecode="1" preload="1" height="256" width="256"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="2048" overlap="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="2048" levelingpitch="0">
+      <level width="2048" preload="0" predecode="0" height="2048"/>
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="0" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="-179.99"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="0">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="-179.99" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985736" customnodeid="" title="default" source="" comment="" datetime="1970-01-01 0:00" author="" tags="博物馆外景" description="" longitude="122.200972"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point01" tilt="-11.64" skinid="ht_node" title="博物馆外景（近）" url="{node2}" target="$fwd" pan="-347.33" description=""/>
+    <userdata title="default" copyright="" customnodeid="" author="" tags="博物馆外景" latitude="29.985736" description="" longitude="122.200972" datetime="1970-01-01 0:00" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆外景（近）" target="$fwd" id="Point01" description="" skinid="ht_node" pan="-347.33" tilt="-11.64" url="{node2}"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node2">
-    <input levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="2048" leveltilesize="510" width="2048">
-      <level predecode="0" preload="0" height="2048" width="2048"/>
-      <level predecode="0" preload="0" height="1024" width="1024"/>
-      <level predecode="0" preload="0" height="512" width="512"/>
-      <level predecode="1" preload="1" height="256" width="256"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="2048" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="2048" levelingpitch="0">
+      <level width="2048" preload="0" predecode="0" height="2048"/>
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="0" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="0">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985686" customnodeid="" title="default" source="" comment="" datetime="1970-01-01 0:00" author="" tags="博物馆外景2" description="" longitude="122.200445"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point02" tilt="-23.47" skinid="ht_node" title="博物馆门口" url="{node3}" target="$fwd" pan="-28.701" description=""/>
-      <hotspot id="Point03" tilt="-4.2" skinid="ht_node" title="博物馆外景（远）" url="{node1}" target="$fwd" pan="-255.439" description=""/>
-      <hotspot id="IntroPoint01" tilt="-11.46" skinid="ht_video_file" title="舟山博物馆简介" url="media/DJI_0016.MP4" target="" pan="-330.41" description="舟山博物馆位于浙江省舟山市，是一座集收藏、保护、研究、展示和教育于一体的综合性博物馆。该博物馆于1986年10月开馆。博物馆建筑面积为14100平方米，建筑外立面以银灰色的几何块面分割，凹陷间隙处以蓝色填充，象征舟山岛礁林立。博物馆陈列展览总面积为6120平方米，设有“美丽家园——舟山自然陈列”、“渔风海韵——舟山民俗陈列”、“群岛往事——舟山历史陈列”3个基本陈列室。截至2019年8月，舟山博物馆馆藏藏品3000件（组）。2009年，舟山博物馆被评为国家三级博物馆。"/>
+    <userdata title="default" copyright="" customnodeid="" author="" tags="博物馆外景2" latitude="29.985686" description="" longitude="122.200445" datetime="1970-01-01 0:00" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆门口" target="$fwd" id="Point02" description="" skinid="ht_node" pan="-28.701" tilt="-23.47" url="{node3}"/>
+      <hotspot title="博物馆外景（远）" target="$fwd" id="Point03" description="" skinid="ht_node" pan="-255.439" tilt="-4.2" url="{node1}"/>
+      <hotspot title="舟山微电影" target="" id="IntroPoint01" description="舟山博物馆位于浙江省舟山市，是一座集收藏、保护、研究、展示和教育于一体的综合性博物馆。该博物馆于1986年10月开馆。博物馆建筑面积为14100平方米，建筑外立面以银灰色的几何块面分割，凹陷间隙处以蓝色填充，象征舟山岛礁林立。博物馆陈列展览总面积为6120平方米，设有“美丽家园——舟山自然陈列”、“渔风海韵——舟山民俗陈列”、“群岛往事——舟山历史陈列”3个基本陈列室。截至2019年8月，舟山博物馆馆藏藏品3000件（组）。2009年，舟山博物馆被评为国家三级博物馆。" skinid="ht_video_file" pan="-330.41" tilt="-11.46" url="media/微电影.mp4"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node3">
-    <input levelingpitch="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="3975" leveltilesize="510" width="3975">
-      <level predecode="0" preload="0" height="3975" width="3975"/>
-      <level predecode="0" preload="0" height="1987" width="1987"/>
-      <level predecode="0" preload="0" height="993" width="993"/>
-      <level predecode="1" preload="1" height="496" width="496"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="3975" overlap="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="3975" levelingpitch="0">
+      <level width="3975" preload="0" predecode="0" height="3975"/>
+      <level width="1987" preload="0" predecode="0" height="1987"/>
+      <level width="993" preload="0" predecode="0" height="993"/>
+      <level width="496" preload="1" predecode="1" height="496"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="0" fovmode="0">
-      <start tilt="7.82" fov="60" projection="4" pan="10.72"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="0">
+      <start fov="60" projection="4" pan="10.72" tilt="7.82"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.984972" customnodeid="" title="" source="" comment="" datetime="2019-07-21 17:13" author="" tags="最终成品" description="" longitude="122.200447"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point04" tilt="2.48" skinid="ht_node" title="博物馆外景（近）" url="{node2}" target="$fwd" pan="103.409" description=""/>
-      <hotspot id="Point05" tilt="-2.84" skinid="ht_node" title="博物馆大厅" url="{node7}" target="$fwd" pan="9.40162" description=""/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="29.984972" description="" longitude="122.200447" datetime="2019-07-21 17:13" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆外景（近）" target="$fwd" id="Point04" description="" skinid="ht_node" pan="103.409" tilt="2.48" url="{node2}"/>
+      <hotspot title="博物馆大厅" target="$fwd" id="Point05" description="" skinid="ht_node" pan="9.40162" tilt="-2.84" url="{node7}"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node7">
-    <input levelingpitch="0" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="5399" leveltilesize="510" width="5399">
-      <level predecode="0" preload="0" height="5399" width="5399"/>
-      <level predecode="0" preload="0" height="2699" width="2699"/>
-      <level predecode="0" preload="0" height="1349" width="1349"/>
-      <level predecode="0" preload="0" height="674" width="674"/>
-      <level predecode="1" preload="1" height="337" width="337"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="5399" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="5399" levelingpitch="0">
+      <level width="5399" preload="0" predecode="0" height="5399"/>
+      <level width="2699" preload="0" predecode="0" height="2699"/>
+      <level width="1349" preload="0" predecode="0" height="1349"/>
+      <level width="674" preload="0" predecode="0" height="674"/>
+      <level width="337" preload="1" predecode="1" height="337"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="31.9121" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="31.9121">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985039" customnodeid="" title="" source="" comment="" datetime="2019-07-21 16:18" author="" tags="最终成品" description="" longitude="122.200333"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point06" tilt="-2.62" skinid="ht_node" title="博物馆大厅前台" url="{node5}" target="$fwd" pan="-117.18" description=""/>
-      <hotspot id="Point07" tilt="2.21" skinid="ht_node" title="博物馆一层1" url="{node6}" target="$fwd" pan="27.93" description=""/>
-      <hotspot id="Point08" tilt="-1.68" skinid="ht_node" title="博物馆门口" url="{node3}" target="$fwd" pan="-172.24" description=""/>
-      <hotspot id="IntroPoint02" tilt="3.7" skinid="ht_image" title="中央大厅渔船" url="images/IMG_2026.JPG" target="" pan="-355.77" description="该雕塑生动形象地重现出渔民们扬帆出海，在大海中与风浪搏击，辛苦捕鱼的画面。"/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="29.985039" description="" longitude="122.200333" datetime="2019-07-21 16:18" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆大厅前台" target="$fwd" id="Point06" description="" skinid="ht_node" pan="-117.18" tilt="-2.62" url="{node5}"/>
+      <hotspot title="博物馆一层1" target="$fwd" id="Point07" description="" skinid="ht_node" pan="27.93" tilt="2.21" url="{node6}"/>
+      <hotspot title="博物馆门口" target="$fwd" id="Point08" description="" skinid="ht_node" pan="-172.24" tilt="-1.68" url="{node3}"/>
+      <hotspot title="中央大厅渔船" target="" id="IntroPoint02" description="该雕塑生动形象地重现出渔民们扬帆出海，在大海中与风浪搏击，辛苦捕鱼的画面。" skinid="ht_image" pan="-355.77" tilt="3.7" url="images/IMG_2026.JPG"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node5">
-    <input levelingpitch="0" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="3508" leveltilesize="510" width="3508">
-      <level predecode="0" preload="0" height="3508" width="3508"/>
-      <level predecode="0" preload="0" height="1754" width="1754"/>
-      <level predecode="0" preload="0" height="877" width="877"/>
-      <level predecode="1" preload="1" height="438" width="438"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="3508" overlap="1" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="3508" levelingpitch="0">
+      <level width="3508" preload="0" predecode="0" height="3508"/>
+      <level width="1754" preload="0" predecode="0" height="1754"/>
+      <level width="877" preload="0" predecode="0" height="877"/>
+      <level width="438" preload="1" predecode="1" height="438"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="199.801" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="199.801">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="" customnodeid="" title="" source="" comment="" datetime="2019-09-06 0:47" author="" tags="最终成品" description="" longitude=""/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point09" tilt="-0.27" skinid="ht_node" title="博物馆一层3" url="{node8}" target="$fwd" pan="-199.71" description=""/>
-      <hotspot id="Point10" tilt="0.88" skinid="ht_node" title="博物馆门口" url="{node3}" target="$fwd" pan="-64.36" description=""/>
-      <hotspot id="Point11" tilt="2.75" skinid="ht_node" title="博物馆大厅中央" url="{node7}" target="$fwd" pan="-108.9" description=""/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="" description="" longitude="" datetime="2019-09-06 0:47" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆一层3" target="$fwd" id="Point09" description="" skinid="ht_node" pan="-199.71" tilt="-0.27" url="{node8}"/>
+      <hotspot title="博物馆门口" target="$fwd" id="Point10" description="" skinid="ht_node" pan="-64.36" tilt="0.88" url="{node3}"/>
+      <hotspot title="博物馆大厅中央" target="$fwd" id="Point11" description="" skinid="ht_node" pan="-108.9" tilt="2.75" url="{node7}"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node6">
-    <input levelingpitch="0" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="4068" leveltilesize="510" width="4068">
-      <level predecode="0" preload="0" height="4068" width="4068"/>
-      <level predecode="0" preload="0" height="2034" width="2034"/>
-      <level predecode="0" preload="0" height="1017" width="1017"/>
-      <level predecode="1" preload="1" height="508" width="508"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="4068" overlap="1" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="4068" levelingpitch="0">
+      <level width="4068" preload="0" predecode="0" height="4068"/>
+      <level width="2034" preload="0" predecode="0" height="2034"/>
+      <level width="1017" preload="0" predecode="0" height="1017"/>
+      <level width="508" preload="1" predecode="1" height="508"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="383.366" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="383.366">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985025" customnodeid="" title="" source="" comment="" datetime="2019-07-21 16:22" author="" tags="最终成品" description="" longitude="122.200317"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point12" tilt="1.11" skinid="ht_node" title="博物馆一层2" url="{node4}" target="$fwd" pan="133.77" description=""/>
-      <hotspot id="Point13" tilt="-3.95" skinid="ht_node" title="博物馆大厅中央" url="{node7}" target="$fwd" pan="-27.87" description=""/>
-      <hotspot id="IntroPoint03" tilt="13.85" skinid="ht_info" title="舟山古生物文化——古菱齿象" url="" target="" pan="-72.67" description="古菱齿象是生活在距今1万—20万年的晚期更新世的大型哺乳动物，是有史以来最大的大象，成年古菱齿象体重可达10-14吨。其主要活动区域是在华北、华东等地区。由于这类象的臼齿磨蚀到一定程度后，齿板的中央就会扩大呈菱形，因此而得名。"/>
-      <hotspot id="IntroPoint04" tilt="-1.39" skinid="ht_info" title="舟山古生物文化——河套大角鹿" url="" target="" pan="-114.89" description="舟山博物馆的主要藏品包括河套大角鹿不完整头骨，该藏品缺失前半部分，包括上颌骨、鼻骨和颧弓；角的眉枝保存较好，主枝仅保存基部。该动物个体大，角粗大，角柄短，仅3厘米，角节部近似圆钝的三角形。"/>
-      <hotspot id="IntroPoint05" tilt="33.03" skinid="ht_info" title="舟山古生物文化——四不像麋鹿" url="" target="" pan="-92.1" description="麋鹿又名“四不像”，是世界珍稀动物，属于鹿科。因为它头脸像马、角像鹿、蹄像牛、尾像驴，因此得名四不像。原产于中国长江中下游沼泽地带，以青草和水草为食物。性好合群，善游泳，喜欢以嫩草和水生植物为食。"/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="29.985025" description="" longitude="122.200317" datetime="2019-07-21 16:22" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆一层2" target="$fwd" id="Point12" description="" skinid="ht_node" pan="133.77" tilt="1.11" url="{node4}"/>
+      <hotspot title="博物馆大厅中央" target="$fwd" id="Point13" description="" skinid="ht_node" pan="-27.87" tilt="-3.95" url="{node7}"/>
+      <hotspot title="舟山古生物文化——古菱齿象" target="" id="IntroPoint03" description="古菱齿象是生活在距今1万—20万年的晚期更新世的大型哺乳动物，是有史以来最大的大象，成年古菱齿象体重可达10-14吨。其主要活动区域是在华北、华东等地区。由于这类象的臼齿磨蚀到一定程度后，齿板的中央就会扩大呈菱形，因此而得名。" skinid="ht_info" pan="-72.67" tilt="13.85" url=""/>
+      <hotspot title="舟山古生物文化——河套大角鹿" target="" id="IntroPoint04" description="舟山博物馆的主要藏品包括河套大角鹿不完整头骨，该藏品缺失前半部分，包括上颌骨、鼻骨和颧弓；角的眉枝保存较好，主枝仅保存基部。该动物个体大，角粗大，角柄短，仅3厘米，角节部近似圆钝的三角形。" skinid="ht_info" pan="-114.89" tilt="-1.39" url=""/>
+      <hotspot title="舟山古生物文化——四不像麋鹿" target="" id="IntroPoint05" description="麋鹿又名“四不像”，是世界珍稀动物，属于鹿科。因为它头脸像马、角像鹿、蹄像牛、尾像驴，因此得名四不像。原产于中国长江中下游沼泽地带，以青草和水草为食物。性好合群，善游泳，喜欢以嫩草和水生植物为食。" skinid="ht_info" pan="-92.1" tilt="33.03" url=""/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node4">
-    <input levelingpitch="0" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="5399" leveltilesize="510" width="5399">
-      <level predecode="0" preload="0" height="5399" width="5399"/>
-      <level predecode="0" preload="0" height="2699" width="2699"/>
-      <level predecode="0" preload="0" height="1349" width="1349"/>
-      <level predecode="0" preload="0" height="674" width="674"/>
-      <level predecode="1" preload="1" height="337" width="337"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="5399" overlap="1" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="5399" levelingpitch="0">
+      <level width="5399" preload="0" predecode="0" height="5399"/>
+      <level width="2699" preload="0" predecode="0" height="2699"/>
+      <level width="1349" preload="0" predecode="0" height="1349"/>
+      <level width="674" preload="0" predecode="0" height="674"/>
+      <level width="337" preload="1" predecode="1" height="337"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="103.769" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="103.769">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985061" customnodeid="" title="" source="" comment="" datetime="2019-07-21 16:27" author="" tags="最终成品" description="" longitude="122.200317"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point14" tilt="2.21" skinid="ht_node" title="博物馆一层3" url="{node8}" target="$fwd" pan="70.19" description=""/>
-      <hotspot id="Point15" tilt="-0.56" skinid="ht_node" title="博物馆一层1" url="{node6}" target="$fwd" pan="-65.86" description=""/>
-      <hotspot id="Point01" tilt="14.95" skinid="ht_info" title="舟山群岛分布图" url="" target="" pan="-2.24" description="舟山群岛是中国第一大群岛，岛礁众多，星罗棋布，位于浙江省东北部。舟山群岛相当于我国海岛总数的20%，分布海域面积22000平方公里，陆域面积1371平方公里。其中1平方公里以上的岛屿58个，占该群岛总面积的96.9%。主要岛屿有舟山岛、衢山岛、六横岛、岱山岛、朱家尖岛、金塘岛、鼠浪湖岛、鲁家峙岛等，其中舟山岛最大，面积为502.65平方公里，为我国第四大岛。"/>
-      <hotspot id="IntroPoint06" tilt="-0.28" skinid="ht_info" title="舟山植物文化" url="" target="" pan="-80.47" description="舟山树木以乔木为主，舟山市市树——舟山新木姜子也属乔木，高可达10米，树皮灰白色，平滑。该种是国家二级重点保护植物。1996年被定为舟山市市树，适宜长江流域及沿海各地栽种。"/>
-      <hotspot id="IntroPoint08" tilt="-7.84" skinid="ht_image" title="舟山海洋生物——贝类" url="images/IMG_9710.JPG" target="" pan="-247.75" description=""/>
-      <hotspot id="IntroPoint09" tilt="-4.83" skinid="ht_image" title="舟山海洋生物——贝类" url="images/IMG_9749.JPG" target="" pan="-256.77" description=""/>
-      <hotspot id="IntroPoint10" tilt="2.75" skinid="ht_image" title="舟山海洋生物——贝类" url="images/IMG_9752.JPG" target="" pan="-252.39" description=""/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="29.985061" description="" longitude="122.200317" datetime="2019-07-21 16:27" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆一层3" target="$fwd" id="Point14" description="" skinid="ht_node" pan="70.19" tilt="2.21" url="{node8}"/>
+      <hotspot title="博物馆一层1" target="$fwd" id="Point15" description="" skinid="ht_node" pan="-65.86" tilt="-0.56" url="{node6}"/>
+      <hotspot title="舟山群岛分布图" target="" id="Point01" description="舟山群岛是中国第一大群岛，岛礁众多，星罗棋布，位于浙江省东北部。舟山群岛相当于我国海岛总数的20%，分布海域面积22000平方公里，陆域面积1371平方公里。其中1平方公里以上的岛屿58个，占该群岛总面积的96.9%。主要岛屿有舟山岛、衢山岛、六横岛、岱山岛、朱家尖岛、金塘岛、鼠浪湖岛、鲁家峙岛等，其中舟山岛最大，面积为502.65平方公里，为我国第四大岛。" skinid="ht_info" pan="-2.24" tilt="14.95" url=""/>
+      <hotspot title="舟山植物文化" target="" id="IntroPoint06" description="舟山树木以乔木为主，舟山市市树——舟山新木姜子也属乔木，高可达10米，树皮灰白色，平滑。该种是国家二级重点保护植物。1996年被定为舟山市市树，适宜长江流域及沿海各地栽种。" skinid="ht_info" pan="-80.47" tilt="-0.28" url=""/>
+      <hotspot title="舟山海洋生物——贝类" target="" id="IntroPoint08" description="" skinid="ht_image" pan="-247.75" tilt="-7.84" url="images/IMG_9710.JPG"/>
+      <hotspot title="舟山海洋生物——贝类" target="" id="IntroPoint09" description="" skinid="ht_image" pan="-256.77" tilt="-4.83" url="images/IMG_9749.JPG"/>
+      <hotspot title="舟山海洋生物——贝类" target="" id="IntroPoint10" description="" skinid="ht_image" pan="-252.39" tilt="2.75" url="images/IMG_9752.JPG"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <panorama id="node8">
-    <input levelingpitch="0" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" height="5399" leveltilesize="510" width="5399">
-      <level predecode="0" preload="0" height="5399" width="5399"/>
-      <level predecode="0" preload="0" height="2699" width="2699"/>
-      <level predecode="0" preload="0" height="1349" width="1349"/>
-      <level predecode="0" preload="0" height="674" width="674"/>
-      <level predecode="1" preload="1" height="337" width="337"/>
+    <input levelingroll="0" levelbiashidpi="1.000" leveltilesize="510" width="5399" overlap="1" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="5399" levelingpitch="0">
+      <level width="5399" preload="0" predecode="0" height="5399"/>
+      <level width="2699" preload="0" predecode="0" height="2699"/>
+      <level width="1349" preload="0" predecode="0" height="1349"/>
+      <level width="674" preload="0" predecode="0" height="674"/>
+      <level width="337" preload="1" predecode="1" height="337"/>
       <preview color="0x808080" strip="1"/>
     </input>
-    <view pannorth="34.5237" fovmode="0">
-      <start tilt="0" fov="70" projection="4" pan="0"/>
-      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
-      <min tilt="-90" fovpixel="2" pan="0"/>
-      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="60" scaletofit="1" pan="360"/>
+    <view fovmode="0" pannorth="34.5237">
+      <start fov="70" projection="4" pan="0" tilt="0"/>
+      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fovfisheye="360" fovstereographic="270" fov="60" pan="360" tilt="90"/>
     </view>
-    <userdata copyright="" info="" latitude="29.985075" customnodeid="" title="" source="" comment="" datetime="2019-07-21 16:42" author="" tags="最终成品" description="" longitude="122.200286"/>
-    <hotspots height="0" wordwrap="1" width="180">
-      <label borderalpha="1" backgroundalpha="1" borderradius="1" textcolor="0x000000" bordercolor="0x000000" border="1" enabled="1" height="0" background="1" textalpha="1" wordwrap="1" width="180" backgroundcolor="0xffffff"/>
-      <polystyle borderalpha="1" handcursor="1" backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff"/>
-      <hotspot id="Point16" tilt="1.25" skinid="ht_node" title="博物馆一层2" url="{node4}" target="$fwd" pan="-252.41" description=""/>
-      <hotspot id="Point17" tilt="0.13" skinid="ht_node" title="博物馆大厅前台" url="{node5}" target="$fwd" pan="-93.56" description=""/>
-      <hotspot id="IntroPoint11" tilt="2.68" skinid="ht_image" title="" url="images/IMG_9764.JPG" target="" pan="-106.23" description=""/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="最终成品" latitude="29.985075" description="" longitude="122.200286" datetime="2019-07-21 16:42" comment="" source="" info=""/>
+    <hotspots width="180" wordwrap="1" height="0">
+      <label borderalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" border="1" backgroundcolor="0xffffff" enabled="1" background="1" borderradius="1" wordwrap="1" height="0"/>
+      <polystyle borderalpha="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot title="博物馆一层2" target="$fwd" id="Point16" description="" skinid="ht_node" pan="-252.41" tilt="1.25" url="{node4}"/>
+      <hotspot title="博物馆大厅前台" target="$fwd" id="Point17" description="" skinid="ht_node" pan="-93.56" tilt="0.13" url="{node5}"/>
+      <hotspot title="" target="" id="IntroPoint11" description="" skinid="ht_image" pan="-106.23" tilt="2.68" url="images/IMG_9764.JPG"/>
     </hotspots>
     <media/>
-    <transition softedge="0" zoomin="2" zoomspeed="2" type="crossdissolve" zoomout="3" zoomfov="20" blendcolor="0x000000" enabled="1" blendtime="1" zoomoutpause="1"/>
-    <autorotate useanimation="0" delay="5.00" noderandom="1" enabled="1" speed="0.010" nodedelay="0.00" startloaded="1" returntohorizon="0.000"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control invertcontrol="1" dblclickfullscreen="0" rubberband="0" lockedkeyboard="0" simulatemass="1" contextfullscreen="1" invertwheel="0" lockedkeyboardzoom="0" sensitivity="8" lockedmouse="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0"/>
+    <transition blendtime="1" zoomin="2" blendcolor="0x000000" type="crossdissolve" zoomout="3" softedge="0" zoomoutpause="1" zoomspeed="2" enabled="1" zoomfov="20"/>
+    <autorotate nodedelay="0.00" speed="0.010" delay="5.00" startloaded="1" noderandom="1" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboardzoom="0" lockedkeyboard="0" contextfullscreen="1" lockedwheel="0" sensitivity="8" speedwheel="1" invertcontrol="1" simulatemass="1" hideabout="0" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" invertwheel="0"/>
   </panorama>
   <masternode>
-    <userdata copyright="" info="" latitude="" customnodeid="" title="" source="" comment="" datetime="" author="" tags="" description="" longitude=""/>
+    <userdata title="" copyright="" customnodeid="" author="" tags="" latitude="" description="" longitude="" datetime="" comment="" source="" info=""/>
   </masternode>
 </tour>

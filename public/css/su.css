@@ -1,11 +1,16 @@
 /*框架*/
 .case_011
 {
-    margin-top: 650px;
+    /*margin-top: 650px;*/
     width: 100%;
     height: 820px;
     position: relative;
     /*border:5px dashed #6f60ff;*/
+}
+.case_01
+{
+   overflow: hidden;
+    /*border:5px dashed orangered;*/
 }
 .case_02
 {

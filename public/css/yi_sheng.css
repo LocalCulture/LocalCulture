@@ -3,7 +3,7 @@
 {
     margin:0 auto;
     width:100%;
-    height: 3000px;
+    /*height: 3000px;*/
     /*border:5px dashed red;*/
     font-family:Source Han Sans CN Regular,sans-serif;
     /*text-shadow:1px 1px 3px rgba(0,0,0,0.7);*/
@@ -11,15 +11,15 @@
 
 .case_01
 {
-    background-color: black;
-    height: 800px;
+    /*background-color: black;*/
+    /*height: 800px;*/
     overflow: hidden;
-    margin-top: -200px;
+    /*margin-top: -200px;*/
 }
 .case_02
 {
     width: 100%;
-    height: 2600px;
+    height: 1200px;
     position: relative;
     /*border:2px dashed blue;*/
 }

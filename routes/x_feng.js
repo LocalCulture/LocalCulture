@@ -18,10 +18,10 @@ router.get('/', function(req, res, next) {
     db.query(newsql,
         function (err, rows) {
             if(err){
-                res.render('X_feng', {title: '乡风', data: []});
+                res.render('X_feng', {title: '乡风', data: [],user:req.session.user});
             }
             else{
-                res.render('X_feng',{title: '乡风',data:rows});
+                res.render('X_feng',{title: '乡风',data:rows,user:req.session.user});
             }
         });
 });
